@@ -55,7 +55,7 @@ const LanguageSwitcher = () => {
           hover:bg-gray-50 dark:hover:bg-gray-700
           border border-gray-200 dark:border-gray-700
           transition-colors duration-200
-          focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-red-500
+          focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-offset-red-500
         `}>
         <Image
           src={activeLang.flag}
