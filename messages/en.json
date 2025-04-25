@@ -1,7 +1,27 @@
 {
+  "nav": {
+    "about": "About Us",
+    "organization": "Our Organization",
+    "journey": "Our Journey",
+    "culture": "Our Culture",
+    "services": "Services",
+    "board": "Board Advisory Services",
+    "executive": "Executive Search",
+    "leadership": "Leadership Hiring",
+    "expertise": "Expertise",
+    "industries": "Industries",
+    "building": "Building Materials",
+    "education": " Education",
+    "industrial": "Industrial",
+    "development": "Development",
+    "realestate": "Real Estate",
+    "technology": "Technology",
+    "contact": "Contact Us"
+  },
   "hero": {
-    "title": "Transform Your Business",
-    "subtitle": "with Empowerment Group",
-    "description": ""
+    "title": "Empower Your Business ",
+    "subtitle": "with empowerment group",
+    "description": "Strategic consulting designed to fuel growth, spark innovation, and deliver lasting success.",
+    "button": "Get in Touch"
   }
 }

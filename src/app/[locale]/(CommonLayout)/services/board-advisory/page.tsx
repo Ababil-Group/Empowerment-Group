@@ -7,35 +7,35 @@ const boardAdvisoryServices = [
   {
     title: "Board Effectiveness",
     description:
-      "Enhancing board performance through strategic evaluation and development.",
+      "Drive performance through tailored board evaluations and development programs.",
     imageUrl:
       "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop",
   },
   {
     title: "Governance Structure",
     description:
-      "Establishing robust corporate governance frameworks and practices.",
+      "Design and implement robust governance frameworks aligned with best practices.",
     imageUrl:
       "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=500&h=500&fit=crop",
   },
   {
     title: "Succession Planning",
     description:
-      "Developing comprehensive board succession and transition strategies.",
+      " Ensure leadership continuity with proactive succession and transition strategies.",
     imageUrl:
       "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=500&h=500&fit=crop",
   },
   {
     title: "Board Composition",
     description:
-      "Optimizing board structure and member selection for maximum effectiveness.",
+      "Build high-impact boards with the right structure and member expertise.",
     imageUrl:
       "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500&h=500&fit=crop",
   },
   {
     title: "Risk Management",
     description:
-      "Implementing effective risk oversight and management systems.",
+      "Enhance oversight with effective risk governance and control mechanisms..",
     imageUrl:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=500&fit=crop",
   },
@@ -53,13 +53,10 @@ export default function BoardAdvisoryServicesPage() {
       <BoardAdvisoryServices />
       <WhatWeDo
         services={boardAdvisoryServices}
-        title="Our Board Advisory Services"
-        description="Comprehensive solutions to enhance board effectiveness and corporate governance."
+        title="Board Advisory Services"
+        description="Strategic solutions to strengthen board performance and governance excellence."
       />
-      <CommonBanner
-        title="Partner with us
-to strengthen your Board and drive sustainable success through strategic leadership."
-      />
+      <CommonBanner title="Collaborate with us to elevate your board and achieve lasting success through strategic leadership." />
     </>
   );
 }

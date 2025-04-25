@@ -21,8 +21,8 @@ export default function Home() {
       <IndustrySpecialization />
       <OurServices />
       <CommonBanner
-        title="Transform Your Business"
-        subtitle="Expert consulting solutions tailored to drive growth, innovation, and sustainable success for your organization."
+        title="Transform Your Business "
+        subtitle="Tailored consulting to fuel growth, spark innovation, and ensure long-term success."
         buttonText="Get Started"
         buttonLink="/contact-us"
       />

@@ -19,32 +19,32 @@ import {
 const timelineData = [
   {
     year: 1985,
-    title: "Foundation",
-    description: "Empowerment Group was established",
+    title: "Founded",
+    description: "Empowerment group is established in Qatar   ",
     image: "/images/1985.jpg",
   },
   {
     year: 1990,
     title: "Expansion",
-    description: "Opened first branch office",
+    description: "First branch office opens.",
     image: "/images/1990.jpg",
   },
   {
     year: 2000,
-    title: "Digital Era",
-    description: "Launched digital recruitment platform",
+    title: "Digital Shift",
+    description: "Launch of digital recruitment platform.",
     image: "/images/2000.jpg",
   },
   {
     year: 2010,
-    title: "Global Reach",
-    description: "International operations began",
+    title: " Going Global",
+    description: " International operations launched.",
     image: "/images/2010.jpg",
   },
   {
     year: 2020,
-    title: "Innovation",
-    description: "AI-powered recruitment solutions",
+    title: "Smarter Hiring",
+    description: "Introduced AI-driven recruitment solutions.",
     image: "/images/2020.jpg",
   },
 ];
@@ -84,16 +84,15 @@ const OurJourney: React.FC = () => {
 
   const getLineWidth = (index: number) => {
     if (!isActive(index)) return "0%";
-    return index === timelineData.length - 1 ?
-        "calc(100% + 44px)"
+    return index === timelineData.length - 1
+      ? "calc(100% + 44px)"
       : "calc(100% + 50px)";
   };
 
   return (
     <section
       id="journey"
-      className="py-8 sm:py-12 md:py-20 bg-white overflow-hidden"
-    >
+      className="py-8 sm:py-12 md:py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Title Section */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 md:mb-24">
@@ -102,8 +101,7 @@ const OurJourney: React.FC = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4"
-          >
+            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4">
             Our Journey
           </motion.h2>
           <motion.p
@@ -111,9 +109,8 @@ const OurJourney: React.FC = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            className="text-gray-600 text-base sm:text-lg md:text-xl"
-          >
-            A legacy of excellence spanning decades
+            className="text-gray-600 text-base sm:text-lg md:text-xl">
+            A Legacy of Excellence
           </motion.p>
         </div>
 
@@ -132,18 +129,16 @@ const OurJourney: React.FC = () => {
                   containScroll: "keepSnaps",
                 },
               },
-            }}
-          >
+            }}>
             <CarouselContent className="-ml-1 md:-ml-2">
               {timelineData.map((item, index) => (
                 <CarouselItem
                   key={item.year}
                   className={`pl-1 md:pl-2 ${
-                    isMobile ?
-                      "basis-[280px] sm:basis-[320px]"
-                    : "basis-[380px]"
-                  }`}
-                >
+                    isMobile
+                      ? "basis-[280px] sm:basis-[320px]"
+                      : "basis-[380px]"
+                  }`}>
                   <div className="flex flex-col">
                     {/* Image */}
                     <div className="mb-4">
@@ -213,22 +208,19 @@ const OurJourney: React.FC = () => {
                       <div
                         className={`text-base sm:text-lg font-bold mb-2 transition-colors duration-300 ${
                           isActive(index) ? "text-black" : "text-gray-400"
-                        }`}
-                      >
+                        }`}>
                         {item.year}
                       </div>
                       <h3
                         className={`text-sm sm:text-base font-bold mb-1 transition-colors duration-300 ${
                           isActive(index) ? "text-black" : "text-gray-400"
-                        }`}
-                      >
+                        }`}>
                         {item.title}
                       </h3>
                       <p
                         className={`text-xs sm:text-sm transition-colors duration-300 ${
                           isActive(index) ? "text-black" : "text-gray-400"
-                        }`}
-                      >
+                        }`}>
                         {item.description}
                       </p>
                     </div>

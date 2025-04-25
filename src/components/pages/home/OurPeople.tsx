@@ -3,11 +3,11 @@
 import * as React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { 
-  containerVariants, 
-  headingVariants, 
-  paragraphVariants, 
-  imageVariants 
+import {
+  containerVariants,
+  headingVariants,
+  paragraphVariants,
+  imageVariants,
 } from "@/components/animation/contentVariants";
 
 const OurPeople = () => {
@@ -20,19 +20,16 @@ const OurPeople = () => {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="text-center max-w-4xl mx-auto mb-8 md:mb-12"
-        >
+          className="text-center max-w-4xl mx-auto mb-8 md:mb-12">
           <motion.h2
             variants={headingVariants}
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6"
-          >
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
             Our People
           </motion.h2>
           <motion.p
             variants={paragraphVariants}
-            className="text-base sm:text-lg md:text-xl text-gray-600"
-          >
-            Meet the dedicated team behind our success.
+            className="text-base sm:text-lg md:text-xl text-gray-600">
+            The passionate minds powering our progress.
           </motion.p>
         </motion.div>
 
@@ -44,8 +41,7 @@ const OurPeople = () => {
             whileInView="animate"
             whileHover="hover"
             viewport={{ once: true }}
-            className="relative w-full h-[300px] sm:h-[400px] md:h-[550px] rounded-lg overflow-hidden shadow-lg"
-          >
+            className="relative w-full h-[300px] sm:h-[400px] md:h-[550px] rounded-lg overflow-hidden shadow-lg">
             <Image
               src="/images/teams.jpg"
               alt="Our Team"

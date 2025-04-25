@@ -18,7 +18,7 @@ export default function About() {
       <OurCulture />
       <CommonBanner
         title="Our Values"
-        subtitle="Our values are the guiding principles that help us in our decision making and define our culture."
+        subtitle="Guiding every decision, shaping our culture.They reflect who we are, what we stand for, and how we work with integrity, excellence, and purpose."
         buttonText="Get Started"
         buttonLink="/contact-us"
       />

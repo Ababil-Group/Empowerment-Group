@@ -16,11 +16,13 @@ import LanguageSwitcher from "../LanguageSwitcher";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { ChevronLeft } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
   const isMobile = useIsMobile();
   const pathname = usePathname();
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
+  const t = useTranslations("nav");
 
   // Reset active menu when pathname changes
   useEffect(() => {
@@ -66,7 +68,7 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                         className={`text-lg font-semibold relative group ${
                           isActive("/about-us") ? "text-primary" : ""
                         }`}>
-                        About Us
+                        {t("about")}
                         {isActive("/about-us") && (
                           <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary" />
                         )}
@@ -77,21 +79,21 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                             <Link
                               className="block p-2 text-base font-medium hover:bg-accent rounded-md"
                               href="/about-us">
-                              Our Organization
+                              {t("organization")}
                             </Link>
                           </li>
                           <li>
                             <Link
                               className="block p-2 hover:bg-accent rounded-md font-medium"
                               href="/about-us#journey">
-                              Our Journey
+                              {t("journey")}
                             </Link>
                           </li>
                           <li>
                             <Link
                               className="block p-2 hover:bg-accent rounded-md font-medium"
                               href="/about-us#ourculture">
-                              Our Culture
+                              {t("culture")}
                             </Link>
                           </li>
                         </ul>
@@ -103,7 +105,7 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                         className={`text-lg font-semibold relative group ${
                           isActive("/services") ? "text-primary" : ""
                         }`}>
-                        Services
+                        {t("services")}
                         {isActive("/services") && (
                           <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary" />
                         )}
@@ -114,21 +116,21 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                             <Link
                               className="block p-2 text-base font-medium hover:bg-accent rounded-md"
                               href="/services/board-advisory">
-                              Board Advisory Services
+                              {t("board")}
                             </Link>
                           </li>
                           <li>
                             <Link
                               className="block p-2 hover:bg-accent rounded-md font-medium"
                               href="/services/executive-search">
-                              Executive Search
+                              {t("executive")}
                             </Link>
                           </li>
                           <li>
                             <Link
                               className="block p-2 hover:bg-accent rounded-md font-medium"
                               href="/services/leadership">
-                              Leadership Hiring
+                              {t("leadership")}
                             </Link>
                           </li>
                         </ul>
@@ -140,7 +142,7 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                         className={`text-lg font-semibold relative group ${
                           isActive("/expertise") ? "text-primary" : ""
                         }`}>
-                        Expertise
+                        {t("expertise")}
                         {isActive("/expertise") && (
                           <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary" />
                         )}
@@ -151,7 +153,7 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                           <div className="w-1/4 p-2 rounded-lg">
                             <div className="flex items-center gap-2 group cursor-default">
                               <h4 className="font-bold text-base text-gray-900 group-hover:text-primary transition-colors">
-                                Industries
+                                {t("industries")}
                               </h4>
                               <ChevronLeft className="w-4 h-4 text-gray-400 group-hover:text-primary transition-colors" />
                             </div>
@@ -165,32 +167,32 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                               <Link
                                 className="block p-2 hover:bg-accent rounded-md font-medium"
                                 href="/expertise/building-materials">
-                                Building Materials
+                                {t("building")}
                               </Link>
                               <Link
                                 className="block p-2 hover:bg-accent rounded-md font-medium"
                                 href="/expertise/education">
-                                Education
+                                {t("education")}
                               </Link>
                               <Link
                                 className="block p-2 hover:bg-accent rounded-md font-medium"
                                 href="/expertise/industrial">
-                                Industrial
+                                {t("industrial")}
                               </Link>
                               <Link
                                 className="block p-2 hover:bg-accent rounded-md font-medium"
                                 href="/expertise/development">
-                                Development
+                                {t("development")}
                               </Link>
                               <Link
                                 className="block p-2 hover:bg-accent rounded-md font-medium"
                                 href="/expertise/real-estate">
-                                Real Estate
+                                {t("realestate")}
                               </Link>
                               <Link
                                 className="block p-2 hover:bg-accent rounded-md font-medium"
                                 href="/expertise/technology">
-                                Technology
+                                {t("technology")}
                               </Link>
                             </div>
                           </div>
@@ -205,7 +207,7 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
           </div>
 
           {/* Right section */}
-          <div className="flex gap-2 items-center">
+          <div className="flex gap-1 items-center">
             <Button
               asChild
               variant="default"
@@ -215,7 +217,7 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
               <Link
                 href="/contact-us"
                 className="relative flex items-center justify-center px-2 md:px-6">
-                <span className="relative z-10">Contact Us</span>
+                <span className="relative z-10">{t("contact")}</span>
                 <div className="absolute inset-0 bg-primary/90 transform scale-0 origin-top-right transition-transform duration-300 ease-out group-hover:scale-100 rounded-full" />
               </Link>
             </Button>

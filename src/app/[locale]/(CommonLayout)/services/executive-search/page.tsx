@@ -5,10 +5,12 @@ import { Search, Users, Briefcase, ChartBar, CheckCircle } from "lucide-react";
 import SearchMethodlogy from "@/components/pages/services/SearchMethodology";
 
 const executiveSearchServices = [
+
+  // update content
   {
     title: "C-Suite Search",
     description:
-      "Identifying and attracting top-tier C-level executives to drive organizational success.",
+      "Connecting you with high-caliber C-level executives to lead with impact.",
     imageUrl:
       "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=500&h=500&fit=crop",
   },

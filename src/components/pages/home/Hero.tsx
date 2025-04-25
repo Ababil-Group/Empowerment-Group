@@ -144,8 +144,7 @@ const Hero = () => {
 
               <AnimateInView variants={fadeInUp} delay={0.8}>
                 <p className="text-sm sm:text-base md:text-xl text-gray-600 max-w-lg">
-                  Expert consulting solutions tailored to drive growth,
-                  innovation, and sustainable success for your organization.
+                  {t("description")}
                 </p>
               </AnimateInView>
 
@@ -159,7 +158,7 @@ const Hero = () => {
                                 py-3 sm:py-4 md:py-6 px-4 sm:px-6 md:px-8
                                 transition-all duration-300 ease-in-out transform hover:scale-105 
                                 relative overflow-hidden group">
-                      <span className="relative z-10">Get in Touch</span>
+                      <span className="relative z-10">{t("button")}</span>
                       <span className="bg-white p-1 sm:p-1.5 md:p-2 rounded-full relative z-10">
                         <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 md:h-6 md:w-6 text-black" />
                       </span>

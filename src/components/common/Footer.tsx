@@ -17,59 +17,52 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Empowerment Group</h3>
+            <h3 className="text-xl font-bold mb-4">Empowerment group</h3>
             <p className="text-gray-400 mb-4">
-              Providing expert consulting services and innovative solutions for
-              businesses worldwide.
+              Delivering expert consulting and innovative solutions to
+              businesses across the globe.
             </p>
             <div className="flex space-x-4">
               <a
                 href="https://www.facebook.com/empowermentuk"
                 className="hover:text-blue-500 transition-colors"
-                target="_blank"
-              >
+                target="_blank">
                 <FaFacebookF />
               </a>
               <a
                 href="https://x.com/empowerment4492"
                 className="hover:text-blue-500 text-xl transition-colors"
-                target="_blank"
-              >
+                target="_blank">
                 <FaTwitter />
               </a>
               <a
                 href="https://www.linkedin.com/company/empowerment-group-limited"
                 className="hover:text-blue-500 text-xl transition-colors"
-                target="_blank"
-              >
+                target="_blank">
                 <FaLinkedinIn />
               </a>
               <a
                 href="https://www.instagram.com/empowerment.group25/"
                 className="hover:text-blue-500 text-xl transition-colors"
-                target="_blank"
-              >
+                target="_blank">
                 <FaInstagram />
               </a>
               <a
                 href="https://www.youtube.com/@EmpowermentGroupLimited"
                 className="hover:text-blue-500 text-xl transition-colors"
-                target="_blank"
-              >
+                target="_blank">
                 <FaYoutube />
               </a>
               <a
                 href="https://www.tiktok.com/@empowerment.group25?lang=en"
                 className="hover:text-blue-500 text-xl transition-colors"
-                target="_blank"
-              >
+                target="_blank">
                 <FaTiktok />
               </a>
               <a
                 href="https://www.pinterest.com/empowermentgroup25/"
                 className="hover:text-blue-500 text-xl transition-colors"
-                target="_blank"
-              >
+                target="_blank">
                 <FaPinterest />
               </a>
             </div>
@@ -106,8 +99,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/contact-us"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
+                  className="text-gray-400 hover:text-white transition-colors">
                   Contact Us
                 </Link>
               </li>
@@ -119,15 +111,15 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Services</h3>
             <ul className="space-y-2">
               <li className="text-gray-400 hover:text-white transition-colors">
-                <Link href="/services/board-advisory">
-                  Board Advisory Services
+                <Link href="/services/board-advisory">Board Advisory</Link>
+              </li>
+              <li className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/services/executive-search">
+                  Executive Talent Search
                 </Link>
               </li>
               <li className="text-gray-400 hover:text-white transition-colors">
-                <Link href="/services/executive-search">Executive Search</Link>
-              </li>
-              <li className="text-gray-400 hover:text-white transition-colors">
-                <Link href="/services/leadership">Leadership Hiring</Link>
+                <Link href="/services/leadership">Leadership Recruitment</Link>
               </li>
             </ul>
           </div>
@@ -143,7 +135,7 @@ const Footer = () => {
                 <br />
                 Malta
               </p>
-              <li>Phone: (555) 123-4567</li>
+              <li>Phone: (555) 123-4567 </li>
               <li>Email: info@empowerment.group</li>
             </ul>
           </div>

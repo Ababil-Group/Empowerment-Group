@@ -1,6 +1,27 @@
 {
+  "nav": {
+    "about": "Despre noi",
+    "organization": "Organizatia noastra",
+    "journey": "Calea noastra",
+    "culture": "Cultura noastra",
+    "services": "Servicii",
+    "board": "Servicii de consiliere",
+    "executive": "Cautare executiv",
+    "leadership": "Cautare de lideri",
+    "expertise": "Specializari",
+    "industries": "Industrii",
+    "building": "Materiali de constructie",
+    "education": "Educatie",
+    "industrial": "Industrial",
+    "development": "Dezvoltare",
+    "realestate": "Imobiliare",
+    "technology": "Tehnologie",
+    "contact": "Contactati ne"
+  },
   "hero": {
-    "title": " Transformišite svoje poslovanje",
-    "subtitle": "sa Empowerment Group"
+    "title": "Imputerniciti-va afacerea",
+    "subtitle": "cu grupul de imputernicire",
+    "description": "Consultianta strategica destulata de creere, impuls si succes.",
+    "button": "Kontaktirajte nas"
   }
 }
