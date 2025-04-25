@@ -19,12 +19,9 @@ import {
 } from "@/components/animation/variants";
 import PageTransition from "@/components/animation/PageTransition";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
-const images = [
-  "/images/h1.jpg",
-  "/images/h2.jpg",
-  "/images/h3.jpg",
-];
+const images = ["/images/h1.jpg", "/images/h2.jpg", "/images/h3.jpg"];
 
 const containerVariants = {
   initial: {
@@ -48,6 +45,7 @@ const Hero = () => {
   const [mounted, setMounted] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [api, setApi] = useState<CarouselApi>();
+  const t = useTranslations("home");
 
   useEffect(() => {
     setMounted(true);
@@ -79,15 +77,13 @@ const Hero = () => {
         variants={containerVariants}
         initial="initial"
         animate="animate"
-        className="relative min-h-[80vh] flex items-center bg-white py-6 md:py-12 pb-4"
-      >
+        className="relative min-h-[80vh] flex items-center bg-white py-6 md:py-12 pb-4">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
             <AnimateInView
               variants={fadeInRight}
               delay={0.6}
-              className="relative mt-0 mb-8 md:mb-0 md:mt-0 order-1 md:order-2"
-            >
+              className="relative mt-0 mb-8 md:mb-0 md:mt-0 order-1 md:order-2">
               <div
                 className="absolute -right-8 top-8 w-full h-full rounded-2xl 
                           bg-primary/20 blur-lg transform"
@@ -100,8 +96,7 @@ const Hero = () => {
                   align: "center",
                   skipSnaps: false,
                   dragFree: false,
-                }}
-              >
+                }}>
                 <CarouselContent>
                   {images.map((image, index) => (
                     <CarouselItem key={index}>
@@ -137,13 +132,12 @@ const Hero = () => {
             <AnimateInView
               variants={fadeInLeft}
               delay={0.6}
-              className="space-y-2 md:space-y-8 order-2 md:order-1"
-            >
+              className="space-y-2 md:space-y-8 order-2 md:order-1">
               <AnimateInView variants={fadeInUp} delay={0.7}>
                 <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  Transform Your Business
+                  {t("title")}
                   <span className="block text-primary mt-0.5 md:mt-2">
-                    with Empowerment Group
+                    {t("subtitle")}
                   </span>
                 </h1>
               </AnimateInView>
@@ -164,8 +158,7 @@ const Hero = () => {
                                 flex items-center justify-center gap-2 md:gap-3 rounded-full 
                                 py-3 sm:py-4 md:py-6 px-4 sm:px-6 md:px-8
                                 transition-all duration-300 ease-in-out transform hover:scale-105 
-                                relative overflow-hidden group"
-                    >
+                                relative overflow-hidden group">
                       <span className="relative z-10">Get in Touch</span>
                       <span className="bg-white p-1 sm:p-1.5 md:p-2 rounded-full relative z-10">
                         <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 md:h-6 md:w-6 text-black" />
@@ -181,22 +174,19 @@ const Hero = () => {
                       <a
                         href="https://x.com/empowerment4492"
                         className="text-gray-600 hover:text-primary transition-colors"
-                        target="_blank"
-                      >
+                        target="_blank">
                         <Twitter className="h-5 w-5 sm:h-5 sm:w-5 md:h-6 md:w-6" />
                       </a>
                       <a
                         href="https://www.linkedin.com/company/empowerment-group-limited"
                         className="text-gray-600 hover:text-primary transition-colors"
-                        target="_blank"
-                      >
+                        target="_blank">
                         <Linkedin className="h-5 w-5 sm:h-5 sm:w-5 md:h-6 md:w-6" />
                       </a>
                       <a
                         href="https://www.facebook.com/empowermentuk"
                         className="text-gray-600 hover:text-primary transition-colors"
-                        target="_blank"
-                      >
+                        target="_blank">
                         <Facebook className="h-5 w-5 sm:h-5 sm:w-5 md:h-6 md:w-6" />
                       </a>
                     </div>

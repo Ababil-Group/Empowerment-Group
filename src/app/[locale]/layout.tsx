@@ -1,5 +1,8 @@
+import { NextIntlClientProvider, hasLocale } from "next-intl";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -31,14 +34,14 @@ export const metadata: Metadata = {
         url: "/logo/logo.svg",
         type: "image/svg+xml",
         sizes: "196x196",
-      }
+      },
     ],
     apple: [
       {
         url: "/apple-touch-icon.png",
         sizes: "180x180",
         type: "image/png",
-      }
+      },
     ],
   },
   openGraph: {
@@ -74,15 +77,21 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
   return (
-    <html className="scroll-smooth" lang="en" suppressHydrationWarning>
+    <html className="scroll-smooth" lang={locale} suppressHydrationWarning>
       <body className={inter.className} suppressHydrationWarning>
-        {children}
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
   );

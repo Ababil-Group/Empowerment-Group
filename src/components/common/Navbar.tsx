@@ -12,6 +12,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
+import LanguageSwitcher from "../LanguageSwitcher";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { ChevronLeft } from "lucide-react";
@@ -58,15 +59,13 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
               <div className="hidden md:block">
                 <NavigationMenu
                   value={activeMenu}
-                  onValueChange={setActiveMenu}
-                >
+                  onValueChange={setActiveMenu}>
                   <NavigationMenuList className="flex items-center md:gap-1 lg:gap-4">
                     <NavigationMenuItem>
                       <NavigationMenuTrigger
                         className={`text-lg font-semibold relative group ${
                           isActive("/about-us") ? "text-primary" : ""
-                        }`}
-                      >
+                        }`}>
                         About Us
                         {isActive("/about-us") && (
                           <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary" />
@@ -77,24 +76,21 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                           <li>
                             <Link
                               className="block p-2 text-base font-medium hover:bg-accent rounded-md"
-                              href="/about-us"
-                            >
+                              href="/about-us">
                               Our Organization
                             </Link>
                           </li>
                           <li>
                             <Link
                               className="block p-2 hover:bg-accent rounded-md font-medium"
-                              href="/about-us#journey"
-                            >
+                              href="/about-us#journey">
                               Our Journey
                             </Link>
                           </li>
                           <li>
                             <Link
                               className="block p-2 hover:bg-accent rounded-md font-medium"
-                              href="/about-us#ourculture"
-                            >
+                              href="/about-us#ourculture">
                               Our Culture
                             </Link>
                           </li>
@@ -106,8 +102,7 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                       <NavigationMenuTrigger
                         className={`text-lg font-semibold relative group ${
                           isActive("/services") ? "text-primary" : ""
-                        }`}
-                      >
+                        }`}>
                         Services
                         {isActive("/services") && (
                           <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary" />
@@ -118,24 +113,21 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                           <li>
                             <Link
                               className="block p-2 text-base font-medium hover:bg-accent rounded-md"
-                              href="/services/board-advisory"
-                            >
+                              href="/services/board-advisory">
                               Board Advisory Services
                             </Link>
                           </li>
                           <li>
                             <Link
                               className="block p-2 hover:bg-accent rounded-md font-medium"
-                              href="/services/executive-search"
-                            >
+                              href="/services/executive-search">
                               Executive Search
                             </Link>
                           </li>
                           <li>
                             <Link
                               className="block p-2 hover:bg-accent rounded-md font-medium"
-                              href="/services/leadership"
-                            >
+                              href="/services/leadership">
                               Leadership Hiring
                             </Link>
                           </li>
@@ -147,8 +139,7 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                       <NavigationMenuTrigger
                         className={`text-lg font-semibold relative group ${
                           isActive("/expertise") ? "text-primary" : ""
-                        }`}
-                      >
+                        }`}>
                         Expertise
                         {isActive("/expertise") && (
                           <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary" />
@@ -157,14 +148,14 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                       <NavigationMenuContent className="border-t-2 border-t-primary">
                         <div className="w-[600px] p-6 flex">
                           {/* Left side - Title */}
-                            <div className="w-1/4 p-2 rounded-lg">
+                          <div className="w-1/4 p-2 rounded-lg">
                             <div className="flex items-center gap-2 group cursor-default">
                               <h4 className="font-bold text-base text-gray-900 group-hover:text-primary transition-colors">
-                              Industries
+                                Industries
                               </h4>
                               <ChevronLeft className="w-4 h-4 text-gray-400 group-hover:text-primary transition-colors" />
                             </div>
-                            </div>
+                          </div>
 
                           {/* Right side - Industries list */}
                           <div className="w-3/4">
@@ -173,38 +164,32 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
 
                               <Link
                                 className="block p-2 hover:bg-accent rounded-md font-medium"
-                                href="/expertise/building-materials"
-                              >
+                                href="/expertise/building-materials">
                                 Building Materials
                               </Link>
                               <Link
                                 className="block p-2 hover:bg-accent rounded-md font-medium"
-                                href="/expertise/education"
-                              >
+                                href="/expertise/education">
                                 Education
                               </Link>
                               <Link
                                 className="block p-2 hover:bg-accent rounded-md font-medium"
-                                href="/expertise/industrial"
-                              >
+                                href="/expertise/industrial">
                                 Industrial
                               </Link>
                               <Link
                                 className="block p-2 hover:bg-accent rounded-md font-medium"
-                                href="/expertise/development"
-                              >
+                                href="/expertise/development">
                                 Development
                               </Link>
                               <Link
                                 className="block p-2 hover:bg-accent rounded-md font-medium"
-                                href="/expertise/real-estate"
-                              >
+                                href="/expertise/real-estate">
                                 Real Estate
                               </Link>
                               <Link
                                 className="block p-2 hover:bg-accent rounded-md font-medium"
-                                href="/expertise/technology"
-                              >
+                                href="/expertise/technology">
                                 Technology
                               </Link>
                             </div>
@@ -220,22 +205,21 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
           </div>
 
           {/* Right section */}
-          <div className="flex items-center">
+          <div className="flex gap-2 items-center">
             <Button
               asChild
               variant="default"
               className="relative bg-black text-white overflow-hidden transition-all duration-300 
               h-7 md:h-10 text-xs md:text-base group rounded-full 
-              mr-14 md:mr-0 px-2 md:px-6" 
-            >
+              mr-14 md:mr-0 px-2 md:px-6">
               <Link
                 href="/contact-us"
-                className="relative flex items-center justify-center px-2 md:px-6" 
-              >
+                className="relative flex items-center justify-center px-2 md:px-6">
                 <span className="relative z-10">Contact Us</span>
                 <div className="absolute inset-0 bg-primary/90 transform scale-0 origin-top-right transition-transform duration-300 ease-out group-hover:scale-100 rounded-full" />
               </Link>
             </Button>
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

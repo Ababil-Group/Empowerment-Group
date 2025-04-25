@@ -45,6 +45,7 @@
     "motion": "^12.0.11",
     "next": "^15.1.6",
     "next-auth": "^4.24.11",
+    "next-intl": "^4.1.0",
     "nextjs-toploader": "^3.7.15",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
