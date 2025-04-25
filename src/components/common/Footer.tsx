@@ -135,7 +135,7 @@ const Footer = () => {
                 <br />
                 Malta
               </p>
-              <li>Phone: (555) 123-4567 </li>
+              <li>Phone: +40 784 805 998 </li>
               <li>Email: info@empowerment.group</li>
             </ul>
           </div>
