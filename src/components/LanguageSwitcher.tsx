@@ -6,7 +6,7 @@ import { useState, useRef, useEffect } from "react";
 
 const languages = [
   { code: "en", name: "English", flag: "https://flagcdn.com/w20/gb.png" },
-  { code: "hr", name: "Hrvatski", flag: "https://flagcdn.com/w20/hr.png" },
+  { code: "ro", name: "Română", flag: "https://flagcdn.com/w20/ro.png" },
 ] as const;
 
 const LanguageSwitcher = () => {
@@ -16,7 +16,7 @@ const LanguageSwitcher = () => {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Get current language from URL
-  const currentLang = pathname.split("/")[1] as "en" | "hr";
+  const currentLang = pathname.split("/")[1] as "en" | "ro";
   const activeLang =
     languages.find((l) => l.code === currentLang) || languages[0];
 

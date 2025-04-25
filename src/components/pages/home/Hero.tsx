@@ -45,7 +45,7 @@ const Hero = () => {
   const [mounted, setMounted] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [api, setApi] = useState<CarouselApi>();
-  const t = useTranslations("home");
+  const t = useTranslations("hero");
 
   useEffect(() => {
     setMounted(true);

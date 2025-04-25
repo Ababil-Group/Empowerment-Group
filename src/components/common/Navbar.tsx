@@ -219,6 +219,7 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                 <div className="absolute inset-0 bg-primary/90 transform scale-0 origin-top-right transition-transform duration-300 ease-out group-hover:scale-100 rounded-full" />
               </Link>
             </Button>
+
             <LanguageSwitcher />
           </div>
         </div>
