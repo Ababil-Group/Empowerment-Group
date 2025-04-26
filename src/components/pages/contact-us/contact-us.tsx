@@ -128,7 +128,7 @@ const ContactUs = () => {
                         <br />
                         Starda VIILOR,Nr.3,Bloc R3,Scara
                         <br />
-                        A,Etaj P,Ap.1,Judet Ialomita
+                        A,Etaj P,Ap.1,Judet Ialomita, Romania.
                       </p>
                     </div>
                   </div>

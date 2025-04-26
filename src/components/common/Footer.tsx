@@ -133,7 +133,7 @@ const Footer = () => {
                 <br />
                 Starda VIILOR,Nr.3,Bloc R3,Scara
                 <br />
-                A,Etaj P,Ap.1,Judet Ialomita
+                A,Etaj P,Ap.1,Judet Ialomita, Romania.
               </p>
               <li>Phone: +40 784 805 998 </li>
               <li>Email: info@empowerment.group</li>

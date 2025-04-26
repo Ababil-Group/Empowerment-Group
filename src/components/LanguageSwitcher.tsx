@@ -1,12 +1,11 @@
 "use client";
+import { ChevronDown, Globe } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
-import Image from "next/image";
-import { ChevronDown } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 
 const languages = [
-  { code: "en", name: "English", flag: "https://flagcdn.com/w20/gb.png" },
-  { code: "ro", name: "Română", flag: "https://flagcdn.com/w20/ro.png" },
+  { code: "en", name: "English" },
+  { code: "ro", name: "Romanian" },
 ] as const;
 
 const LanguageSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
@@ -14,9 +13,10 @@ const LanguageSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const timeoutRef = useRef<NodeJS.Timeout>(null);
 
   // Get current language from URL
-  const currentLang = pathname.split("/")[1] as "en" | "ro";
+  const currentLang = pathname.split("/")[1];
   const activeLang =
     languages.find((l) => l.code === currentLang) || languages[0];
 
@@ -43,6 +43,17 @@ const LanguageSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
     setIsOpen(false);
   };
 
+  const handleMouseEnter = () => {
+    clearTimeout(timeoutRef.current);
+    setIsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setIsOpen(false);
+    }, 300);
+  };
+
   // Mobile version - simplified
   if (mobile) {
     return (
@@ -50,16 +61,7 @@ const LanguageSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="flex items-center justify-between w-full px-4 py-3 text-lg font-medium">
-          <div className="flex items-center gap-2">
-            <Image
-              src={activeLang.flag}
-              alt={`${activeLang.name} flag`}
-              width={24}
-              height={18}
-              className="object-cover rounded-sm"
-            />
-            <span>{activeLang.name}</span>
-          </div>
+          <span>{activeLang.name}</span>
           <ChevronDown
             className={`h-5 w-5 transition-transform ${isOpen ? "rotate-180" : ""}`}
           />
@@ -75,13 +77,6 @@ const LanguageSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
                 className={`flex items-center gap-2 w-full px-4 py-2 text-left ${
                   lang.code === currentLang ? "opacity-50" : ""
                 }`}>
-                <Image
-                  src={lang.flag}
-                  alt={`${lang.name} flag`}
-                  width={24}
-                  height={18}
-                  className="object-cover rounded-sm"
-                />
                 <span>{lang.name}</span>
               </button>
             ))}
@@ -93,26 +88,27 @@ const LanguageSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
 
   // Desktop version
   return (
-    <div className="relative inline-block text-left" ref={dropdownRef}>
-      <button
-        type="button"
-        onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 bg-white text-primary px-3 py-2 rounded-md text-sm font-medium hover:bg-white/90 transition">
-        <Image
-          src={activeLang.flag}
-          alt={`${activeLang.name} flag`}
-          width={20}
-          height={16}
-          className="object-cover rounded-sm"
-        />
-        <span className="hidden sm:inline">{activeLang.name}</span>
-        <ChevronDown
-          className={`h-4 w-4 transition-transform ${isOpen ? "rotate-180" : ""}`}
-        />
-      </button>
+    <div
+      className="relative inline-block text-left"
+      ref={dropdownRef}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}>
+      <div className="flex justify-center items-center">
+        <span className="text-gray-500">
+          <Globe className="h-5 w-5" />
+        </span>
+        <button
+          type="button"
+          className="flex items-center gap-1 text-primary px-3 py-2 text-sm font-medium hover:underline">
+          <span>{activeLang.name}</span>
+        </button>
+      </div>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-40 origin-top-right bg-white rounded-md shadow-lg z-50">
+        <div
+          className="absolute right-0 mt-2 w-40 origin-top-right bg-white rounded-md shadow-lg z-50 border border-gray-200"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}>
           <div className="py-1">
             {languages.map((lang) => (
               <button
@@ -124,13 +120,6 @@ const LanguageSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
                     ? "bg-gray-100 cursor-not-allowed opacity-70"
                     : "hover:bg-gray-100"
                 }`}>
-                <Image
-                  src={lang.flag}
-                  alt={`${lang.name} flag`}
-                  width={20}
-                  height={16}
-                  className="object-cover rounded-sm"
-                />
                 <span>{lang.name}</span>
               </button>
             ))}
