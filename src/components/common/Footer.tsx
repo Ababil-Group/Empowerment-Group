@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Empowerment group</h3>
+            <h3 className="text-xl font-bold mb-4">Empowerment Group</h3>
             <p className="text-gray-400 mb-4">
               Delivering expert consulting and innovative solutions to
               businesses across the globe.
@@ -129,11 +129,11 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-400">
               <p className="leading-relaxed">
-                19 Triq Iganzio Gavino Bonavita
+                Municipiul Slobozia
                 <br />
-                PEMBROKE, PBK1151
+                Starda VIILOR,Nr.3,Bloc R3,Scara
                 <br />
-                Malta
+                A,Etaj P,Ap.1,Judet Ialomita
               </p>
               <li>Phone: +40 784 805 998 </li>
               <li>Email: info@empowerment.group</li>

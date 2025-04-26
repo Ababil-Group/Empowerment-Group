@@ -27,7 +27,7 @@ interface SearchMethodologyProps {
 const SearchMethodology: React.FC<SearchMethodologyProps> = ({
   methodologies,
   title = "Our Search Methodology",
-  description = "A systematic approach to finding and securing top talent.",
+  description = "A structured approach to identifying and securing exceptional talent.",
 }) => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);

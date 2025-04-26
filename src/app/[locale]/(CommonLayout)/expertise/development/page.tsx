@@ -1,19 +1,26 @@
-"use client"
+"use client";
 
-import IndustiresLayout from "@/components/pages/industries/IndustriesLayout"
-import SecondaryNav from "@/components/pages/industries/SecondaryNav"
-import CommonBanner from "@/components/common/CommonBanner"
-import { Search, Users, CheckCircle, BarChart, ClipboardCheck, HandshakeIcon } from 'lucide-react'
-import { 
-  Building, 
-  Landmark, 
-  Construction, 
-  HardHat, 
-  LineChart, 
-  PlaneTakeoff, 
+import IndustiresLayout from "@/components/pages/industries/IndustriesLayout";
+import SecondaryNav from "@/components/pages/industries/SecondaryNav";
+import CommonBanner from "@/components/common/CommonBanner";
+import {
+  Search,
+  Users,
+  CheckCircle,
+  BarChart,
+  ClipboardCheck,
+  HandshakeIcon,
+} from "lucide-react";
+import {
+  Building,
+  Landmark,
+  Construction,
+  HardHat,
+  LineChart,
+  PlaneTakeoff,
   Map, // Changed from Road to Map
-  Users2 
-} from 'lucide-react'
+  Users2,
+} from "lucide-react";
 
 const DevelopmentPage = () => {
   const specialities = [
@@ -29,93 +36,93 @@ const DevelopmentPage = () => {
     "Industrial Development",
     "Rural Development",
     "Economic Development",
-    "Project Finance"
-  ]
+    "Project Finance",
+  ];
 
   const representativeSearches = [
     {
       icon: Building,
-      title: "Project Director",
-      subtitle: "Major Infrastructure Development Company"
+      title: "Chief Operating Officer",
+      subtitle: "Leading Industrial Manufacturing Company",
     },
     {
       icon: Landmark,
-      title: "Urban Planning Head",
-      subtitle: "City Development Authority"
+      title: "Plant Head",
+      subtitle: "Major Heavy Engineering Corporation",
     },
     {
       icon: Construction,
-      title: "Construction Director",
-      subtitle: "Leading Development Corporation"
+      title: "VP Supply Chain",
+      subtitle: "Industrial Equipment Manufacturer",
     },
     {
       icon: HardHat,
-      title: "Head of Operations",
-      subtitle: "Infrastructure Development Firm"
+      title: "Director of Engineering",
+      subtitle: "Precision Manufacturing Company",
     },
     {
       icon: LineChart,
-      title: "Chief Strategy Officer",
-      subtitle: "Urban Development Agency"
+      title: "Head of R&D",
+      subtitle: "Power Generation Equipment Manufacturer",
     },
     {
       icon: PlaneTakeoff,
-      title: "Aviation Infrastructure Head",
-      subtitle: "Airport Development Company"
+      title: "Technology Director",
+      subtitle: "Industrial Automation Solutions Provider",
     },
     {
-      icon: Map, 
-      title: "Transportation Director",
-      subtitle: "Highway Development Corporation"
+      icon: Map,
+      title: "Business Head",
+      subtitle: "Industrial IoT Solutions Company",
     },
     {
       icon: Users2,
       title: "VP Human Resources",
-      subtitle: "Development Authority"
-    }
-  ]
+      subtitle: "Leading Process Industry Corporation",
+    },
+  ];
 
   const methodologies = [
     {
       icon: <Search className="w-8 h-8 text-primary" />,
       title: "Requirements Analysis",
-      subtitle: "Understanding client needs and role specifications"
+      subtitle: "Understanding client needs and role specifications",
     },
     {
       icon: <Users className="w-8 h-8 text-primary" />,
       title: "Candidate Identification",
-      subtitle: "Leveraging our network to find potential matches"
+      subtitle: "Leveraging our network to find potential matches",
     },
     {
       icon: <CheckCircle className="w-8 h-8 text-primary" />,
       title: "Screening Process",
-      subtitle: "In-depth evaluation of candidates"
+      subtitle: "In-depth evaluation of candidates",
     },
     {
       icon: <BarChart className="w-8 h-8 text-primary" />,
       title: "Assessment",
-      subtitle: "Detailed assessment of shortlisted candidates"
+      subtitle: "Detailed assessment of shortlisted candidates",
     },
     {
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
       title: "Selection",
-      subtitle: "Final selection and offer management"
+      subtitle: "Final selection and offer management",
     },
     {
       icon: <HandshakeIcon className="w-8 h-8 text-primary" />,
       title: "Onboarding",
-      subtitle: "Ensuring smooth transition into the role"
-    }
-  ]
+      subtitle: "Ensuring smooth transition into the role",
+    },
+  ];
 
   return (
     <>
       <IndustiresLayout
         title="Development"
         description={[
-          "The development sector plays a crucial role in shaping our cities and infrastructure. Our expertise in this domain enables us to identify and place leaders who can drive sustainable development and innovation.",
-          "We work with development authorities, infrastructure companies, and urban planning organizations to find executives who understand the complexities of large-scale development projects and can lead with vision.",
-          "Our comprehensive understanding spans across various segments including infrastructure, urban development, and transportation, ensuring we can support your specific leadership needs within this diverse sector."
+          "The development sector is key to shaping our cities and infrastructure. Our expertise allows us to identify and place leaders who drive sustainable development and foster innovation.",
+          "We collaborate with development authorities, infrastructure companies, and urban planning organizations to find executives who understand the complexities of large-scale projects and lead with vision and purpose.",
+          "Our deep understanding spans key areas, including infrastructure, urban development, and transportation, ensuring we can meet your leadership needs within this dynamic sector.",
         ]}
         imageSrc="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&h=500&fit=crop"
         imageAlt="Development Projects"
@@ -125,14 +132,14 @@ const DevelopmentPage = () => {
         methodologies={methodologies}
         representativeSearches={representativeSearches}
       />
-      <CommonBanner 
+      <CommonBanner
         title="Reach out to our Senior Consultants"
         subtitle="for your leadership hiring needs"
         buttonText="Get In Touch"
         buttonLink="/contact-us"
       />
     </>
-  )
-}
+  );
+};
 
-export default DevelopmentPage
+export default DevelopmentPage;

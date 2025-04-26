@@ -65,30 +65,27 @@ const ContactUs = () => {
     <motion.section
       className="min-h-screen relative bg-white overflow-hidden"
       initial={{
-      background:
-        "linear-gradient(289deg, #ff0000 0%, #ffffff 0%, #ffffff 100%)",
+        background:
+          "linear-gradient(289deg, #ff0000 0%, #ffffff 0%, #ffffff 100%)",
       }}
       animate={{
-      background:
-        "linear-gradient(289deg, #ff0000 55%, #ffffff 55%, #ffffff 100%)",
+        background:
+          "linear-gradient(289deg, #ff0000 55%, #ffffff 55%, #ffffff 100%)",
       }}
-      transition={{ duration: 1.2, ease: "easeInOut" }}
-    >
+      transition={{ duration: 1.2, ease: "easeInOut" }}>
       <div className="relative container mx-auto px-4 py-3">
         {/* Animated Breadcrumb */}
         <motion.div
           variants={fadeInUp}
           initial="initial"
           animate="animate"
-          className="mb-4"
-        >
+          className="mb-4">
           <Breadcrumb className="mb-4">
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbLink
                   href="/"
-                  className="text-gray-800 hover:text-gray-600"
-                >
+                  className="text-gray-800 hover:text-gray-600">
                   Home
                 </BreadcrumbLink>
               </BreadcrumbItem>
@@ -107,14 +104,12 @@ const ContactUs = () => {
           variants={organizationContainerVariants}
           initial="hidden"
           animate="visible"
-          className="backdrop-blur-sm rounded-2xl shadow-xl max-w-5xl mx-auto border border-gray-200 overflow-hidden"
-        >
+          className="backdrop-blur-sm rounded-2xl shadow-xl max-w-5xl mx-auto border border-gray-200 overflow-hidden">
           <div className="grid md:grid-cols-2">
             {/* Contact Information Section */}
             <motion.div
               variants={organizationItemVariants}
-              className="p-5 md:p-6 space-y-6"
-            >
+              className="p-5 md:p-6 space-y-6">
               <div>
                 <h2 className="text-2xl font-bold mb-6 text-gray-900">
                   Contact Information
@@ -129,11 +124,11 @@ const ContactUs = () => {
                         Office Address
                       </h3>
                       <p className="text-gray-600 leading-relaxed">
-                        19 Triq Iganzio Gavino Bonavita
+                        Municipiul Slobozia
                         <br />
-                        PEMBROKE, PBK1151
+                        Starda VIILOR,Nr.3,Bloc R3,Scara
                         <br />
-                        Malta
+                        A,Etaj P,Ap.1,Judet Ialomita
                       </p>
                     </div>
                   </div>
@@ -146,7 +141,7 @@ const ContactUs = () => {
                       <h3 className="font-semibold mb-2 text-gray-800">
                         Phone
                       </h3>
-                      <p className="text-gray-600">+91 98187 73666</p>
+                      <p className="text-gray-600"> +40784805998</p>
                     </div>
                   </div>
 
@@ -174,22 +169,19 @@ const ContactUs = () => {
                   <a
                     href="https://www.facebook.com/empowermentuk"
                     className="p-3 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors"
-                    target="_blank"
-                  >
+                    target="_blank">
                     <Facebook className="w-6 h-6 text-gray-700" />
                   </a>
                   <a
                     href="https://x.com/empowerment4492"
                     className="p-3 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors"
-                    target="_blank"
-                  >
+                    target="_blank">
                     <Twitter className="w-6 h-6 text-gray-700" />
                   </a>
                   <a
                     href="https://www.linkedin.com/company/empowerment-group-limited"
                     className="p-3 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors"
-                    target="_blank"
-                  >
+                    target="_blank">
                     <Linkedin className="w-6 h-6 text-gray-700" />
                   </a>
                 </div>
@@ -197,8 +189,7 @@ const ContactUs = () => {
                   <a
                     href="https://www.youtube.com/@EmpowermentGroupLimited"
                     className="p-3 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors"
-                    target="_blank"
-                  >
+                    target="_blank">
                     <Youtube className="w-6 h-6 text-gray-700" />
                   </a>
                 </div>
@@ -233,8 +224,7 @@ const ContactUs = () => {
             {/* Form Section */}
             <motion.div
               variants={organizationItemVariants}
-              className="p-5 md:p-6 backdrop-blur-sm bg-gray-50/50"
-            >
+              className="p-5 md:p-6 backdrop-blur-sm bg-gray-50/50">
               <div className="mb-6">
                 <h2 className="text-2xl font-bold text-gray-900">
                   Get in Touch
@@ -247,8 +237,7 @@ const ContactUs = () => {
               <Form {...form}>
                 <form
                   onSubmit={form.handleSubmit(onSubmit)}
-                  className="space-y-6"
-                >
+                  className="space-y-6">
                   <FormField
                     control={form.control}
                     name="name"
@@ -323,8 +312,7 @@ const ContactUs = () => {
 
                   <Button
                     type="submit"
-                    className="w-full bg-primary text-white hover:bg-primary/90"
-                  >
+                    className="w-full bg-primary text-white hover:bg-primary/90">
                     Send Message
                   </Button>
                 </form>

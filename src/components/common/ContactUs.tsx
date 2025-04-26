@@ -58,18 +58,16 @@ const ContactUs = () => {
     <div className="fixed bottom-0 right-0 z-[9999]">
       <AnimatePresence mode="wait">
         <div className="w-[150px] xs:w-[200px] sm:w-[220px]">
-          {isOpen ?
+          {isOpen ? (
             <motion.div
               variants={drawerVariants}
               initial="initial"
               animate="animate"
-              className="bg-white rounded-t-lg shadow-lg"
-            >
+              className="bg-white rounded-t-lg shadow-lg">
               {/* Header */}
               <div
                 className="flex items-center justify-between p-2 sm:p-3 cursor-pointer bg-black text-white rounded-t-lg" // Added smaller padding for mobile
-                onClick={() => setIsOpen(false)}
-              >
+                onClick={() => setIsOpen(false)}>
                 <h3 className="text-xs sm:text-sm font-semibold">Contact Us</h3>
                 <div className="bg-white/10 rounded-full p-1 sm:p-1.5 hover:bg-white/20 transition-colors">
                   <X className="h-2.5 w-2.5 sm:h-3 sm:w-3" />
@@ -82,8 +80,7 @@ const ContactUs = () => {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="p-3 sm:p-4 space-y-3 sm:space-y-4"
-              >
+                className="p-3 sm:p-4 space-y-3 sm:space-y-4">
                 {/* Corporates Section */}
                 <div>
                   <h4 className="font-medium mb-1 text-black text-xs sm:text-sm">
@@ -94,7 +91,7 @@ const ContactUs = () => {
                     talent?
                   </p>
                   <div className="space-y-0.5 text-[10px] sm:text-xs text-gray-800">
-                    <p>Phone: +91 98187 73666</p>
+                    <p>Phone: +40784805998</p>
                     <p>E-mail: info@empowerment.group</p>
                   </div>
                 </div>
@@ -109,8 +106,7 @@ const ContactUs = () => {
                   </p>
                   <Link
                     href="/jobs/submit-cv"
-                    className="text-blue-600 hover:text-blue-700 text-[10px] sm:text-xs"
-                  >
+                    className="text-blue-600 hover:text-blue-700 text-[10px] sm:text-xs">
                     Submit your CV
                   </Link>
                 </div>
@@ -121,7 +117,8 @@ const ContactUs = () => {
                 </div>
               </motion.div>
             </motion.div>
-          : <motion.div
+          ) : (
+            <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 20, opacity: 0 }}
@@ -133,8 +130,7 @@ const ContactUs = () => {
                 duration: 0.4,
               }}
               className="bg-black text-white p-2 sm:p-3 cursor-pointer flex items-center justify-between hover:bg-black/90 rounded-t-lg" // Changed rounded-lg to rounded-t-lg
-              onClick={() => setIsOpen(true)}
-            >
+              onClick={() => setIsOpen(true)}>
               <span className="text-xs sm:text-sm font-semibold">
                 Contact Us
               </span>
@@ -142,7 +138,7 @@ const ContactUs = () => {
                 <Plus className="h-3 w-3 sm:h-4 sm:w-4" />
               </div>
             </motion.div>
-          }
+          )}
         </div>
       </AnimatePresence>
     </div>

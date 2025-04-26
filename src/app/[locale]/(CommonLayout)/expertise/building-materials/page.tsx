@@ -42,76 +42,76 @@ const BuildingMaterialsPage = () => {
     {
       icon: Wrench,
       title: "Technical Director",
-      subtitle: "A Leading Sanitary Ware Manufacturer",
+      subtitle: " Leading Sanitaryware Manufacturer",
     },
     {
       icon: PaintBucket,
-      title: "Group Head Material",
-      subtitle: "One of The Leaders in Decorative Paints",
+      title: "Group Head – Materials",
+      subtitle: " Top Decorative Paints Brand",
     },
     {
       icon: Columns,
-      title: "Senior Vice President Exports",
-      subtitle: "A Leading Ceramics Player",
+      title: "Senior Vice President – Exports",
+      subtitle: " Prominent Ceramics Manufacturer",
     },
     {
       icon: Globe,
       title: "Country Manager, India",
-      subtitle: "A Globally-Known Premium Ranged Sanitary Ware Player",
+      subtitle: " Global Premium Sanitaryware Brand",
     },
     {
       icon: DoorOpen,
-      title: "Executive Vice President of Business",
-      subtitle: "A Leading Conglomerate for Their Doors & Windows BU",
+      title: "Executive Vice President – Business",
+      subtitle: " Diversified Conglomerate – Doors & Windows Division",
     },
     {
       icon: BarChart3,
-      title: "Vice President Sales",
-      subtitle: "A Leading ACP Manufacturer",
+      title: "Vice President – Sales",
+      subtitle: " Leading ACP (Aluminium Composite Panel) Manufacturer",
     },
     {
       icon: Calculator,
-      title: "CFO",
-      subtitle: "A leading plywood manufacturer",
+      title: "Chief Financial Officer (CFO)",
+      subtitle: " Renowned Plywood Manufacturer",
     },
     {
       icon: Users2,
-      title: "CHRO",
-      subtitle:
-        "A Leading Partition & False Ceiling Manufacturer with Global Footprints",
+      title: "Chief Human Resources Officer (CHRO)",
+      subtitle: "Global Leader in Partitions & False Ceilings",
     },
   ];
 
   const methodologies = [
     {
       icon: <Search className="w-8 h-8 text-primary" />,
-      title: "Requirements Analysis",
-      subtitle: "Understanding client needs and role specifications",
+      title: "Role Discovery",
+      subtitle: "Deep dive into client needs and position requirements.",
     },
     {
       icon: <Users className="w-8 h-8 text-primary" />,
-      title: "Candidate Identification",
-      subtitle: "Leveraging our network to find potential matches",
+      title: "Talent Mapping",
+      subtitle:
+        " Identify top candidates through targeted outreach and networks.",
     },
     {
       icon: <CheckCircle className="w-8 h-8 text-primary" />,
-      title: "Screening Process",
-      subtitle: "In-depth evaluation of candidates",
+      title: "Screening",
+      subtitle: " Thorough evaluation of skills, experience, and alignment.",
     },
     {
       icon: <BarChart className="w-8 h-8 text-primary" />,
-      title: "Assessment",
-      subtitle: "Detailed assessment of shortlisted candidates",
+      title: "Candidate Assessment",
+      subtitle: " In-depth analysis of shortlisted candidates for best fit.",
     },
     {
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
-      title: "Selection",
-      subtitle: "Final selection and offer management",
+      title: "Selection & Offer",
+      subtitle: " Support final selection and manage the offer process.",
     },
     {
       icon: <HandshakeIcon className="w-8 h-8 text-primary" />,
-      title: "Onboarding",
-      subtitle: "Ensuring smooth transition into the role",
+      title: "Onboarding Support",
+      subtitle: "Ensure a seamless integration into the organization.",
     },
   ];
 
@@ -133,8 +133,9 @@ const BuildingMaterialsPage = () => {
         representativeSearches={representativeSearches}
       />
       <CommonBanner
-        title="Reach out to our Senior Consultants"
-        subtitle="for your leadership hiring needs"
+        title="Connect with Our Senior Consultants"
+        subtitle="For expert support with your leadership hiring needs.
+Button: Get In Touch"
         buttonText="Get In Touch"
         buttonLink="/contact-us"
       />

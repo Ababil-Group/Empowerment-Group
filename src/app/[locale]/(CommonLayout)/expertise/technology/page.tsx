@@ -1,19 +1,26 @@
-"use client"
+"use client";
 
-import IndustiresLayout from "@/components/pages/industries/IndustriesLayout"
-import SecondaryNav from "@/components/pages/industries/SecondaryNav"
-import CommonBanner from "@/components/common/CommonBanner"
-import { Search, Users, CheckCircle, BarChart, ClipboardCheck, HandshakeIcon } from 'lucide-react'
-import { 
-  Code, 
-  Cloud, 
-  Database, 
-  Shield, 
-  Cpu, 
-  Brain, 
-  Smartphone, 
-  Users2 
-} from 'lucide-react'
+import IndustiresLayout from "@/components/pages/industries/IndustriesLayout";
+import SecondaryNav from "@/components/pages/industries/SecondaryNav";
+import CommonBanner from "@/components/common/CommonBanner";
+import {
+  Search,
+  Users,
+  CheckCircle,
+  BarChart,
+  ClipboardCheck,
+  HandshakeIcon,
+} from "lucide-react";
+import {
+  Code,
+  Cloud,
+  Database,
+  Shield,
+  Cpu,
+  Brain,
+  Smartphone,
+  Users2,
+} from "lucide-react";
 
 const TechnologyPage = () => {
   const specialities = [
@@ -29,93 +36,93 @@ const TechnologyPage = () => {
     "Blockchain",
     "IoT Solutions",
     "FinTech",
-    "SaaS Platforms"
-  ]
+    "SaaS Platforms",
+  ];
 
   const representativeSearches = [
     {
       icon: Code,
       title: "Chief Technology Officer",
-      subtitle: "Leading Technology Company"
+      subtitle: "Leading Industrial Manufacturing Company",
     },
     {
       icon: Cloud,
-      title: "Cloud Architecture Head",
-      subtitle: "Enterprise Solutions Provider"
+      title: "Plant Head",
+      subtitle: "Major Heavy Engineering Corporation",
     },
     {
       icon: Database,
-      title: "Data Science Director",
-      subtitle: "Analytics Company"
+      title: "VP Supply Chain",
+      subtitle: "Industrial Equipment Manufacturer",
     },
     {
       icon: Shield,
-      title: "Security Director",
-      subtitle: "Cybersecurity Firm"
+      title: "Director of Engineering",
+      subtitle: "Precision Manufacturing Company",
     },
     {
       icon: Cpu,
-      title: "Engineering Head",
-      subtitle: "Software Development Company"
+      title: "Head of R&D",
+      subtitle: "Power Generation Equipment Manufacturer",
     },
     {
       icon: Brain,
-      title: "AI Research Director",
-      subtitle: "Tech Innovation Lab"
+      title: "Technology Director",
+      subtitle: "Industrial Automation Solutions Provider",
     },
     {
       icon: Smartphone,
-      title: "Mobile Solutions Head",
-      subtitle: "Digital Products Company"
+      title: "Business Head",
+      subtitle: "Industrial IoT Solutions Company",
     },
     {
       icon: Users2,
       title: "VP Human Resources",
-      subtitle: "Technology Solutions Provider"
-    }
-  ]
+      subtitle: "Leading Process Industry Corporation",
+    },
+  ];
 
   const methodologies = [
     {
       icon: <Search className="w-8 h-8 text-primary" />,
       title: "Requirements Analysis",
-      subtitle: "Understanding client needs and role specifications"
+      subtitle: "Understanding client needs and role specifications",
     },
     {
       icon: <Users className="w-8 h-8 text-primary" />,
       title: "Candidate Identification",
-      subtitle: "Leveraging our network to find potential matches"
+      subtitle: "Leveraging our network to find potential matches",
     },
     {
       icon: <CheckCircle className="w-8 h-8 text-primary" />,
       title: "Screening Process",
-      subtitle: "In-depth evaluation of candidates"
+      subtitle: "In-depth evaluation of candidates",
     },
     {
       icon: <BarChart className="w-8 h-8 text-primary" />,
       title: "Assessment",
-      subtitle: "Detailed assessment of shortlisted candidates"
+      subtitle: "Detailed assessment of shortlisted candidates",
     },
     {
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
       title: "Selection",
-      subtitle: "Final selection and offer management"
+      subtitle: "Final selection and offer management",
     },
     {
       icon: <HandshakeIcon className="w-8 h-8 text-primary" />,
       title: "Onboarding",
-      subtitle: "Ensuring smooth transition into the role"
-    }
-  ]
+      subtitle: "Ensuring smooth transition into the role",
+    },
+  ];
 
   return (
     <>
       <IndustiresLayout
         title="Technology"
         description={[
-          "The technology sector is at the forefront of innovation and digital transformation. Our expertise in this domain enables us to identify and place leaders who can drive technological advancement and business growth.",
-          "We work with software companies, tech startups, and enterprise solution providers to find executives who understand both technology and business strategy, ensuring successful digital initiatives.",
-          "Our comprehensive understanding spans across various segments including software development, AI/ML, cloud computing, and cybersecurity, ensuring we can support your specific leadership needs within this dynamic sector."
+          "The technology sector leads the way in innovation and digital transformation. Our expertise helps us identify and place leaders who can drive technological advancements and business growth.",
+          "We partner with software companies, tech startups, and enterprise solution providers to find executives who blend technological expertise with business strategy, ensuring successful digital initiatives.",
+          "Our deep understanding spans key areas, including software development, AI/ML, cloud computing, and cybersecurity, allowing us to meet your specific leadership needs in this ever-evolving sector.",
         ]}
         imageSrc="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&h=500&fit=crop"
         imageAlt="Technology Innovation"
@@ -125,14 +132,14 @@ const TechnologyPage = () => {
         methodologies={methodologies}
         representativeSearches={representativeSearches}
       />
-      <CommonBanner 
+      <CommonBanner
         title="Reach out to our Senior Consultants"
         subtitle="for your leadership hiring needs"
         buttonText="Get In Touch"
         buttonLink="/contact-us"
       />
     </>
-  )
-}
+  );
+};
 
-export default TechnologyPage
+export default TechnologyPage;
