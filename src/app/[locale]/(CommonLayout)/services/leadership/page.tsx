@@ -45,27 +45,29 @@ const methodologies = [
   {
     icon: <Search className="w-8 h-8 text-primary" />,
     title: "Role Analysis",
-    subtitle: "Understanding leadership requirements and competencies",
+    subtitle: " Define key leadership competencies and role requirements.",
   },
   {
     icon: <Users className="w-8 h-8 text-primary" />,
     title: "Talent Search",
-    subtitle: "Identifying potential leadership candidates",
+    subtitle:
+      "Identify high-potential leadership candidates through targeted sourcing.",
   },
   {
     icon: <Briefcase className="w-8 h-8 text-primary" />,
     title: "Evaluation",
-    subtitle: "Assessing leadership capabilities and fit",
+    subtitle:
+      " Gauge candidate suitability through strategic screening and interviews.",
   },
   {
     icon: <ChartBar className="w-8 h-8 text-primary" />,
     title: "Assessment",
-    subtitle: "Leadership potential and competency assessment",
+    subtitle: " Measure leadership potential, skills, and cultural alignment.",
   },
   {
     icon: <CheckCircle className="w-8 h-8 text-primary" />,
     title: "Selection",
-    subtitle: "Final selection and placement",
+    subtitle: " Finalize the best-fit candidate for successful placement.",
   },
 ];
 
@@ -82,12 +84,12 @@ export default function LeadershipHiringPage() {
       <WhatWeDo
         services={leadershipServices}
         title="Our Leadership Hiring Services"
-        description="Comprehensive solutions for building strong leadership teams."
+        description="End-to-end solutions for crafting high-performing leadership teams."
       />
       <SearchMethodlogy methodologies={methodologies} />
       <CommonBanner
         title="Building Your Leadership Team?"
-        text="Let us help you find the right leaders to drive your organization forward."
+        text="We’ll help you find the leaders who move your vision forward."
         buttonText="Get Started"
         buttonLink="/contact-us"
       />

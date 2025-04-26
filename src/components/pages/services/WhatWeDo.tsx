@@ -1,10 +1,14 @@
-"use client"
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { fadeInBottom, staggerContainer, fadeInItem } from '@/components/animation/variants';
-import AnimateInView from '@/components/animation/AnimateInView';
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import {
+  fadeInBottom,
+  staggerContainer,
+  fadeInItem,
+} from "@/components/animation/variants";
+import AnimateInView from "@/components/animation/AnimateInView";
 
 interface ServiceCardProps {
   title: string;
@@ -18,14 +22,17 @@ interface WhatWeDoProps {
   description?: string;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, imageUrl }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({
+  title,
+  description,
+  imageUrl,
+}) => {
   return (
-    <motion.div 
+    <motion.div
       variants={fadeInItem}
-      className="group bg-white p-4 rounded-xl text-center hover:shadow-lg transition-all duration-300"
-    >
+      className="group bg-white p-4 rounded-xl text-center hover:shadow-lg transition-all duration-300">
       <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-        <Image 
+        <Image
           src={imageUrl}
           alt={title}
           fill
@@ -40,10 +47,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, imageUrl 
   );
 };
 
-const WhatWeDo: React.FC<WhatWeDoProps> = ({ 
+const WhatWeDo: React.FC<WhatWeDoProps> = ({
   services,
   title = "",
-  description = ""
+  description = "",
 }) => {
   const firstRow = services.slice(0, 2);
   const secondRow = services.slice(2);
@@ -62,26 +69,24 @@ const WhatWeDo: React.FC<WhatWeDoProps> = ({
 
         <div className="max-w-6xl mx-auto">
           {/* First Row - 2 items */}
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6"
-          >
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             {firstRow.map((service, index) => (
               <ServiceCard key={index} {...service} />
             ))}
           </motion.div>
 
           {/* Second Row - 3 items */}
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6"
-          >
+            className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {secondRow.map((service, index) => (
               <ServiceCard key={index} {...service} />
             ))}

@@ -5,7 +5,6 @@ import { Search, Users, Briefcase, ChartBar, CheckCircle } from "lucide-react";
 import SearchMethodlogy from "@/components/pages/services/SearchMethodology";
 
 const executiveSearchServices = [
-
   // update content
   {
     title: "C-Suite Search",
@@ -17,28 +16,28 @@ const executiveSearchServices = [
   {
     title: "Leadership Assessment",
     description:
-      "Comprehensive evaluation of leadership capabilities and potential.",
+      "Thorough evaluation of executive capabilities, readiness, and potential.",
     imageUrl:
       "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&h=500&fit=crop",
   },
   {
     title: "Industry Expertise",
     description:
-      "Deep understanding of sector-specific leadership requirements and talent pools.",
+      "Sector-specific insights to match the right leaders with the right roles.",
     imageUrl:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=500&fit=crop",
   },
   {
-    title: "Global Talent Search",
+    title: "Global Talent Access",
     description:
-      "Access to international executive talent networks and markets.",
+      "Reach top executive talent across international markets and networks.",
     imageUrl:
       "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=500&fit=crop",
   },
   {
     title: "Executive Integration",
     description:
-      "Ensuring smooth onboarding and transition of new executive hires.",
+      "Seamless onboarding and transition support for long-term leadership success.",
     imageUrl:
       "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500&h=500&fit=crop",
   },
@@ -47,28 +46,32 @@ const executiveSearchServices = [
 const methodologies = [
   {
     icon: <Search className="w-8 h-8 text-primary" />,
-    title: "Requirements Analysis",
-    subtitle: "Understanding client needs and role specifications",
+    title: "Our Search Methodology",
+    subtitle:
+      "A proven, structured process for finding and securing top-tier talent.",
   },
   {
     icon: <Users className="w-8 h-8 text-primary" />,
-    title: "Candidate Sourcing",
-    subtitle: "Identifying potential candidates through multiple channels",
+    title: "Our Screening & Selection Process",
+    subtitle:
+      "A rigorous, step-by-step approach to ensure the perfect talent match.",
   },
   {
     icon: <Briefcase className="w-8 h-8 text-primary" />,
-    title: "Screening Process",
-    subtitle: "Thorough evaluation of candidate qualifications",
+    title: "Requirements Analysis",
+    subtitle: " Deep dive into client needs and role expectations.",
   },
   {
     icon: <ChartBar className="w-8 h-8 text-primary" />,
-    title: "Assessment",
-    subtitle: "In-depth interviews and skill validation",
+    title: " Candidate Sourcing",
+    subtitle:
+      "Targeted identification through extensive networks and channels.",
   },
   {
     icon: <CheckCircle className="w-8 h-8 text-primary" />,
-    title: "Selection",
-    subtitle: "Final candidate shortlisting and presentation",
+    title: "Screening",
+    subtitle:
+      "Final  Detailed review of qualifications, experience, and cultural fit.",
   },
 ];
 
@@ -84,13 +87,13 @@ export default function ExecutiveSearchPage() {
       <ExecutiveSearch />
       <WhatWeDo
         services={executiveSearchServices}
-        title="Our Executive Search Services"
-        description="Expert solutions for identifying and securing exceptional leadership talent."
+        title="Executive Search Services"
+        description="Targeted solutions to attract and secure exceptional leadership talent."
       />
       <SearchMethodlogy methodologies={methodologies} />
       <CommonBanner
-        title="Looking for Executive Talent?"
-        text="Let us help you find the perfect leadership fit for your organization."
+        title="In Search of Executive Talent?"
+        text="We’ll help you find the right leader to drive your success."
         buttonText="Get Started"
         buttonLink="/contact-us"
       />
