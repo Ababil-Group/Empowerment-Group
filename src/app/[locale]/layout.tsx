@@ -1,11 +1,15 @@
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Titillium_Web } from "next/font/google";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+const titillium = Titillium_Web({
+  subsets: ["latin"],
+  weight: "600",
+});
 
 export const metadata: Metadata = {
   title: "Empowerment Group - Agency for Employment",
@@ -90,7 +94,7 @@ export default async function RootLayout({
   }
   return (
     <html className="scroll-smooth" lang={locale} suppressHydrationWarning>
-      <body className={inter.className} suppressHydrationWarning>
+      <body className={titillium.className} suppressHydrationWarning>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
