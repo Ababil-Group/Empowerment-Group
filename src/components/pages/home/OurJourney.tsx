@@ -18,33 +18,34 @@ import {
 
 const timelineData = [
   {
-    year: 1985,
-    title: "Founded",
-    description: "Empowerment group is established in Qatar   ",
+    year: 2010,
+    title: "Global Expansion",
+    description:
+      " Brought talent acquisition solutions to international markets.",
     image: "/images/1985.jpg",
   },
   {
-    year: 1990,
-    title: "Expansion",
-    description: "First branch office opens.",
+    year: 2015,
+    title: "Innovation",
+    description: "  Introduced AI-driven recruitment tools.",
     image: "/images/1990.jpg",
   },
   {
-    year: 2000,
-    title: "Digital Shift",
-    description: "Launch of digital recruitment platform.",
+    year: 2020,
+    title: " Adaptation",
+    description: "Shifted to virtual recruitment and consulting.",
     image: "/images/2000.jpg",
   },
   {
-    year: 2010,
-    title: " Going Global",
-    description: " International operations launched.",
+    year: 2023,
+    title: "Future-Focused",
+    description: "  Launched initiatives promoting diversity and inclusion.",
     image: "/images/2010.jpg",
   },
   {
-    year: 2020,
-    title: "Smarter Hiring",
-    description: "Introduced AI-driven recruitment solutions.",
+    year: 2024,
+    title: "Intelligent Recruitment",
+    description: "Implemented AI-powered hiring solutions.",
     image: "/images/2020.jpg",
   },
 ];
@@ -110,7 +111,7 @@ const OurJourney: React.FC = () => {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             className="text-gray-600 text-base sm:text-lg md:text-xl">
-            A Legacy of Excellence
+            A Legacy of Excellence, Evolving with the Times
           </motion.p>
         </div>
 
