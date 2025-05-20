@@ -128,13 +128,21 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-400">
-              <p className="leading-relaxed">
-                Municipiul Slobozia
-                <br />
-                Starda VIILOR,Nr.3,Bloc R3,Scara
-                <br />
-                A,Etaj P,Ap.1,Judet Ialomita, Romania.
-              </p>
+              <li className="w-full border p-2 rounded-lg">
+                <span className="text-[12px]">
+                  Corporate Headquarter - Qatar:
+                </span>
+                <p className="text-sm">
+                  World Wide Business Centre, D Ring Rd, Doha, Qatar
+                </p>
+              </li>
+              <li className="w-full border  p-2 rounded-lg">
+                <span className="text-[12px] ">Head Office - Romania:</span>
+                <p className="text-sm">
+                  Municipiul Slobozia, Starda VIILOR,Nr.3,Bloc R3,Scara, A,Etaj
+                  P,Ap.1,Judet Ialomita, Romania
+                </p>
+              </li>
               <li>Phone: +40 784 805 998 </li>
               <li>Email: info@empowerment.group</li>
             </ul>

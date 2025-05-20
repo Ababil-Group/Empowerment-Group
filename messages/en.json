@@ -23,5 +23,32 @@
     "subtitle": "with Empowerment Group",
     "description": "Strategic consulting designed to fuel growth, spark innovation, and deliver lasting success.",
     "button": "Get in Touch"
+  },
+  "countstats": {
+    "title": "An integral part of corporate Europe's journey",
+    "subtitle": "Guiding multinationals, top European enterprises, and visionary leaders with expert insight.",
+    "count1": "Years of Trusted Excellence",
+    "count2": "Leadership Placements Delivereds",
+    "count3": "Industry-Savvy Consultants",
+    "count4": "Client Satisfaction Rate"
+  },
+  "ourpeople": {
+    "title": "Our People",
+    "subtitle": "The passionate minds powering our progress."
+  },
+  "ourjourney": {
+    "title": "Our Journey",
+    "subtitle": "A Legacy of Excellence, Evolving with the Times",
+    "timeyear1": "2010",
+    "timeyear2": "2015",
+    "timeyear3": "2020",
+    "timeyear4": "2023",
+    "timeyear5": "2024",
+    "timetitle1": "Global Expansion",
+    "timedec1": "Brought talent acquisition solutions to international markets.",
+    "timetitle2": "Innovation",
+    "timedec2": "Delivered cutting-edge solutions for dynamic business environments.",
+    "timetitle3": "Digital Transformation",
+    "timedec3": "Led strategic digital transformation initiatives."
   }
 }

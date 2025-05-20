@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "about": "O nama",
+    "organization": "Naša organizacija",
+    "journey": "Naše putovanje",
+    "culture": "Naša kultura",
+    "services": "Usluge",
+    "board": "Usluge savjetovanja odbora",
+    "executive": "Izvršna potraga",
+    "leadership": "Zapošljavanje lidera",
+    "expertise": "Stručnost",
+    "industries": "Industrije",
+    "building": "Građevinski materijali",
+    "education": "Obrazovanje",
+    "industrial": "Industrija",
+    "development": "Razvoj",
+    "realestate": "Nekretnine",
+    "technology": "Tehnologija",
+    "contact": "Kontaktirajte nas"
+  },
+  "hero": {
+    "title": "Osnažite svoje poslovanje",
+    "subtitle": "sa Empowerment Groupom",
+    "description": "Strateško savjetovanje osmišljeno za poticanje rasta, poticanje inovacija i postizanje trajnog uspjeha.",
+    "button": "Kontaktirajte nas"
+  },
+  "countstats": {
+    "title": "Sastavni dio putovanja korporativne Evrope",
+    "subtitle": "Vođenje multinacionalnih kompanija, vodećih evropskih preduzeća i vizionarskih lidera sa stručnim uvidom.",
+    "count1": "Godine povjerenja i izvrsnosti",
+    "count2": "Izvršenih pozicija lidera",
+    "count3": "Stručnih savjetnika poznavatelja industrije",
+    "count4": "Stopa zadovoljstva klijenata"
+  },
+  "ourpeople": {
+    "title": "Naši ljudi",
+    "subtitle": "Strastveni umovi koji pokreću naš napredak."
+  },
+  "ourjourney": {
+    "title": "Naše putovanje",
+    "subtitle": "Naslijeđe izvrsnosti, razvijajući se s vremenom",
+    "timeyear1": "2010",
+    "timeyear2": "2015",
+    "timeyear3": "2020",
+    "timeyear4": "2023",
+    "timeyear5": "2024",
+    "timetitle1": "Globalna ekspanzija",
+    "timedec1": "Donijeli rješenja za pronalaženje talenata na međunarodna tržišta.",
+    "timetitle2": "Inovacija",
+    "timedec2": "Pružili smo najsavremenija rješenja za dinamična poslovna okruženja.",
+    "timetitle3": "Digitalna transformacija",
+    "timedec3": "Vodili strateške inicijative digitalne transformacije."
+  }
+}

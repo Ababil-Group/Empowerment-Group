@@ -115,21 +115,36 @@ const ContactUs = () => {
                   Contact Information
                 </h2>
                 <div className="space-y-6">
-                  <div className="flex items-start space-x-4 group">
+                  <div className="flex items-start justify-center space-x-4 group">
                     <div className="p-3 bg-gray-100 rounded-xl group-hover:bg-gray-200 transition-colors">
                       <MapPin className="w-6 h-6 text-gray-700" />
                     </div>
-                    <div>
-                      <h3 className="font-semibold mb-2 text-gray-800">
-                        Office Address
-                      </h3>
-                      <p className="text-gray-600 leading-relaxed">
-                        Municipiul Slobozia
-                        <br />
-                        Starda VIILOR,Nr.3,Bloc R3,Scara
-                        <br />
-                        A,Etaj P,Ap.1,Judet Ialomita, Romania.
-                      </p>
+                    <div className="">
+                      <div className="border border-gray-400 p-4">
+                        <div className="w-full ">
+                          <h3 className="font-semibold text-[12px]  text-gray-800">
+                            Corporate Headquarter - Qatar
+                          </h3>
+                        </div>
+                        <div className="w-full ">
+                          <p>
+                            World Wide Business Centre, D Ring Rd, Doha, Qatar
+                          </p>
+                        </div>
+                      </div>
+                      <div className="border border-gray-400 p-4">
+                        <div className="w-full ">
+                          <h3 className="font-semibold text-[12px]  text-gray-800">
+                            Head Office - Romania:
+                          </h3>
+                        </div>
+                        <div className="w-full ">
+                          <p>
+                            Municipiul Slobozia, Starda VIILOR,Nr.3,Bloc
+                            R3,Scara, A,Etaj P,Ap.1,Judet Ialomita, Romania
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -204,13 +219,13 @@ const ContactUs = () => {
                   <p className="flex justify-between items-center py-2 border-b border-gray-200">
                     <span>Monday - Friday</span>
                     <span className="text-green-800 font-medium">
-                      9:00 AM - 6:00 PM
+                      8:00 AM - 6:00 PM
                     </span>
                   </p>
                   <p className="flex justify-between items-center py-2 border-b border-gray-200">
                     <span>Saturday</span>
                     <span className="text-green-800 font-medium">
-                      9:00 AM - 2:00 PM
+                      8:00 AM - 2:00 PM
                     </span>
                   </p>
                   <p className="flex justify-between items-center py-2">

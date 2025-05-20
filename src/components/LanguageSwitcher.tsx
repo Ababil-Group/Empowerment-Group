@@ -5,7 +5,11 @@ import { useState, useRef, useEffect } from "react";
 
 const languages = [
   { code: "en", name: "English" },
+  { code: "hr", name: "Croatian" },
   { code: "ro", name: "Romanian" },
+  { code: "sr", name: "Serbian" },
+  { code: "bs", name: "Bosnian" },
+  { code: "bg", name: "Bulgarian" },
 ] as const;
 
 const LanguageSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
@@ -37,7 +41,6 @@ const LanguageSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
 
   const handleLanguageChange = (lang: string) => {
     if (lang === currentLang) return;
-
     const pathWithoutLang = pathname.replace(/^\/[a-z]{2}/, "") || "/";
     router.push(`/${lang}${pathWithoutLang}`);
     setIsOpen(false);
