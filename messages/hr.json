@@ -36,6 +36,7 @@
     "title": "Naši ljudi",
     "subtitle": "Strastveni umovi koji pokreću naš napredak."
   },
+
   "ourjourney": {
     "title": "Naše putovanje",
     "subtitle": "Naslijeđe izvrsnosti, razvijajući se s vremenom",
@@ -45,10 +46,246 @@
     "timeyear4": "2023",
     "timeyear5": "2024",
     "timetitle1": "Globalna ekspanzija",
-    "timedec1": "Donijeli rješenja za pronalaženje talenata na međunarodna tržišta.",
+    "timedec1": "Donijeli smo rješenja za pronalaženje talenata na međunarodna tržišta.",
     "timetitle2": "Inovacija",
-    "timedec2": "Pružili smo najsuvremenija rješenja za dinamična poslovna okruženja.",
-    "timetitle3": "Digitalna transformacija",
-    "timedec3": "Vodili strateške inicijative digitalne transformacije."
+    "timedec2": "Uveli smo alate za zapošljavanje vođene umjetnom inteligencijom.",
+    "timetitle3": "Prilagodba",
+    "timedec3": "Prešli smo na virtualno zapošljavanje i savjetovanje.",
+    "timetitle4": "Usmjerenost na budućnost",
+    "timedec4": "Pokrenuli smo inicijative za promicanje raznolikosti i uključivosti.",
+    "timetitle5": "Pametno zapošljavanje",
+    "timedec5": "Implementirali smo rješenja za zapošljavanje vođena umjetnom inteligencijom."
+  },
+  "industriesspecialization": {
+    "title": "Industrijska specijalizacija",
+    "subtitle": "Specijalizirana rješenja za zapošljavanje u ključnim sektorima — prilagođena jedinstvenim potrebama vaše industrije.",
+    "industries1": {
+      "title": "Mediji i zabava",
+      "desc": "Povezujemo vrhunske talente s dinamičnim svijetom medija."
+    },
+    "industries2": {
+      "title": "Financije",
+      "desc": "Stručno osoblje za financijski sektor."
+    },
+    "industries3": {
+      "title": "Industrija",
+      "desc": "Pouzdano zapošljavanje za industrijske i proizvodne uloge."
+    },
+    "industries4": {
+      "title": "Tehnologija",
+      "desc": "Specijalisti u pronalaženju visokokvalitetnih IT profesionalaca."
+    },
+    "industries5": {
+      "title": "Potrošački",
+      "desc": "Stručnjaci za zapošljavanje u potrošačkom sektoru."
+    }
+  },
+  "ourservices": {
+    "title": "Naše usluge",
+    "subtitle": "Cjelovita rješenja za pronalaženje i upravljanje talentima, prilagođena potrebama vaše organizacije.",
+    "services1": {
+      "title": "Rješenja za zapošljavanje",
+      "desc": "Pametno zapošljavanje. Stvarni rezultati."
+    },
+    "services2": {
+      "title": "Izvršna potraga",
+      "desc": "Zapošljavanje vrhunskih lidera."
+    },
+    "services3": {
+      "title": "HR savjetovanje",
+      "desc": "Stručne strategije upravljanja ljudima."
+    },
+    "services4": {
+      "title": "Procjena talenata",
+      "desc": "Prepoznajte pravog kandidata."
+    },
+    "btnText": "Započnite"
+  },
+  "banner1": {
+    "title": "Transformirajte svoje poslovanje",
+    "subtitle": "Personalizirano savjetovanje za poticanje rasta, pokretanje inovacija i osiguranje dugoročnog uspjeha.",
+    "btnText": "Započnite"
+  },
+  "ourorganization": {
+    "menu1": "Početna",
+    "menu2": "O nama",
+    "title": "Vodeća tvrtka za izvršno pretraživanje i selekciju",
+    "subtitle": "Od osnutka 1969. godine, Empowerment Group je predvodnik u rješenjima za privlačenje talenata i vodstvo. Kombiniramo desetljeća iskustva s inovativnim metodologijama kako bismo pružili izvanredne rezultate za naše klijente.",
+    "desc": "Naše duboko poznavanje industrije, široka mreža i predanost izvrsnosti čine nas pouzdanim partnerom za organizacije koje traže vrhunske talente u različitim sektorima.",
+    "btnText": "Saznajte više"
+  },
+  "ourculture": {
+    "title": "Naša kultura",
+    "subtitle": "Vođeni vrijednostima. Definirani svrhom. Njegujemo kulturu utemeljenu na kontinuiranom učenju, inovacijama i zajedničkoj predanosti izvrsnosti.",
+    "culture1": {
+      "title": "Povjerenje i integritet",
+      "desc": "Podržavamo iskrenost i transparentnost, gradeći čvrste, trajne odnose."
+    },
+    "culture2": {
+      "title": "Izvrsnost",
+      "desc": "Nadmašujemo očekivanja kako bismo svaki put pružili izvanredne rezultate."
+    },
+    "culture3": {
+      "title": "Suradnja",
+      "desc": "Vjerujemo da je uspjeh timski napor – i postajemo jači zajedno."
+    },
+    "culture4": {
+      "title": "Inovacija",
+      "desc": "Izzivamo status quo kako bismo pružili hrabra, napredna rješenja."
+    }
+  },
+  "banner2": {
+    "title": "Naše vrijednosti",
+    "subtitle": "Vode svaku odluku, oblikuju našu kulturu. One odražavaju tko smo, za što stojimo i kako radimo s integritetom, izvrsnošću i svrhom.",
+    "btnText": "Započnite"
+  },
+
+  "boardservices": {
+    "menu1": "Početna",
+    "menu2": "Usluge",
+    "title": "Savjetodavne usluge za odbore",
+    "desc1": "Partnerimo s organizacijama u izgradnji i održavanju visokoučinkovitih odbora kroz stručno vođenje u sastavu odbora, planiranju nasljeđivanja i upravljanju.",
+    "desc2": "Potkrijepljeni desetljećima iskustva u različitim industrijama, naše prilagođene rješenja poboljšavaju učinkovitost odbora i jačaju korporativno upravljanje.",
+    "btnText": "Sve usluge"
+  },
+  "boardadvisoryservices": {
+    "title": "Savjetodavne usluge za odbore",
+    "desc": "Strateška rješenja za jačanje performansi odbora i izvrsnosti upravljanja.",
+    "advisory1": {
+      "title": "Učinkovitost odbora",
+      "desc": "Unaprijedite performanse kroz prilagođene evaluacije odbora i programe razvoja."
+    },
+    "advisory2": {
+      "title": "Upravljačka struktura",
+      "desc": "Dizajnirajte i implementirajte robusne okvire upravljanja usklađene s najboljim praksama."
+    },
+    "advisory3": {
+      "title": "Planiranje nasljeđivanja",
+      "desc": "Osigurajte kontinuitet vodstva proaktivnim strategijama nasljeđivanja i tranzicije."
+    },
+    "advisory4": {
+      "title": "Sastav odbora",
+      "desc": "Izgradite visokoučinkovite odbore s pravom strukturom i stručnošću članova."
+    },
+    "advisory5": {
+      "title": "Upravljanje rizikom",
+      "desc": "Poboljšajte nadzor učinkovitim mehanizmima upravljanja i kontrole rizika."
+    }
+  },
+  "banner3": {
+    "titlebanner": "Surađujte s nama kako biste unaprijedili svoj odbor i postigli trajni uspjeh kroz strateško vodstvo."
+  },
+  "executivesearch": {
+    "menu1": "Početna",
+    "menu2": "Usluge",
+    "title": "Izvršna potraga",
+    "desc1": "Naša praksa izvršne potrage specijalizirana je za identifikaciju i privlačenje vrhunskih lidera za organizacije u različitim industrijama. Razumijemo da je pronalaženje pravog vodstva ključno za uspjeh organizacije.",
+    "desc2": "S našom širokom mrežom i dokazanom metodologijom, pomažemo organizacijama izgraditi visokoučinkovite timove lidera koji pokreću rast i inovacije u današnjem konkurentnom poslovnom okruženju.",
+    "btnText": "Sve usluge",
+    "title2": "Usluge izvršne potrage",
+    "description": "Ciljana rješenja za privlačenje i osiguravanje izuzetnih lidera.",
+    "executive1": {
+      "title": "Potraga za C-Level vodstvom",
+      "desc": "Povezujemo vas s visokokvalificiranim izvršnim direktorima koji vode s utjecajem."
+    },
+    "executive2": {
+      "title": "Procjena vodstva",
+      "desc": "Temeljita evaluacija izvršnih sposobnosti, spremnosti i potencijala."
+    },
+    "executive3": {
+      "title": "Stručnost u industriji",
+      "desc": "Sektorska znanja za usklađivanje pravih lidera s pravim ulogama."
+    },
+    "executive4": {
+      "title": "Pristup globalnim talentima",
+      "desc": "Dostup do vrhunskih izvršnih talenata na međunarodnim tržištima i mrežama."
+    },
+    "executive5": {
+      "title": "Integracija vodstva",
+      "desc": "Besprijekorno uključivanje i podrška pri tranziciji za dugoročni uspjeh vodstva."
+    },
+    "methodologie1": {
+      "title": "Naša metodologija potrage",
+      "desc": "Dokazan, strukturiran proces za pronalaženje i osiguravanje vrhunskih talenata."
+    },
+    "methodologie2": {
+      "title": "Naš proces selekcije i odabira",
+      "desc": "Strog, korak po korak pristup kako bi se osiguralo savršeno poklapanje talenata."
+    },
+    "methodologie3": {
+      "title": "Analiza zahtjeva",
+      "desc": "Dubinski pregled potreba klijenta i očekivanja uloge."
+    },
+    "methodologie4": {
+      "title": "Pronalaženje kandidata",
+      "desc": "Ciljano pronalaženje kroz široke mreže i kanale."
+    },
+    "methodologie5": {
+      "title": "Selekcija",
+      "desc": "Detaljna provjera kvalifikacija, iskustva i kulturne podudarnosti."
+    }
+  },
+  "banner4": {
+    "titlebanner": "U potrazi za izvršnim talentima?",
+    "subtitlebanner": "Pomoći ćemo vam pronaći pravog lidera koji će pokrenuti vaš uspjeh.",
+    "btnText": "Započnite"
+  },
+  "leadershipservices": {
+    "menu1": "Početna",
+    "menu2": "Usluge",
+    "title": "Regrutacija lidera",
+    "desc1": "Specijalizirani smo za prepoznavanje i privlačenje najboljih talenata za ključne leaderske pozicije na svim razinama i funkcijama.",
+    "desc2": "Svjesni da je snažno vodstvo ključno za rast organizacije, koristimo našu široku mrežu i provjerene metode procjene kako bismo izgradili leaderske timove koji su u skladu s vašim strateškim ciljevima i kulturnim vrijednostima.",
+    "desc3": "Naš sveobuhvatan pristup osigurava savršeno uklapanje kako za organizaciju tako i za kandidata.",
+    "btnText": "Sve usluge",
+    "title2": "Naše usluge zapošljavanja lidera",
+    "description": "Cjelovita rješenja za izgradnju visokoučinkovitih leaderskih timova.",
+    "leadership1": {
+      "title": "Viši menadžment",
+      "desc": "Zapošljavanje iskusnih lidera za ključne pozicije u višem menadžmentu."
+    },
+    "leadership2": {
+      "title": "Voditelji odjela",
+      "desc": "Prepoznavanje sposobnih lidera za unapređenje rada odjela."
+    },
+    "leadership3": {
+      "title": "Vođe timova",
+      "desc": "Pronalaženje talentiranih profesionalaca koji će voditi i nadahnjivati timove."
+    },
+    "leadership4": {
+      "title": "Voditelji projekata",
+      "desc": "Pronalaženje vještih menadžera za uspješno vođenje projekata."
+    },
+    "leadership5": {
+      "title": "Tehnički lideri",
+      "desc": "Zapošljavanje lidera s dubokim tehničkim znanjem i vodstvenim vještinama."
+    },
+    "methodologytitle": "Naša metodologija pretrage",
+    "methodologydesc": "Strukturirani pristup prepoznavanju i privlačenju izuzetnih talenata.",
+    "methodologie1": {
+      "title": "Analiza uloge",
+      "desc": "Definiranje ključnih leaderskih kompetencija i zahtjeva za ulogu."
+    },
+    "methodologie2": {
+      "title": "Potraga za talentima",
+      "desc": "Prepoznavanje kandidata s visokim potencijalom kroz ciljanu potragu."
+    },
+    "methodologie3": {
+      "title": "Evaluacija",
+      "desc": "Procjena podobnosti kandidata kroz strateški screening i intervjue."
+    },
+    "methodologie4": {
+      "title": "Procjena",
+      "desc": "Mjerenje liderksog potencijala, vještina i usklađenosti s kulturom."
+    },
+    "methodologie5": {
+      "title": "Selekcija",
+      "desc": "Finaliziranje najprikladnijeg kandidata za uspješno zapošljavanje."
+    }
+  },
+  "banner5": {
+    "titlebanner": "Gradite svoj leaderski tim?",
+    "subtitlebanner": "Pomoći ćemo vam pronaći lidere koji će pomaknuti vašu viziju naprijed.",
+    "btnText": "Započnite"
   }
 }

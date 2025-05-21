@@ -15,40 +15,7 @@ import {
   headingVariants,
   paragraphVariants,
 } from "@/components/animation/contentVariants";
-
-const industries = [
-  // {
-  //   title: "Media & Entertainment",
-  //   icon: Car,
-  //   description: "Connecting top talent to the dynamic world of media.",
-  // },
-  {
-    title: "Media & Entertainment",
-    icon: Radio,
-    description: "Connecting top talent to the dynamic world of media.",
-  },
-  {
-    title: "Consumer",
-    icon: Landmark,
-    description: "Expert financial sector staffing",
-  },
-  {
-    title: "Industrial",
-    icon: Building2,
-    description:
-      " Reliable recruitment for industrial and manufacturing roles.",
-  },
-  {
-    title: "Technology",
-    icon: CircuitBoard,
-    description: "Specialists in sourcing high-impact tech professionals.",
-  },
-  {
-    title: "Consumer",
-    icon: Users,
-    description: "Consumer sector hiring experts",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const CircularProgress = ({ onComplete }: { onComplete: () => void }) => (
   <svg className="absolute inset-0 w-full h-full -rotate-90">
@@ -76,6 +43,39 @@ const IndustrySpecialisation = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isClient, setIsClient] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
+  const t = useTranslations("industriesspecialization");
+  const industries = [
+    // {
+    //   title: "Media & Entertainment",
+    //   icon: Car,
+    //   description: "Connecting top talent to the dynamic world of media.",
+    // },
+    {
+      title: t("industries1.title"),
+      icon: Radio,
+      description: t("industries1.desc"),
+    },
+    {
+      title: t("industries2.title"),
+      icon: Landmark,
+      description: t("industries2.desc"),
+    },
+    {
+      title: t("industries3.title"),
+      icon: Building2,
+      description: t("industries3.desc"),
+    },
+    {
+      title: t("industries4.title"),
+      icon: CircuitBoard,
+      description: t("industries4.desc"),
+    },
+    {
+      title: t("industries5.title"),
+      icon: Users,
+      description: t("industries5.desc"),
+    },
+  ];
   useEffect(() => {
     setIsClient(true);
   }, []);
@@ -136,7 +136,7 @@ const IndustrySpecialisation = () => {
             whileInView="animate"
             viewport={{ once: true }}
             className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4">
-            Industry Specialisation
+            {t("title")}
           </motion.h2>
           <motion.p
             variants={paragraphVariants}
@@ -144,8 +144,7 @@ const IndustrySpecialisation = () => {
             whileInView="animate"
             viewport={{ once: true }}
             className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-            Specialized recruitment solutions across key sectors—tailored to
-            your industry&apos;s unique needs.
+            {t("subtitle")}
           </motion.p>
         </div>
 

@@ -3,6 +3,7 @@ import OurOrganization from "@/components/pages/about-us/OurOrganization";
 import OurJourney from "@/components/pages/home/OurJourney";
 import CommonBanner from "@/components/common/CommonBanner";
 import OurCulture from "@/components/pages/about-us/OurCulture";
+import { useTranslations } from "next-intl";
 
 export const metadata = {
   title: "About Us - Empowerment Group",
@@ -11,15 +12,16 @@ export const metadata = {
 };
 
 export default function About() {
+  const t = useTranslations("banner2");
   return (
     <>
       <OurOrganization />
       <OurJourney />
       <OurCulture />
       <CommonBanner
-        title="Our Values"
-        subtitle="Guiding every decision, shaping our culture.They reflect who we are, what we stand for, and how we work with integrity, excellence, and purpose."
-        buttonText="Get Started"
+        title={t("title")}
+        subtitle={t("subtitle")}
+        buttonText={t("btnText")}
         buttonLink="/contact-us"
       />
     </>

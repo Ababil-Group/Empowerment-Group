@@ -11,6 +11,7 @@ import {
 import { fadeInBottom } from "@/components/animation/variants";
 import AnimateInView from "@/components/animation/AnimateInView";
 import type { CarouselApi } from "@/components/ui/carousel";
+import { useTranslations } from "next-intl";
 
 interface MethodologyItem {
   icon: React.ReactNode;
@@ -26,9 +27,8 @@ interface SearchMethodologyProps {
 
 const SearchMethodology: React.FC<SearchMethodologyProps> = ({
   methodologies,
-  title = "Our Search Methodology",
-  description = "A structured approach to identifying and securing exceptional talent.",
 }) => {
+  const t = useTranslations("leadershipservices");
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
@@ -45,9 +45,11 @@ const SearchMethodology: React.FC<SearchMethodologyProps> = ({
       <div className="container mx-auto px-4">
         <AnimateInView variants={fadeInBottom}>
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{title}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              {t("methodologytitle")}
+            </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-base">
-              {description}
+              {t("methodologydesc")}
             </p>
           </div>
         </AnimateInView>

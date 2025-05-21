@@ -8,8 +8,10 @@ import IndustrySpecialization from "@/components/pages/home/IndustrySpecialisati
 import OurServices from "@/components/pages/home/OurServices";
 import CommonBanner from "@/components/common/CommonBanner";
 import { useScrollTop } from "@/hooks/useScrollTop";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations("banner1");
   useScrollTop();
 
   return (
@@ -21,9 +23,9 @@ export default function Home() {
       <IndustrySpecialization />
       <OurServices />
       <CommonBanner
-        title="Transform Your Business "
-        subtitle="Tailored consulting to fuel growth, spark innovation, and ensure long-term success."
-        buttonText="Get Started"
+        title={t("title")}
+        subtitle={t("subtitle")}
+        buttonText={t("btnText")}
         buttonLink="/contact-us"
       />
     </main>

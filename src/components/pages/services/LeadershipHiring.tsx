@@ -19,8 +19,10 @@ import {
   organizationItemVariants,
 } from "@/components/animation/variants";
 import { useScrollTop } from "@/hooks/useScrollTop";
+import { useTranslations } from "next-intl";
 
 const LeadershipHiring = () => {
+  const t = useTranslations("leadershipservices");
   useScrollTop();
 
   return (
@@ -39,12 +41,12 @@ const LeadershipHiring = () => {
                   <BreadcrumbLink
                     href="/"
                     className="text-white/80 hover:text-white">
-                    Home
+                    {t("menu1")}
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="text-white/60" />
                 <BreadcrumbPage className="text-white font-medium">
-                  Services
+                  {t("menu2")}
                 </BreadcrumbPage>
               </BreadcrumbList>
             </Breadcrumb>
@@ -54,7 +56,7 @@ const LeadershipHiring = () => {
           <motion.h1
             variants={organizationItemVariants}
             className="text-2xl md:text-4xl font-bold text-center">
-            Leadership Recruitment
+            {t("title")}
           </motion.h1>
         </div>
       </motion.div>
@@ -91,23 +93,18 @@ const LeadershipHiring = () => {
                 <motion.p
                   variants={organizationItemVariants}
                   className="leading-relaxed">
-                  We specialize in identifying and attracting top-tier talent
-                  for key leadership roles across all levels and functions.
+                  {t("desc1")}
                 </motion.p>
                 <motion.p
                   variants={organizationItemVariants}
                   className="leading-relaxed">
-                  Recognizing that strong leadership is vital for organizational
-                  growth, we leverage our extensive network and proven
-                  assessment methods to build leadership teams that align with
-                  your strategic goals and cultural values.
+                  {t("desc2")}
                 </motion.p>
 
                 <motion.p
                   variants={organizationItemVariants}
                   className="leading-relaxed">
-                  Our comprehensive approach ensures the perfect fit for both
-                  the organization and the candidate.
+                  {t("desc3")}
                 </motion.p>
               </motion.div>
 
@@ -120,7 +117,7 @@ const LeadershipHiring = () => {
                   className="relative overflow-hidden border-2 border-primary text-primary
                          hover:bg-primary hover:text-white px-6 py-3 rounded-full 
                          w-full xs:w-auto text-base transition-all duration-300">
-                  <Link href="/#allservices">All Services</Link>
+                  <Link href="/#allservices">{t("btnText")}</Link>
                 </Button>
               </motion.div>
             </motion.div>

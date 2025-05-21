@@ -5,10 +5,12 @@ import {
   headingVariants,
   paragraphVariants,
 } from "@/components/animation/contentVariants";
+import { useTranslations } from "next-intl";
 
 const CountStatscard = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(containerRef);
+  const t = useTranslations("countstats");
 
   useEffect(() => {
     if (!containerRef.current || !isInView) return;
@@ -66,13 +68,12 @@ const CountStatscard = () => {
           <motion.h2
             className="text-3xl sm:text-2xl md:text-4xl font-bold mb-4"
             variants={headingVariants}>
-            An integral part of corporate Europe&apos;s journey
+            {t("title")}
           </motion.h2>
           <motion.p
             className="text-base sm:text-lg text-gray-600"
             variants={paragraphVariants}>
-            Guiding multinationals, top European enterprises, and visionary
-            leaders with expert insight.
+            {t("subtitle")}
           </motion.p>
         </motion.div>
 
@@ -106,10 +107,10 @@ const CountStatscard = () => {
                       0+
                     </motion.p>
                     <p className="text-xs sm:text-sm md:text-base text-gray-600">
-                      {index === 0 && "Years of Trusted Excellence"}
-                      {index === 1 && "Leadership Placements Delivereds"}
-                      {index === 2 && "Industry-Savvy Consultants"}
-                      {index === 3 && "Client Satisfaction Rate"}
+                      {index === 0 && t("count1")}
+                      {index === 1 && t("count2")}
+                      {index === 2 && t("count3")}
+                      {index === 3 && t("count4")}
                     </p>
                   </Card>
                 </motion.div>

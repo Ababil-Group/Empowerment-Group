@@ -1,17 +1,29 @@
-"use client"
+"use client";
 
-import React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { motion } from "framer-motion"
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb"
-import { Button } from "@/components/ui/button"
-import PageTransition from "@/components/animation/PageTransition"
-import { organizationContainerVariants, organizationItemVariants } from "@/components/animation/variants"
-import { useScrollTop } from "@/hooks/useScrollTop"
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { Button } from "@/components/ui/button";
+import PageTransition from "@/components/animation/PageTransition";
+import {
+  organizationContainerVariants,
+  organizationItemVariants,
+} from "@/components/animation/variants";
+import { useScrollTop } from "@/hooks/useScrollTop";
+import { useTranslations } from "next-intl";
 
 const ExecutiveSearch = () => {
-  useScrollTop()
+  const t = useTranslations("executivesearch");
+  useScrollTop();
 
   return (
     <PageTransition>
@@ -19,33 +31,30 @@ const ExecutiveSearch = () => {
         initial="hidden"
         animate="visible"
         variants={organizationContainerVariants}
-        className="bg-primary text-white"
-      >
+        className="bg-primary text-white">
         <div className="container mx-auto px-4 md:px-5 lg:px-7 max-w-8xl py-4 md:py-6">
           <motion.div variants={organizationItemVariants}>
             <Breadcrumb className="mb-4 md:mb-6">
               <BreadcrumbList className="text-xs md:text-sm">
                 <BreadcrumbItem>
-                  <BreadcrumbLink 
-                    href="/" 
-                    className="text-white/80 hover:text-white"
-                  >
-                    Home
+                  <BreadcrumbLink
+                    href="/"
+                    className="text-white/80 hover:text-white">
+                    {t("menu1")}
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="text-white/60" />
                 <BreadcrumbPage className="text-white font-medium">
-                  Services
+                  {t("menu2")}
                 </BreadcrumbPage>
               </BreadcrumbList>
             </Breadcrumb>
           </motion.div>
 
-          <motion.h1 
+          <motion.h1
             variants={organizationItemVariants}
-            className="text-2xl md:text-4xl font-bold text-center"
-          >
-            Executive Search
+            className="text-2xl md:text-4xl font-bold text-center">
+            {t("title")}
           </motion.h1>
         </div>
       </motion.div>
@@ -56,15 +65,13 @@ const ExecutiveSearch = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="py-12 md:py-16"
-      >
+        className="py-12 md:py-16">
         <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
             {/* Image Column */}
-            <motion.div 
+            <motion.div
               variants={organizationItemVariants}
-              className="relative w-full h-[200px] xs:h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-lg overflow-hidden order-1"
-            >
+              className="relative w-full h-[200px] xs:h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-lg overflow-hidden order-1">
               <Image
                 src="/images/service2.jpg"
                 alt="Executive Search Services"
@@ -76,45 +83,35 @@ const ExecutiveSearch = () => {
             </motion.div>
 
             {/* Content Column */}
-            <motion.div 
+            <motion.div
               variants={organizationItemVariants}
-              className="space-y-3 md:space-y-4 order-2"
-            >
-              <motion.div 
+              className="space-y-3 md:space-y-4 order-2">
+              <motion.div
                 variants={organizationItemVariants}
-                className="space-y-3 text-sm sm:text-base text-gray-600"
-              >
-                <motion.p 
+                className="space-y-3 text-sm sm:text-base text-gray-600">
+                <motion.p
                   variants={organizationItemVariants}
-                  className="leading-relaxed"
-                >
-                  Our Executive Search practice specializes in identifying and attracting 
-                  top-tier leadership talent for organizations across industries. We understand 
-                  that finding the right executive leadership is crucial for organizational success.
+                  className="leading-relaxed">
+                  {t("desc1")}
                 </motion.p>
 
-                <motion.p 
+                <motion.p
                   variants={organizationItemVariants}
-                  className="leading-relaxed"
-                >
-                  With our extensive network and proven methodology, we help organizations 
-                  build high-performing leadership teams that drive growth and innovation 
-                  in today&apos;s competitive business landscape.
+                  className="leading-relaxed">
+                  {t("desc2")}
                 </motion.p>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 variants={organizationItemVariants}
-                className="flex flex-col xs:flex-row gap-3 sm:gap-4 pt-3 md:pt-4"
-              >
+                className="flex flex-col xs:flex-row gap-3 sm:gap-4 pt-3 md:pt-4">
                 <Button
                   asChild
                   variant="outline"
                   className="relative overflow-hidden border-2 border-primary text-primary
                          hover:bg-primary hover:text-white px-6 py-3 rounded-full 
-                         w-full xs:w-auto text-base transition-all duration-300"
-                >
-                  <Link href="/#allservices">All Services</Link>
+                         w-full xs:w-auto text-base transition-all duration-300">
+                  <Link href="/#allservices">{t("btnText")}</Link>
                 </Button>
               </motion.div>
             </motion.div>
@@ -122,7 +119,7 @@ const ExecutiveSearch = () => {
         </div>
       </motion.section>
     </PageTransition>
-  )
-}
+  );
+};
 
-export default ExecutiveSearch
+export default ExecutiveSearch;

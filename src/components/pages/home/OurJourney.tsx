@@ -15,45 +15,45 @@ import {
   journeyTitleVariants,
   journeySubtitleVariants,
 } from "@/components/animation/contentVariants";
-
-const timelineData = [
-  {
-    year: 2010,
-    title: "Global Expansion",
-    description:
-      " Brought talent acquisition solutions to international markets.",
-    image: "/images/1985.jpg",
-  },
-  {
-    year: 2015,
-    title: "Innovation",
-    description: "  Introduced AI-driven recruitment tools.",
-    image: "/images/1990.jpg",
-  },
-  {
-    year: 2020,
-    title: " Adaptation",
-    description: "Shifted to virtual recruitment and consulting.",
-    image: "/images/2000.jpg",
-  },
-  {
-    year: 2023,
-    title: "Future-Focused",
-    description: "  Launched initiatives promoting diversity and inclusion.",
-    image: "/images/2010.jpg",
-  },
-  {
-    year: 2024,
-    title: "Intelligent Recruitment",
-    description: "Implemented AI-powered hiring solutions.",
-    image: "/images/2020.jpg",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const OurJourney: React.FC = () => {
+  const t = useTranslations("ourjourney");
   const [api, setApi] = useState<CarouselApi>();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const timelineData = [
+    {
+      year: t("timeyear1"),
+      title: t("timetitle1"),
+      description: t("timedec1"),
+      image: "/images/1985.jpg",
+    },
+    {
+      year: t("timeyear2"),
+      title: t("timetitle2"),
+      description: t("timedec2"),
+      image: "/images/1990.jpg",
+    },
+    {
+      year: t("timeyear3"),
+      title: t("timetitle3"),
+      description: t("timedec3"),
+      image: "/images/2000.jpg",
+    },
+    {
+      year: t("timeyear4"),
+      title: t("timetitle4"),
+      description: t("timedec4"),
+      image: "/images/2010.jpg",
+    },
+    {
+      year: t("timeyear5"),
+      title: t("timetitle5"),
+      description: t("timedec5"),
+      image: "/images/2020.jpg",
+    },
+  ];
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
@@ -103,7 +103,7 @@ const OurJourney: React.FC = () => {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4">
-            Our Journey
+            {t("title")}
           </motion.h2>
           <motion.p
             variants={journeySubtitleVariants}
@@ -111,7 +111,7 @@ const OurJourney: React.FC = () => {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             className="text-gray-600 text-base sm:text-lg md:text-xl">
-            A Legacy of Excellence, Evolving with the Times
+            {t("subtitle")}
           </motion.p>
         </div>
 

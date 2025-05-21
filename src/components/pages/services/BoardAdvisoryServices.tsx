@@ -19,8 +19,10 @@ import {
   organizationItemVariants,
 } from "@/components/animation/variants";
 import { useScrollTop } from "@/hooks/useScrollTop";
+import { useTranslations } from "next-intl";
 
 const BoardAdvisoryServices = () => {
+  const t = useTranslations("boardservices");
   useScrollTop();
 
   return (
@@ -40,12 +42,12 @@ const BoardAdvisoryServices = () => {
                     <BreadcrumbLink
                       href="/"
                       className="text-white/80 hover:text-white">
-                      Home
+                      {t("menu1")}
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator className="text-white/60" />
                   <BreadcrumbPage className="text-white font-medium">
-                    Services
+                    {t("menu2")}
                   </BreadcrumbPage>
                 </BreadcrumbList>
               </Breadcrumb>
@@ -55,7 +57,7 @@ const BoardAdvisoryServices = () => {
             <motion.h1
               variants={organizationItemVariants}
               className="text-2xl md:text-4xl font-bold text-center">
-              Board Advisory Services
+              {t("title")}
             </motion.h1>
           </div>
         </motion.div>
@@ -91,17 +93,13 @@ const BoardAdvisoryServices = () => {
                   <motion.p
                     variants={organizationItemVariants}
                     className="leading-relaxed">
-                    We partner with organizations to build and sustain
-                    high-performing boards through expert guidance in board
-                    composition, succession planning, and governance.
+                    {t("desc1")}
                   </motion.p>
 
                   <motion.p
                     variants={organizationItemVariants}
                     className="leading-relaxed">
-                    Backed by decades of cross-industry experience, our tailored
-                    solutions enhance board effectiveness and strengthen
-                    corporate governance.
+                    {t("desc2")}
                   </motion.p>
                 </motion.div>
 
@@ -114,7 +112,7 @@ const BoardAdvisoryServices = () => {
                     className="relative overflow-hidden border-2 border-primary text-primary
                            hover:bg-primary hover:text-white px-6 py-3 rounded-full 
                            w-full xs:w-auto text-base transition-all duration-300">
-                    <Link href="/#allservices">All Services</Link>
+                    <Link href="/#allservices">{t("btnText")}</Link>
                   </Button>
                 </motion.div>
               </motion.div>

@@ -9,8 +9,10 @@ import {
   paragraphVariants,
   imageVariants,
 } from "@/components/animation/contentVariants";
+import { useTranslations } from "next-intl";
 
 const OurPeople = () => {
+  const t = useTranslations("ourpeople");
   return (
     <section className="py-6 sm:py-8 md:py-12">
       <div className="container mx-auto px-4">
@@ -24,12 +26,12 @@ const OurPeople = () => {
           <motion.h2
             variants={headingVariants}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
-            Our People
+            {t("title")}
           </motion.h2>
           <motion.p
             variants={paragraphVariants}
             className="text-base sm:text-lg md:text-xl text-gray-600">
-            The passionate minds powering our progress.
+            {t("subtitle")}
           </motion.p>
         </motion.div>
 

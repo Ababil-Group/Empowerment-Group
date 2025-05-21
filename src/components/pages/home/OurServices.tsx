@@ -15,29 +15,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { serviceDescriptionVariants } from "@/components/animation/contentVariants";
-
-const services = [
-  {
-    title: "Recruitment Solutions",
-    description: "Smart hiring. Real results.",
-    image: "/images/service1.jpg",
-  },
-  {
-    title: "Executive Search",
-    description: " Top-tier leadership hires.",
-    image: "/images/service2.jpg",
-  },
-  {
-    title: "HR Consulting",
-    description: "Expert people strategies",
-    image: "/images/service3.jpg",
-  },
-  {
-    title: "Talent Assessment",
-    description: " Spot the right fit",
-    image: "/images/service4.jpg",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const ServiceCard = ({
   title,
@@ -49,7 +27,7 @@ const ServiceCard = ({
   image: string;
 }) => {
   const [isHovered, setIsHovered] = React.useState(false);
-
+  const b = useTranslations("ourservices");
   return (
     <Card
       className="relative group overflow-hidden"
@@ -85,7 +63,7 @@ const ServiceCard = ({
                 className={`absolute text-[10px] sm:text-sm whitespace-nowrap
                 text-black group-hover:text-white transition-all duration-300
                 ${isHovered ? "opacity-100 translate-x-0 left-3" : "opacity-0 -translate-x-4 pointer-events-none"}`}>
-                Get Started
+                {b("btnText")}
               </span>
               <ArrowRight
                 className={`w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-black group-hover:text-white transition-all duration-300
@@ -100,8 +78,31 @@ const ServiceCard = ({
 };
 
 const OurServices = () => {
+  const t = useTranslations("ourservices");
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
+  const services = [
+    {
+      title: t("services1.title"),
+      description: t("services1.desc"),
+      image: "/images/service1.jpg",
+    },
+    {
+      title: t("services2.title"),
+      description: t("services2.desc"),
+      image: "/images/service2.jpg",
+    },
+    {
+      title: t("services3.title"),
+      description: t("services3.desc"),
+      image: "/images/service3.jpg",
+    },
+    {
+      title: t("services4.title"),
+      description: t("services4.desc"),
+      image: "/images/service4.jpg",
+    },
+  ];
 
   React.useEffect(() => {
     if (!api) return;
@@ -129,7 +130,7 @@ const OurServices = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-bold mb-4">
-            Our Services
+            {t("title")}
           </motion.h2>
           <motion.p
             variants={serviceDescriptionVariants}
@@ -137,8 +138,7 @@ const OurServices = () => {
             whileInView="animate"
             viewport={{ once: true }}
             className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-            End-to-end talent acquisition and management solutions tailored to
-            your organization’s needs.
+            {t("subtitle")}
           </motion.p>
         </div>
 

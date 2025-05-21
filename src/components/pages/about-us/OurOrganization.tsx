@@ -19,8 +19,10 @@ import {
   organizationContainerVariants,
   organizationItemVariants,
 } from "@/components/animation/variants";
+import { useTranslations } from "next-intl";
 
 const AboutPage = () => {
+  const t = useTranslations("ourorganization");
   return (
     <>
       <PageTransition>
@@ -28,8 +30,7 @@ const AboutPage = () => {
           initial="hidden"
           animate="visible"
           variants={organizationContainerVariants}
-          className="min-h-screen relative pt-4 pb-4 md:pt-8 md:pb-8"
-        >
+          className="min-h-screen relative pt-4 pb-4 md:pt-8 md:pb-8">
           <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
             {/* Breadcrumbs with animation */}
             <motion.div variants={organizationItemVariants}>
@@ -38,15 +39,14 @@ const AboutPage = () => {
                   <BreadcrumbItem>
                     <BreadcrumbLink
                       href="/"
-                      className="text-gray-600 hover:text-primary"
-                    >
-                      Home
+                      className="text-gray-600 hover:text-primary">
+                      {t("menu1")}
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator className="text-gray-400" />
                   <BreadcrumbItem>
                     <BreadcrumbPage className="text-gray-900 font-medium">
-                      About Us
+                      {t("menu2")}
                     </BreadcrumbPage>
                   </BreadcrumbItem>
                 </BreadcrumbList>
@@ -58,8 +58,7 @@ const AboutPage = () => {
               {/* Left Column */}
               <motion.div
                 variants={organizationItemVariants}
-                className="relative w-full h-[250px] xs:h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] rounded-xl overflow-hidden order-1"
-              >
+                className="relative w-full h-[250px] xs:h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] rounded-xl overflow-hidden order-1">
                 <Image
                   src="/images/h2.jpg"
                   alt="About Empowerment Group"
@@ -73,48 +72,32 @@ const AboutPage = () => {
               {/* Right Column */}
               <motion.div
                 variants={organizationItemVariants}
-                className="space-y-4 md:space-y-6 order-2"
-              >
+                className="space-y-4 md:space-y-6 order-2">
                 <motion.h1
                   variants={organizationItemVariants}
-                  className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold leading-tight"
-                >
-                  Leading Executive Search & Selection Firm
+                  className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+                  {t("title")}
                 </motion.h1>
 
                 <motion.div
                   variants={organizationItemVariants}
-                  className="space-y-4 text-sm sm:text-base md:text-lg text-gray-600"
-                >
-                  <p className="leading-relaxed">
-                    Since our inception in 1969, Empowerment Group has been at
-                    the forefront of talent acquisition and leadership
-                    solutions. We combine decades of experience with innovative
-                    methodologies to deliver exceptional results for our
-                    clients.
-                  </p>
+                  className="space-y-4 text-sm sm:text-base md:text-lg text-gray-600">
+                  <p className="leading-relaxed">{t("subtitle")}</p>
 
-                  <p className="leading-relaxed">
-                    Our deep industry knowledge, extensive network, and
-                    commitment to excellence make us the trusted partner for
-                    organizations seeking top-tier talent across sectors.
-                  </p>
+                  <p className="leading-relaxed">{t("desc")}</p>
                 </motion.div>
 
                 <motion.div
                   variants={organizationItemVariants}
-                  className="flex flex-col xs:flex-row gap-4 sm:gap-6 pt-4 md:pt-6"
-                >
+                  className="flex flex-col xs:flex-row gap-4 sm:gap-6 pt-4 md:pt-6">
                   <Button
                     asChild
                     className="relative overflow-hidden bg-primary hover:bg-primary/90 text-white 
-                         px-6 py-3 rounded-full w-full xs:w-auto text-base group"
-                  >
+                         px-6 py-3 rounded-full w-full xs:w-auto text-base group">
                     <Link
                       href="/about-us#ourculture"
-                      className="flex items-center justify-center gap-2"
-                    >
-                      Learn More
+                      className="flex items-center justify-center gap-2">
+                      {t("btnText")}
                       <span className="relative transition-all duration-300 group-hover:translate-x-1">
                         <ArrowRight className="w-4 h-4" />
                       </span>

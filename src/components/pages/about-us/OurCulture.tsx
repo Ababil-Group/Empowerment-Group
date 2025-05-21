@@ -1,44 +1,42 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { fadeInUp, staggerContainer, fadeInItem } from "@/components/animation/variants"
-import { Shield, Target, Users, Lightbulb } from "lucide-react"
-
-
-const cultureItems = [
-  {
-    id: 1,
-    icon: Shield,
-    title: "Trust & Integrity",
-    description:
-      "We uphold honesty and transparency, building strong, lasting relationships.",
-  },
-  {
-    id: 2,
-    icon: Target,
-    title: "Excellence",
-    description:
-      "We go beyond expectations to deliver outstanding results, every time.",
-  },
-  {
-    id: 3,
-    icon: Users,
-    title: "Collaboration",
-    description:
-      "We believe success is a team effort—and we grow stronger together.",
-  },
-  {
-    id: 4,
-    icon: Lightbulb,
-    title: "Innovation",
-    description:
-      "We challenge the status quo to deliver bold, forward-thinking solutions.",
-  },
-];
+import { motion } from "framer-motion";
+import {
+  fadeInUp,
+  staggerContainer,
+  fadeInItem,
+} from "@/components/animation/variants";
+import { Shield, Target, Users, Lightbulb } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const OurCulture = () => {
-
-
+  const t = useTranslations("ourculture");
+  const cultureItems = [
+    {
+      id: 1,
+      icon: Shield,
+      title: t("culture1.title"),
+      description: t("culture1.desc"),
+    },
+    {
+      id: 2,
+      icon: Target,
+      title: t("culture2.title"),
+      description: t("culture2.desc"),
+    },
+    {
+      id: 3,
+      icon: Users,
+      title: t("culture3.title"),
+      description: t("culture3.desc"),
+    },
+    {
+      id: 4,
+      icon: Lightbulb,
+      title: t("culture4.title"),
+      description: t("culture4.desc"),
+    },
+  ];
   return (
     <section id="ourculture" className="py-24">
       <motion.div
@@ -54,13 +52,9 @@ const OurCulture = () => {
           animate="animate"
           className="max-w-2xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Our Culture
+            {t("title")}
           </h2>
-          <p className="text-lg text-gray-600">
-            Driven by values. Defined by purpose. We cultivate a culture rooted
-            in continuous learning, innovation, and a shared commitment to
-            excellence.
-          </p>
+          <p className="text-lg text-gray-600">{t("subtitle")}</p>
         </motion.div>
 
         {/* Culture Grid */}
@@ -83,6 +77,6 @@ const OurCulture = () => {
       </motion.div>
     </section>
   );
-}
+};
 
-export default OurCulture
+export default OurCulture;
