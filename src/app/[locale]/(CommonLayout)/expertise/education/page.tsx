@@ -19,99 +19,86 @@ import {
   Globe,
   Users2,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const EducationPage = () => {
-  const specialities = [
-    "K-12 Education",
-    "Higher Education",
-    "EdTech",
-    "Vocational Training",
-    "Corporate Training",
-    "Educational Publishing",
-    "Online Learning",
-    "Special Education",
-    "Educational Administration",
-    "Curriculum Development",
-    "Educational Research",
-    "Student Services",
-    "Teacher Training",
-  ];
+  const t = useTranslations("education");
+  const b = useTranslations("banner8");
+  const des = t.raw("desc");
+  const spacil = t.raw("specialitie");
+  const specialities = spacil.map((item) => item);
 
   const representativeSearches = [
     {
       icon: GraduationCap,
-      title: "Chief Operating Officer",
-      subtitle: "Leading Industrial Manufacturing Company",
+      title: t("representative1.title"),
+      subtitle: t("representative1.desc"),
     },
     {
       icon: School,
-      title: "Plant Head",
-      subtitle: "Major Heavy Engineering Corporation",
+      title: t("representative2.title"),
+      subtitle: t("representative2.desc"),
     },
     {
       icon: BookOpen,
-      title: "VP Supply Chain",
-      subtitle: "Industrial Equipment Manufacturer",
+      title: t("representative3.title"),
+      subtitle: t("representative3.desc"),
     },
     {
       icon: Presentation,
-      title: "Director of Engineering",
-      subtitle: "Precision Manufacturing Company",
+      title: t("representative4.title"),
+      subtitle: t("representative4.desc"),
     },
     {
       icon: Globe,
-      title: "Head of R&D",
-      subtitle: "Power Generation Equipment Manufacturer",
+      title: t("representative5.title"),
+      subtitle: t("representative5.desc"),
     },
     {
       icon: Users2,
-      title: "Technology Director",
-      subtitle: "Industrial Automation Solutions Provider",
+      title: t("representative6.title"),
+      subtitle: t("representative6.desc"),
     },
   ];
 
   const methodologies = [
     {
       icon: <Search className="w-8 h-8 text-primary" />,
-      title: "Requirements Analysis",
-      subtitle: "Understanding client needs and role specifications",
+      title: t("methodologie1.title"),
+      subtitle: t("methodologie1.desc"),
     },
     {
       icon: <Users className="w-8 h-8 text-primary" />,
-      title: "Candidate Identification",
-      subtitle: "Leveraging our network to find potential matches",
+      title: t("methodologie2.title"),
+      subtitle: t("methodologie2.desc"),
     },
     {
       icon: <CheckCircle className="w-8 h-8 text-primary" />,
-      title: "Screening Process",
-      subtitle: "In-depth evaluation of candidates",
+      title: t("methodologie3.title"),
+      subtitle: t("methodologie3.desc"),
     },
     {
       icon: <BarChart className="w-8 h-8 text-primary" />,
-      title: "Assessment",
-      subtitle: "Detailed assessment of shortlisted candidates",
+      title: t("methodologie4.title"),
+      subtitle: t("methodologie4.desc"),
     },
     {
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
-      title: "Selection",
-      subtitle: "Final selection and offer management",
+      title: t("methodologie5.title"),
+      subtitle: t("methodologie5.desc"),
     },
     {
       icon: <HandshakeIcon className="w-8 h-8 text-primary" />,
-      title: "Onboarding",
-      subtitle: "Ensuring smooth transition into the role",
+      title: t("methodologie6.title"),
+      subtitle: t("methodologie6.desc"),
     },
   ];
 
   return (
     <>
       <IndustiresLayout
-        title="Education"
-        description={[
-          "The education sector plays a crucial role in shaping the future. Our expertise allows us to identify and place leaders who can drive academic excellence and foster innovation.",
-          "We collaborate with educational institutions, EdTech companies, and training providers to find executives who understand the complexities of the education landscape and lead with vision and integrity.",
-          "Our deep understanding spans key segments, including K-12, higher education, vocational training, and online learning, ensuring we can address your specific leadership needs in this dynamic sector.",
-        ]}
+        title={t("title2")}
+        description={des}
         imageSrc="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&h=500&fit=crop"
         imageAlt="Education Sector"
       />
@@ -121,9 +108,9 @@ const EducationPage = () => {
         representativeSearches={representativeSearches}
       />
       <CommonBanner
-        title="Reach out to our Senior Consultants"
-        subtitle="for your leadership hiring needs"
-        buttonText="Get In Touch"
+        title={b("titlebanner")}
+        subtitle={b("subtitlebanner")}
+        buttonText={b("btnText")}
         buttonLink="/contact-us"
       />
     </>

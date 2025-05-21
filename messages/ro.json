@@ -287,5 +287,350 @@
     "titlebanner": "Construiți echipa de lideri?",
     "subtitlebanner": "Vă vom ajuta să găsiți liderii care să vă avanseze viziunea.",
     "btnText": "Începeți"
+  },
+  "secondarynav": {
+    "nav": ["Specialități", "Metodologia de căutare", "Căutări reprezentative"]
+  },
+  "buildingmaterials": {
+    "title": "Materiale de construcție",
+    "desc": [
+      "Ca un pilon vital al construcțiilor și infrastructurii, industria materialelor de construcții necesită conducere visionară.",
+      "Cu o înțelegere profundă a sectorului, ajutăm producătorii, furnizorii și distribuitorii să recruteze directori care să stimuleze inovația, să navigheze prin reglementări și să conducă creșterea sustenabilă.",
+      "De la ciment și oțel la lemn, sticlă și materiale compozite avansate, expertiza noastră acoperă întregul spectru de nevoi de talente ale industriei."
+    ],
+    "specialitytitle": "Specialitățile noastre",
+    "representativetitle": "Căutări reprezentative",
+    "specialitie": [
+      "Sanitare",
+      "Ceramică",
+      "Vopsele, chimicale și adezivi",
+      "Accesorii arhitecturale",
+      "Sticlă",
+      "Soluții interioare și exterioare",
+      "Uși și ferestre",
+      "PAL, furnir, laminat și MDF",
+      "Piatră și grafit",
+      "Ascensoare și scări rulante",
+      "Țevi, cabluri și UPVC",
+      "Bucătării modulare și mobilier de birou"
+    ],
+    "representative1": {
+      "title": "Director tehnic",
+      "desc": "Producător lider de sanitare"
+    },
+    "representative2": {
+      "title": "Șef de grup – materiale",
+      "desc": "Top brand de vopsele decorative"
+    },
+    "representative3": {
+      "title": "Vicepreședinte senior – export",
+      "desc": "Producător important de ceramică"
+    },
+    "representative4": {
+      "title": "Manager de țară, India",
+      "desc": "Brand global premium de sanitare"
+    },
+    "representative5": {
+      "title": "Vicepreședinte executiv – dezvoltare afaceri",
+      "desc": "Conglomerat diversificat – divizia uși și ferestre"
+    },
+    "representative6": {
+      "title": "Vicepreședinte – vânzări",
+      "desc": "Producător lider de panouri ACP (aluminiu compozit)"
+    },
+    "representative7": {
+      "title": "Director financiar (CFO)",
+      "desc": "Producător renumit de PAL"
+    },
+    "representative8": {
+      "title": "Director resurse umane (CHRO)",
+      "desc": "Lider global în pereți despărțitori și plafoane false"
+    },
+    "methodologie1": {
+      "title": "Descoperirea rolului",
+      "desc": "Analiză profundă a nevoilor clientului și a cerințelor postului."
+    },
+    "methodologie2": {
+      "title": "Cartografierea talentelor",
+      "desc": "Identificarea candidaților de top prin abordare direcționată și rețele."
+    },
+    "methodologie3": {
+      "title": "Screening",
+      "desc": "Evaluare amănunțită a abilităților, experienței și alinierii."
+    },
+    "methodologie4": {
+      "title": "Evaluarea candidaților",
+      "desc": "Analiză detaliată a candidaților selectați pentru cea mai bună potrivire."
+    },
+    "methodologie5": {
+      "title": "Selecție și ofertă",
+      "desc": "Sprijin în selecția finală și gestionarea procesului de ofertă."
+    },
+    "methodologie6": {
+      "title": "Sprijin la integrare",
+      "desc": "Asigurarea unei integrări fără probleme în organizație."
+    }
+  },
+  "banner6": {
+    "titlebanner": "Contactați consultanții noștri seniori",
+    "subtitlebanner": "Pentru sprijin expert în nevoile dumneavoastră de angajare a liderilor.",
+    "btnText": "Începeți"
+  },
+  "industries": {
+    "title": "Industrial",
+    "menu1": "Acasă",
+    "menu2": "Industrii",
+    "title2": "Industrial",
+    "desc": [
+      "Sectorul industrial este piatra de temelie a producției și progresului tehnologic. Cu expertiza noastră profundă, suntem specializați în identificarea și plasarea liderilor care conduc excelența operațională și stimulează inovația.",
+      "Colaborăm cu firme de producție, furnizori de automatizări și producători de echipamente pentru a găsi directori cu combinația potrivită de expertiză tehnică și abilități puternice de conducere.",
+      "Cunoștințele noastre extinse acoperă segmente industriale critice, inclusiv inginerie grea, automatizări, industrii de proces și tehnologii emergente precum Internetul Industrial al Lucrurilor, asigurându-ne că ne îndeplinim nevoile specifice de leadership."
+    ],
+    "specialitytitle": "Specialitățile noastre",
+    "representativetitle": "Căutări reprezentative",
+    "specialitie": [
+      "Inginerie grea",
+      "Automatizare industrială",
+      "Echipamente de generare a energiei",
+      "Echipamente de manipulare a materialelor",
+      "Producție industrială",
+      "Industrii de proces",
+      "Mașini-unelte",
+      "Electronică industrială",
+      "Internetul Industrial al Lucrurilor",
+      "Inginerie de precizie",
+      "Echipamente industriale",
+      "Sisteme de producție",
+      "Robotică industrială"
+    ],
+    "representative1": {
+      "title": "Director Operațional",
+      "desc": "Companie de producție industrială de top"
+    },
+    "representative2": {
+      "title": "Șef de Uzina",
+      "desc": "Corporație majoră de inginerie grea"
+    },
+    "representative3": {
+      "title": "Vicepreședinte Lanț Aprovizionare",
+      "desc": "Producător de echipamente industriale"
+    },
+    "representative4": {
+      "title": "Director Inginerie",
+      "desc": "Companie de producție de precizie"
+    },
+    "representative5": {
+      "title": "Șef Cercetare și Dezvoltare",
+      "desc": "Producător de echipamente de generare a energiei"
+    },
+    "representative6": {
+      "title": "Director Tehnologie",
+      "desc": "Furnizor de soluții de automatizare industrială"
+    },
+    "representative7": {
+      "title": "Șef de Afaceri",
+      "desc": "Companie de soluții IIoT"
+    },
+    "representative8": {
+      "title": "Vicepreședinte Resurse Umane",
+      "desc": "Corporație de top în industria de proces"
+    },
+    "methodologie1": {
+      "title": "Analiză Cerințe",
+      "desc": "Înțelegere aprofundată a nevoilor clientului și specificațiilor rolului."
+    },
+    "methodologie2": {
+      "title": "Identificare Candidați",
+      "desc": "Folosirea rețelei noastre pentru a identifica candidați potențiali."
+    },
+    "methodologie3": {
+      "title": "Proces de Screening",
+      "desc": "Evaluare cuprinzătoare a calificărilor și potrivirii candidaților."
+    },
+    "methodologie4": {
+      "title": "Evaluare",
+      "desc": "Analiză amănunțită a candidaților pe lista scurtă."
+    },
+    "methodologie5": {
+      "title": "Selecție",
+      "desc": "Selectarea finală a candidatului și gestionarea ofertei."
+    },
+    "methodologie6": {
+      "title": "Onboarding",
+      "desc": "Asigurarea unei tranziții și integrare fără probleme în rol."
+    }
+  },
+  "banner7": {
+    "titlebanner": "Contactați consultanții noștri seniori",
+    "subtitlebanner": "pentru nevoile dumneavoastră de angajare a liderilor",
+    "btnText": "Ia legătura"
+  },
+  "realestate": {
+    "title": "Industrial",
+    "menu1": "Acasă",
+    "menu2": "Industrii",
+    "title2": "Imobiliare",
+    "desc": [
+      "Sectorul imobiliar este o industrie dinamică și în continuă evoluție care necesită conducere vizionară. Expertiza noastră în acest domeniu ne permite să identificăm și să plasăm lideri care pot stimula creșterea și inovația în dezvoltarea și managementul proprietăților.",
+      "Lucrăm cu dezvoltatori, firme de management imobiliar și companii de investiții imobiliare pentru a găsi directori care înțeleg dinamica pieței, cerințele reglementare și tendințele emergente în dezvoltarea durabilă.",
+      "Înțelegerea noastră cuprinde diverse segmente, inclusiv imobiliare rezidențiale, comerciale, retail și industriale, asigurându-ne că putem susține nevoile dumneavoastră specifice de leadership în acest sector divers."
+    ],
+    "specialitytitle": "Specialitățile noastre",
+    "representativetitle": "Căutări reprezentative",
+    "specialitie": [
+      "Imobiliare rezidențiale",
+      "Proprietăți comerciale",
+      "Dezvoltare imobiliară",
+      "Managementul proprietăților",
+      "Investiții imobiliare",
+      "Managementul construcțiilor",
+      "Managementul activelor",
+      "Managementul facilităților",
+      "Consultanță imobiliară",
+      "Managementul proiectelor",
+      "Finanțare imobiliară"
+    ],
+    "representative1": {
+      "title": "Director Operațional",
+      "desc": "Companie de top în producția industrială"
+    },
+    "representative2": {
+      "title": "Șef de Uzina",
+      "desc": "Corporație majoră de inginerie grea"
+    },
+    "representative3": {
+      "title": "Vicepreședinte lanț de aprovizionare",
+      "desc": "Producător de echipamente industriale"
+    },
+    "representative4": {
+      "title": "Director de Inginerie",
+      "desc": "Companie de producție de precizie"
+    },
+    "representative5": {
+      "title": "Șef de Cercetare și Dezvoltare",
+      "desc": "Producător de echipamente pentru generarea de energie"
+    },
+    "representative6": {
+      "title": "Director Tehnologic",
+      "desc": "Furnizor de soluții de automatizare industrială"
+    },
+    "representative7": {
+      "title": "Șef de Afaceri",
+      "desc": "Companie de soluții IoT industrial"
+    },
+    "representative8": {
+      "title": "Vicepreședinte Resurse Umane",
+      "desc": "Corporație de top în industria de proces"
+    },
+    "methodologie1": {
+      "title": "O abordare strategică pentru asigurarea topului de talente",
+      "desc": "Utilizăm o metodologie structurată pentru a identifica și atrage candidați excepționali."
+    },
+    "methodologie2": {
+      "title": "Analiza cerințelor",
+      "desc": "Înțelegem temeinic nevoile clienților și specificațiile rolului."
+    },
+    "methodologie3": {
+      "title": "Identificarea candidaților",
+      "desc": "Folosim rețeaua noastră extinsă pentru a găsi cele mai bune potriviri."
+    },
+    "methodologie4": {
+      "title": "Procesul de selecție",
+      "desc": "Evaluare aprofundată pentru a evalua calificările și potrivirea candidaților."
+    },
+    "methodologie5": {
+      "title": "Evaluare",
+      "desc": "Evaluare cuprinzătoare a candidaților de pe lista scurtă."
+    },
+    "methodologie6": {
+      "title": "Selecție",
+      "desc": "Gestionarea procesului final de selecție și ofertă."
+    }
+  },
+  "banner8": {
+    "titlebanner": "Contactați consultanții noștri seniori",
+    "subtitlebanner": "pentru nevoile dumneavoastră de angajare a liderilor",
+    "btnText": "Contactați-ne"
+  },
+  "education": {
+    "title": "Industrial",
+    "menu1": "Acasă",
+    "menu2": "Industrii",
+    "title2": "Educație",
+    "desc": [
+      "Sectorul educațional joacă un rol crucial în modelarea viitorului. Expertiza noastră ne permite să identificăm și să plasăm lideri care pot conduce excelența academică și să promoveze inovația.",
+      "Colaborăm cu instituții de învățământ, companii EdTech și furnizori de formare pentru a găsi executivi care înțeleg complexitatea peisajului educațional și conduc cu viziune și integritate.",
+      "Înțelegerea noastră profundă acoperă segmente cheie, inclusiv K-12, învățământul superior, formarea profesională și învățarea online, asigurându-ne că putem răspunde nevoilor dumneavoastră specifice de leadership în acest sector dinamic."
+    ],
+    "specialitytitle": "Specialitățile noastre",
+    "representativetitle": "Căutări reprezentative",
+    "specialitie": [
+      "Educație K-12",
+      "Învățământ superior",
+      "EdTech",
+      "Formare profesională",
+      "Formare corporativă",
+      "Editură educațională",
+      "Învățare online",
+      "Educație specială",
+      "Administrație educațională",
+      "Dezvoltare curriculară",
+      "Cercetare educațională",
+      "Servicii pentru studenți",
+      "Formare a cadrelor didactice"
+    ],
+    "representative1": {
+      "title": "Director Operațional",
+      "desc": "Companie de manufactură industrială de top"
+    },
+    "representative2": {
+      "title": "Șef de Uzina",
+      "desc": "Corporație majoră de inginerie grea"
+    },
+    "representative3": {
+      "title": "Vicepreședinte Lanț de Aprovizionare",
+      "desc": "Producător de echipamente industriale"
+    },
+    "representative4": {
+      "title": "Director de Inginerie",
+      "desc": "Companie de manufactură de precizie"
+    },
+    "representative5": {
+      "title": "Șef Cercetare și Dezvoltare",
+      "desc": "Producător de echipamente pentru generarea de energie"
+    },
+    "representative6": {
+      "title": "Director Tehnologic",
+      "desc": "Furnizor de soluții de automatizare industrială"
+    },
+    "methodologie1": {
+      "title": "Analiza Cerințelor",
+      "desc": "Înțelegerea nevoilor clientului și a specificațiilor rolului"
+    },
+    "methodologie2": {
+      "title": "Identificarea Candidaților",
+      "desc": "Folosirea rețelei noastre pentru a găsi potențiale potriviri"
+    },
+    "methodologie3": {
+      "title": "Proces de Screening",
+      "desc": "Evaluare aprofundată a candidaților"
+    },
+    "methodologie4": {
+      "title": "Evaluare",
+      "desc": "Evaluare detaliată a candidaților selectați."
+    },
+    "methodologie5": {
+      "title": "Selecție",
+      "desc": "Selecție finală și gestionarea ofertei"
+    },
+    "methodologie6": {
+      "title": "Onboarding",
+      "desc": "Asigurarea unei tranziții fluide în rol"
+    }
+  },
+  "banner9": {
+    "titlebanner": "Contactați consultanții noștri seniori",
+    "subtitlebanner": "pentru nevoile dumneavoastră de angajare a liderilor",
+    "btnText": "Contactați-ne"
   }
 }

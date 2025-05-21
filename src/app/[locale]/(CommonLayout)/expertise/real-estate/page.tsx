@@ -21,110 +21,96 @@ import {
   MapPin,
   Users2,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const RealEstatePage = () => {
-  const specialities = [
-    "Residential Real Estate",
-    "Commercial Property",
-    "Real Estate Development",
-    "Property Management",
-    "Real Estate Investment",
-    "Construction Management",
-    "Asset Management",
-    "Facilities Management",
-    "Real Estate Advisory",
-    "Project Management",
-    "Real Estate Finance",
-  ];
+  const t = useTranslations("realestate");
+  const b = useTranslations("banner8");
+  const des = t.raw("desc");
+  const spacil = t.raw("specialitie");
+  const specialities = spacil.map((item) => item);
 
   const representativeSearches = [
     {
       icon: Building2,
-      title: "Chief Operating Officer",
-      subtitle: "Leading Industrial Manufacturing Company",
+      title: t("representative1.title"),
+      subtitle: t("representative1.desc"),
     },
     {
       icon: Home,
-      title: "Plant Head",
-      subtitle: "Major Heavy Engineering Corporation",
+      title: t("representative2.title"),
+      subtitle: t("representative2.desc"),
     },
     {
       icon: AreaChart,
-      title: "VP Supply Chain",
-      subtitle: "Industrial Equipment Manufacturer",
+      title: t("representative3.title"),
+      subtitle: t("representative3.desc"),
     },
     {
       icon: Briefcase,
-      title: "Director of Engineering",
-      subtitle: "Precision Manufacturing Company",
+      title: t("representative4.title"),
+      subtitle: t("representative4.desc"),
     },
     {
       icon: LineChart,
-      title: "Head of R&D",
-      subtitle: "Power Generation Equipment Manufacturer",
+      title: t("representative5.title"),
+      subtitle: t("representative5.desc"),
     },
     {
       icon: Building,
-      title: "Technology Director",
-      subtitle: "Industrial Automation Solutions Provider",
+      title: t("representative6.title"),
+      subtitle: t("representative6.desc"),
     },
     {
       icon: MapPin,
-      title: "Business Head",
-      subtitle: "Industrial IoT Solutions Company",
+      title: t("representative7.title"),
+      subtitle: t("representative7.desc"),
     },
     {
       icon: Users2,
-      title: "VP Human Resources",
-      subtitle: "Leading Process Industry Corporation",
+      title: t("representative8.title"),
+      subtitle: t("representative8.desc"),
     },
   ];
 
   const methodologies = [
     {
       icon: <Search className="w-8 h-8 text-primary" />,
-      title: "A Strategic Approach to Securing Top Talent",
-      subtitle:
-        "We use a structured methodology to identify and attract exceptional candidates.",
+      title: t("methodologie1.title"),
+      subtitle: t("methodologie1.desc"),
     },
     {
       icon: <Users className="w-8 h-8 text-primary" />,
-      title: "Requirements Analysis",
-      subtitle:
-        "We thoroughly understand client needs and role specifications.",
+      title: t("methodologie2.title"),
+      subtitle: t("methodologie2.desc"),
     },
     {
       icon: <CheckCircle className="w-8 h-8 text-primary" />,
-      title: "Candidate Identification",
-      subtitle: " We leverage our extensive network to find the best matches.",
+      title: t("methodologie3.title"),
+      subtitle: t("methodologie3.desc"),
     },
     {
       icon: <BarChart className="w-8 h-8 text-primary" />,
-      title: "Screening Process",
-      subtitle:
-        " In-depth evaluation to assess candidates' qualifications and fit.",
+      title: t("methodologie4.title"),
+      subtitle: t("methodologie4.desc"),
     },
     {
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
-      title: "Assessment",
-      subtitle: " Comprehensive evaluation of shortlisted candidates.",
+      title: t("methodologie5.title"),
+      subtitle: t("methodologie5.desc"),
     },
     {
       icon: <HandshakeIcon className="w-8 h-8 text-primary" />,
-      title: "Selection",
-      subtitle: "Managing the final selection and offer process.",
+      title: t("methodologie6.title"),
+      subtitle: t("methodologie6.desc"),
     },
   ];
 
   return (
     <>
       <IndustiresLayout
-        title="Real Estate"
-        description={[
-          "The real estate sector is a dynamic and evolving industry that requires visionary leadership. Our expertise in this domain enables us to identify and place leaders who can drive growth and innovation in property development and management.",
-          "We work with developers, property management firms, and real estate investment companies to find executives who understand market dynamics, regulatory requirements, and emerging trends in sustainable development.",
-          "Our comprehensive understanding spans across various segments including residential, commercial, retail, and industrial real estate, ensuring we can support your specific leadership needs within this diverse sector.",
-        ]}
+        title={t("title2")}
+        description={des}
         imageSrc="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&h=500&fit=crop"
         imageAlt="Real Estate Development"
       />
@@ -134,9 +120,9 @@ const RealEstatePage = () => {
         representativeSearches={representativeSearches}
       />
       <CommonBanner
-        title="Reach out to our Senior Consultants"
-        subtitle="for your leadership hiring needs"
-        buttonText="Get In Touch"
+        title={b("titlebanner")}
+        subtitle={b("subtitlebanner")}
+        buttonText={b("btnText")}
         buttonLink="/contact-us"
       />
     </>

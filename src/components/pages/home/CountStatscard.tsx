@@ -15,7 +15,7 @@ const CountStatscard = () => {
   useEffect(() => {
     if (!containerRef.current || !isInView) return;
 
-    animate(0, 30, {
+    animate(0, 13, {
       duration: 2,
       onUpdate: (value) => {
         if (containerRef.current) {

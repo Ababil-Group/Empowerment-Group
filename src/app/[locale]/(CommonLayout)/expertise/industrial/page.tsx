@@ -21,111 +21,96 @@ import {
   LineChart,
   Users2,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const IndustrialPage = () => {
-  const specialities = [
-    "Heavy Engineering",
-    "Industrial Automation",
-    "Power Generation Equipment",
-    "Material Handling Equipment",
-    "Industrial Manufacturing",
-    "Process Industries",
-    "Machine Tools",
-    "Industrial Electronics",
-    "Industrial IoT",
-    "Precision Engineering",
-    "Industrial Equipment",
-    "Manufacturing Systems",
-    "Industrial Robotics",
-  ];
+  const t = useTranslations("industries");
+  const b = useTranslations("banner7");
+  const des = t.raw("desc");
+  const spacil = t.raw("specialitie");
+  const specialities = spacil.map((item) => item);
 
   const representativeSearches = [
     {
       icon: Factory,
-      title: "Chief Operating Officer",
-      subtitle: "Leading Industrial Manufacturing Company",
+      title: t("representative1.title"),
+      subtitle: t("representative1.desc"),
     },
     {
       icon: Cog,
-      title: "Plant Head",
-      subtitle: "Major Heavy Engineering Corporation",
+      title: t("representative2.title"),
+      subtitle: t("representative2.desc"),
     },
     {
       icon: Truck,
-      title: "VP Supply Chain",
-      subtitle: "Industrial Equipment Manufacturer",
+      title: t("representative3.title"),
+      subtitle: t("representative3.desc"),
     },
     {
       icon: Wrench, // Changed from Tool to Wrench
-      title: "Director of Engineering",
-      subtitle: "Precision Manufacturing Company",
+      title: t("representative4.title"),
+      subtitle: t("representative4.desc"),
     },
     {
       icon: Battery,
-      title: "Head of R&D",
-      subtitle: "Power Generation Equipment Manufacturer",
+      title: t("representative5.title"),
+      subtitle: t("representative5.desc"),
     },
     {
       icon: Cpu,
-      title: "Technology Director",
-      subtitle: "Industrial Automation Solutions Provider",
+      title: t("representative6.title"),
+      subtitle: t("representative6.desc"),
     },
     {
       icon: LineChart,
-      title: "Business Head",
-      subtitle: "Industrial IoT Solutions Company",
+      title: t("representative7.title"),
+      subtitle: t("representative7.desc"),
     },
     {
       icon: Users2,
-      title: "VP Human Resources",
-      subtitle: "Leading Process Industry Corporation",
+      title: t("representative8.title"),
+      subtitle: t("representative8.desc"),
     },
   ];
 
   const methodologies = [
     {
       icon: <Search className="w-8 h-8 text-primary" />,
-      title: "Requirements Analysis",
-      subtitle:
-        "In-depth understanding of client needs and role specifications.",
+      title: t("methodologie1.title"),
+      subtitle: t("methodologie1.desc"),
     },
     {
       icon: <Users className="w-8 h-8 text-primary" />,
-      title: "Candidate Identification",
-      subtitle: "Utilizing our network to pinpoint potential candidates.",
+      title: t("methodologie2.title"),
+      subtitle: t("methodologie2.desc"),
     },
     {
       icon: <CheckCircle className="w-8 h-8 text-primary" />,
-      title: "Screening Process",
-      subtitle:
-        " Comprehensive evaluation of candidates’ qualifications and fit.",
+      title: t("methodologie3.title"),
+      subtitle: t("methodologie3.desc"),
     },
     {
       icon: <BarChart className="w-8 h-8 text-primary" />,
-      title: "Assessment",
-      subtitle: "Thorough assessment of shortlisted candidates.",
+      title: t("methodologie4.title"),
+      subtitle: t("methodologie4.desc"),
     },
     {
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
-      title: "Selection",
-      subtitle: " Final candidate selection and offer management.",
+      title: t("methodologie5.title"),
+      subtitle: t("methodologie5.desc"),
     },
     {
       icon: <HandshakeIcon className="w-8 h-8 text-primary" />,
-      title: "Onboarding",
-      subtitle: " Ensuring a smooth transition and integration into the role.",
+      title: t("methodologie6.title"),
+      subtitle: t("methodologie6.desc"),
     },
   ];
 
   return (
     <>
       <IndustiresLayout
-        title="Industrial"
-        description={[
-          "The industrial sector is the cornerstone of manufacturing and technological progress. With our deep expertise, we specialize in identifying and placing leaders who drive operational excellence and foster innovation.",
-          "We collaborate with manufacturing firms, automation providers, and equipment manufacturers to find executives with the right blend of technical expertise and strong leadership capabilities.",
-          "Our extensive knowledge spans critical industrial segments, including heavy engineering, automation, process industries, and emerging technologies like Industrial IoT, ensuring we meet your specific leadership needs.",
-        ]}
+        title={t("title2")}
+        description={des}
         imageSrc="https://images.unsplash.com/photo-1516937941344-00b4e0337589?w=500&h=500&fit=crop"
         imageAlt="Industrial Manufacturing"
       />
@@ -135,9 +120,9 @@ const IndustrialPage = () => {
         representativeSearches={representativeSearches}
       />
       <CommonBanner
-        title="Reach out to our Senior Consultants"
-        subtitle="for your leadership hiring needs"
-        buttonText="Get In Touch"
+        title={b("titlebanner")}
+        subtitle={b("subtitlebanner")}
+        buttonText={b("btnText")}
         buttonLink="/contact-us"
       />
     </>

@@ -286,5 +286,354 @@
     "titlebanner": "Градите свој лидерски тим?",
     "subtitlebanner": "Помоћи ћемо вам да пронађете лидере који ће померати вашу визију напред.",
     "btnText": "Започните"
+  },
+  "secondarynav": {
+    "nav": [
+      "Specijalnosti",
+      "Metodologija pretrage",
+      "Reprezentativne pretrage"
+    ]
+  },
+  "buildingmaterials": {
+    "title": "Građevinski materijali",
+    "desc": [
+      "Kao vitalni stub građevinarstva i infrastrukture, industrija građevinskih materijala zahteva vizionarsko liderstvo.",
+      "Sa dubokim uvidom u sektor, pomažemo proizvođačima, dobavljačima i distributerima da zaposle rukovodioce koji pokreću inovacije, upravljaju propisima i vode održivi rast.",
+      "Od cementa i čelika do drveta, stakla i naprednih kompozita, naša ekspertiza pokriva ceo spektar potreba industrije za talentima."
+    ],
+    "specialitytitle": "Наше специјалности",
+    "representativetitle": "Репрезентативне претраге",
+    "specialitie": [
+      "Sanitarije",
+      "Keramika",
+      "Boje, hemikalije i lepkovi",
+      "Arhitektonska oprema",
+      "Staklo",
+      "Enterijerna i eksterijerna rešenja",
+      "Vrata i prozori",
+      "Šperploča, furnir, laminati i MDF",
+      "Kamen i grafit",
+      "Liftovi i pokretne stepenice",
+      "Cevi, kablovi i UPVC",
+      "Modularne kuhinje i kancelarijski nameštaj"
+    ],
+    "representative1": {
+      "title": "Tehnički direktor",
+      "desc": "Vodeći proizvođač sanitarija"
+    },
+    "representative2": {
+      "title": "Voditelj grupe – materijali",
+      "desc": "Vrhunski brend dekorativnih boja"
+    },
+    "representative3": {
+      "title": "Viši potpredsednik – izvoz",
+      "desc": "Istaknuti proizvođač keramike"
+    },
+    "representative4": {
+      "title": "Direktor za zemlju, Indija",
+      "desc": "Globalni premium brend sanitarija"
+    },
+    "representative5": {
+      "title": "Izvršni potpredsednik – razvoj poslovanja",
+      "desc": "Diverzifikovani konglomerat – odeljenje za vrata i prozore"
+    },
+    "representative6": {
+      "title": "Potpredsednik – prodaja",
+      "desc": "Vodeći proizvođač ACP (aluminijumskih kompozitnih panela)"
+    },
+    "representative7": {
+      "title": "Glavni finansijski direktor (CFO)",
+      "desc": "Poznati proizvođač šperploča"
+    },
+    "representative8": {
+      "title": "Glavni direktor ljudskih resursa (CHRO)",
+      "desc": "Globalni lider u pregradama i lažnim plafonima"
+    },
+    "methodologie1": {
+      "title": "Otkrivanje uloge",
+      "desc": "Dubinski pregled potreba klijenta i zahteva pozicije."
+    },
+    "methodologie2": {
+      "title": "Mapiranje talenata",
+      "desc": "Identifikacija najboljih kandidata putem ciljanog pristupa i mreža."
+    },
+    "methodologie3": {
+      "title": "Provera",
+      "desc": "Temeljita evaluacija veština, iskustva i usklađenosti."
+    },
+    "methodologie4": {
+      "title": "Procena kandidata",
+      "desc": "Dubinska analiza kandidata za najbolje poklapanje."
+    },
+    "methodologie5": {
+      "title": "Odabir i ponuda",
+      "desc": "Podrška pri konačnom odabiru i upravljanje procesom ponude."
+    },
+    "methodologie6": {
+      "title": "Podrška pri uključivanju",
+      "desc": "Osiguravanje besprekorne integracije u organizaciju."
+    }
+  },
+  "banner6": {
+    "titlebanner": "Povežite se s našim višim konsultantima",
+    "subtitlebanner": "Za stručnu podršku pri vašim potrebama za zapošljavanjem lidera.",
+    "btnText": "Započnite"
+  },
+  "industries": {
+    "title": "Индустријски",
+    "menu1": "Почетна",
+    "menu2": "Индустрије",
+    "title2": "Индустријски",
+    "desc": [
+      "Индустријски сектор је темељ производње и технолошког напретка. Са нашим дубоким знањем, специјализовани смо за проналажење и постављање лидера који покрећу оперативну изврсност и подстичу иновације.",
+      "Сарађујемо са производним фирмама, добављачима аутоматизације и произвођачима опреме како бисмо пронашли руководиоце са правом комбинацијом техничке експертизе и јаких лидерских способности.",
+      "Наше опсежно знање обухвата кључне индустријске сегменте, укључујући тешко инжењерство, аутоматизацију, процесне индустрије и нове технологије попут Индустријског интернета ствари, осигуравајући да испуњавамо ваше специфичне потребе за лидерима."
+    ],
+    "specialitytitle": "Наше специјалности",
+    "representativetitle": "Репрезентативне претраге",
+    "specialitie": [
+      "Тешко инжењерство",
+      "Индустријска аутоматизација",
+      "Опрема за производњу енергије",
+      "Опрема за руковање материјалима",
+      "Индустријска производња",
+      "Процесне индустрије",
+      "Машински алати",
+      "Индустријска електроника",
+      "Индустријски интернет ствари",
+      "Прецизно инжењерство",
+      "Индустријска опрема",
+      "Производни системи",
+      "Индустријска роботика"
+    ],
+    "representative1": {
+      "title": "Главни оперативни директор",
+      "desc": "Водећа индустријска производна компанија"
+    },
+    "representative2": {
+      "title": "Шеф погона",
+      "desc": "Велика корпорација за тешко инжењерство"
+    },
+    "representative3": {
+      "title": "Потпредседник ланца снабдевања",
+      "desc": "Произвођач индустријске опреме"
+    },
+    "representative4": {
+      "title": "Директор инжењеринга",
+      "desc": "Компанија за прецизну производњу"
+    },
+    "representative5": {
+      "title": "Шеф истраживања и развоја",
+      "desc": "Произвођач опреме за производњу енергије"
+    },
+    "representative6": {
+      "title": "Технолошки директор",
+      "desc": "Добављач решења за индустријску аутоматизацију"
+    },
+    "representative7": {
+      "title": "Пословни руководилац",
+      "desc": "Компанија за решења Индустријског интернета ствари"
+    },
+    "representative8": {
+      "title": "Потпредседник људских ресурса",
+      "desc": "Водећа корпорација у процесној индустрији"
+    },
+    "methodologie1": {
+      "title": "Анализа захтева",
+      "desc": "Дубинско разумевање потреба клијента и спецификација улоге."
+    },
+    "methodologie2": {
+      "title": "Идентификација кандидата",
+      "desc": "Коришћење наше мреже за лоцирање потенцијалних кандидата."
+    },
+    "methodologie3": {
+      "title": "Процес селекције",
+      "desc": "Свеобухватна евалуација квалификација и подобности кандидата."
+    },
+    "methodologie4": {
+      "title": "Процена",
+      "desc": "Темељита процена кандидата са ужег списка."
+    },
+    "methodologie5": {
+      "title": "Селекција",
+      "desc": "Коначни избор кандидата и управљање понудом."
+    },
+    "methodologie6": {
+      "title": "Укључивање",
+      "desc": "Осигуравање глатког преласка и интеграције у улогу."
+    }
+  },
+  "banner7": {
+    "titlebanner": "Обратите се нашим вишим консултантима",
+    "subtitlebanner": "за ваше потребе запошљавања лидера",
+    "btnText": "Контактирајте нас"
+  },
+  "realestate": {
+    "title": "Индустријски",
+    "menu1": "Почетна",
+    "menu2": "Индустрије",
+    "title2": "Некретнине",
+    "desc": [
+      "Сектор некретнина је динамична и иновативна индустрија која захтева визионарско вођство. Наша стручност у овој области нам омогућава да идентификујемо и поставимо лидере који могу да подстакну раст и иновације у развоју и управљању некретнинама.",
+      "Радимо са девелоперима, фирмама за управљање некретнинама и компанијама за инвестиције у некретнине како бисмо пронашли директоре који разумеју тржишну динамику, регулаторне захтеве и нове трендове у одрживом развоју.",
+      "Наше свеобухватно разумевање обухвата различите сегменте укључујући стамбене, комерцијалне, малопродајне и индустријске некретнине, осигуравајући да можемо да подржимо ваше специфичне потребе за лидерством у овом разноврсном сектору."
+    ],
+    "specialitytitle": "Наше специјалности",
+    "representativetitle": "Репрезентативне претраге",
+    "specialitie": [
+      "Стамбене некретнине",
+      "Комерцијалне некретнине",
+      "Развој некретнина",
+      "Управљање некретнинама",
+      "Инвестиције у некретнине",
+      "Управљање грађевинарством",
+      "Управљање имовином",
+      "Управљање објектима",
+      "Саветовање о некретнинама",
+      "Управљање пројектима",
+      "Финансирање некретнина"
+    ],
+    "representative1": {
+      "title": "Главни оперативни директор",
+      "desc": "Водећа индустријска производна компанија"
+    },
+    "representative2": {
+      "title": "Шеф погона",
+      "desc": "Велика корпорација за тешко инжењерство"
+    },
+    "representative3": {
+      "title": "Потпредседник ланца снабдевања",
+      "desc": "Произвођач индустријске опреме"
+    },
+    "representative4": {
+      "title": "Директор инжењерства",
+      "desc": "Компанија за прецизну производњу"
+    },
+    "representative5": {
+      "title": "Шеф истраживања и развоја",
+      "desc": "Произвођач опреме за производњу енергије"
+    },
+    "representative6": {
+      "title": "Технолошки директор",
+      "desc": "Добављач решења за индустријску аутоматизацију"
+    },
+    "representative7": {
+      "title": "Шеф пословања",
+      "desc": "Компанија за решења индустријског интернета ствари"
+    },
+    "representative8": {
+      "title": "Потпредседник људских ресурса",
+      "desc": "Водећа корпорација у процесној индустрији"
+    },
+    "methodologie1": {
+      "title": "Стратешки приступ осигуравању врхунских талената",
+      "desc": "Користимо структурирану методологију за идентификацију и привлачење изузетних кандидата."
+    },
+    "methodologie2": {
+      "title": "Анализа захтева",
+      "desc": "Темељито разумемо потребе клијената и спецификације улоге."
+    },
+    "methodologie3": {
+      "title": "Идентификација кандидата",
+      "desc": "Користимо нашу широку мрежу да пронађемо најбоље одговарајуће кандидате."
+    },
+    "methodologie4": {
+      "title": "Процес селекције",
+      "desc": "Дубока евалуација за процену квалификација и прикладности кандидата."
+    },
+    "methodologie5": {
+      "title": "Процена",
+      "desc": "Свеобухватна евалуација кандидата са кратког списка."
+    },
+    "methodologie6": {
+      "title": "Избор",
+      "desc": "Управљање коначним процесом избора и понуде."
+    }
+  },
+  "banner8": {
+    "titlebanner": "Обратите се нашим вишим консултантима",
+    "subtitlebanner": "за ваше потребе запошљавања лидера",
+    "btnText": "Контактирајте нас"
+  },
+  "education": {
+    "title": "Индустријски",
+    "menu1": "Почетна",
+    "menu2": "Индустрије",
+    "title2": "Образовање",
+    "desc": [
+      "Образовни сектор игра кључну улогу у обликовању будућности. Наша стручност нам омогућава да идентификујемо и поставимо лидере који могу да подстичу академски успех и подстичу иновације.",
+      "Сарађујемо са образовним институцијама, EdTech компанијама и пружаоцима обука како бисмо пронашли руководеће особе које разумеју сложеност образовног пејзажа и воде визијом и интегритетом.",
+      "Наше дубоко разумевање обухвата кључне сегменте, укључујући K-12, високо образовање, стручно усавршавање и онлајн учење, осигуравајући да можемо да одговоримо на ваше специфичне потребе за лидерством у овом динамичном сектору."
+    ],
+    "specialitytitle": "Наше специјалности",
+    "representativetitle": "Репрезентативне претраге",
+    "specialitie": [
+      "Образовање K-12",
+      "Високо образовање",
+      "EdTech",
+      "Стручно усавршавање",
+      "Корпоративна обука",
+      "Образовно издаваштво",
+      "Онлајн учење",
+      "Специјално образовање",
+      "Образовна администрација",
+      "Развој наставног плана и програма",
+      "Образовна истраживања",
+      "Студентске услуге",
+      "Обука наставника"
+    ],
+    "representative1": {
+      "title": "Главни оперативни директор",
+      "desc": "Водећа индустријска производна компанија"
+    },
+    "representative2": {
+      "title": "Шеф погона",
+      "desc": "Велика корпорација за тешко инжењерство"
+    },
+    "representative3": {
+      "title": "Потпредседник ланца снабдевања",
+      "desc": "Произвођач индустријске опреме"
+    },
+    "representative4": {
+      "title": "Директор инжењеринга",
+      "desc": "Компанија за прецизну производњу"
+    },
+    "representative5": {
+      "title": "Шеф истраживања и развоја",
+      "desc": "Произвођач опреме за производњу енергије"
+    },
+    "representative6": {
+      "title": "Технолошки директор",
+      "desc": "Добављач решења за индустријску аутоматизацију"
+    },
+    "methodologie1": {
+      "title": "Анализа захтева",
+      "desc": "Разумевање потреба клијента и спецификација улоге"
+    },
+    "methodologie2": {
+      "title": "Идентификација кандидата",
+      "desc": "Коришћење наше мреже за проналажење потенцијалних подударања"
+    },
+    "methodologie3": {
+      "title": "Процес селекције",
+      "desc": "Дубока евалуација кандидата"
+    },
+    "methodologie4": {
+      "title": "Процена",
+      "desc": "Детаљна процена изабраних кандидата."
+    },
+    "methodologie5": {
+      "title": "Избор",
+      "desc": "Коначни избор и управљање понудама"
+    },
+    "methodologie6": {
+      "title": "Укључивање",
+      "desc": "Осигуравање глатког преласка у улогу"
+    }
+  },
+  "banner9": {
+    "titlebanner": "Обратите се нашим вишим консултантима",
+    "subtitlebanner": "за ваше потребе запошљавања лидера",
+    "btnText": "Контактирајте нас"
   }
 }

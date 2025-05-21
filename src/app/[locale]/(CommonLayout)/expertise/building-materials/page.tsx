@@ -21,109 +21,96 @@ import {
   Calculator,
   Users2,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const BuildingMaterialsPage = () => {
-  const specialities = [
-    "Sanitaryware",
-    "Ceramics",
-    "Paints, Chemicals & Adhesives",
-    "Architectural Fittings",
-    "Glass",
-    "Interior & Exterior Solutions",
-    "Doors & Windows",
-    "Plywood, Veneers, Laminates & MDF",
-    "Stone & Graphite",
-    "Elevators & Escalators",
-    "Piping, Cables & UPVC",
-    "Modular Kitchens & Office Furniture",
-  ];
+  const t = useTranslations("buildingmaterials");
+  const b = useTranslations("banner6");
+  const desc = t.raw("desc");
+  const speicali = t.raw("specialitie");
+  const specialities = speicali.map((item) => item);
 
   const representativeSearches = [
     {
       icon: Wrench,
-      title: "Technical Director",
-      subtitle: " Leading Sanitaryware Manufacturer",
+      title: t("representative1.title"),
+      subtitle: t("representative1.desc"),
     },
     {
       icon: PaintBucket,
-      title: "Group Head – Materials",
-      subtitle: " Top Decorative Paints Brand",
+      title: t("representative2.title"),
+      subtitle: t("representative2.desc"),
     },
     {
       icon: Columns,
-      title: "Senior Vice President – Exports",
-      subtitle: " Prominent Ceramics Manufacturer",
+      title: t("representative3.title"),
+      subtitle: t("representative3.desc"),
     },
     {
       icon: Globe,
-      title: "Country Manager, India",
-      subtitle: " Global Premium Sanitaryware Brand",
+      title: t("representative4.title"),
+      subtitle: t("representative4.desc"),
     },
     {
       icon: DoorOpen,
-      title: "Executive Vice President – Business",
-      subtitle: " Diversified Conglomerate – Doors & Windows Division",
+      title: t("representative5.title"),
+      subtitle: t("representative5.desc"),
     },
     {
       icon: BarChart3,
-      title: "Vice President – Sales",
-      subtitle: " Leading ACP (Aluminium Composite Panel) Manufacturer",
+      title: t("representative6.title"),
+      subtitle: t("representative6.desc"),
     },
     {
       icon: Calculator,
-      title: "Chief Financial Officer (CFO)",
-      subtitle: " Renowned Plywood Manufacturer",
+      title: t("representative7.title"),
+      subtitle: t("representative7.desc"),
     },
     {
       icon: Users2,
-      title: "Chief Human Resources Officer (CHRO)",
-      subtitle: "Global Leader in Partitions & False Ceilings",
+      title: t("representative8.title"),
+      subtitle: t("representative8.desc"),
     },
   ];
 
   const methodologies = [
     {
       icon: <Search className="w-8 h-8 text-primary" />,
-      title: "Role Discovery",
-      subtitle: "Deep dive into client needs and position requirements.",
+      title: t("methodologie1.title"),
+      subtitle: t("methodologie1.desc"),
     },
     {
       icon: <Users className="w-8 h-8 text-primary" />,
-      title: "Talent Mapping",
-      subtitle:
-        " Identify top candidates through targeted outreach and networks.",
+      title: t("methodologie2.title"),
+      subtitle: t("methodologie2.desc"),
     },
     {
       icon: <CheckCircle className="w-8 h-8 text-primary" />,
-      title: "Screening",
-      subtitle: " Thorough evaluation of skills, experience, and alignment.",
+      title: t("methodologie3.title"),
+      subtitle: t("methodologie3.desc"),
     },
     {
       icon: <BarChart className="w-8 h-8 text-primary" />,
-      title: "Candidate Assessment",
-      subtitle: " In-depth analysis of shortlisted candidates for best fit.",
+      title: t("methodologie4.title"),
+      subtitle: t("methodologie4.desc"),
     },
     {
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
-      title: "Selection & Offer",
-      subtitle: " Support final selection and manage the offer process.",
+      title: t("methodologie5.title"),
+      subtitle: t("methodologie5.desc"),
     },
     {
       icon: <HandshakeIcon className="w-8 h-8 text-primary" />,
-      title: "Onboarding Support",
-      subtitle: "Ensure a seamless integration into the organization.",
+      title: t("methodologie6.title"),
+      subtitle: t("methodologie6.desc"),
     },
   ];
 
   return (
     <>
       <IndustiresLayout
-        title="Building Materials"
-        description={[
-          "As a vital pillar of construction and infrastructure, the building materials industry demands visionary leadership.",
-          "With deep sector insight, we help manufacturers, suppliers, and distributors recruit executives who drive innovation, navigate regulations, and lead sustainable growth.",
-          "From cement and steel to timber, glass, and advanced composites our expertise covers the full spectrum of industry talent needs.",
-        ]}
+        title={t("title")}
+        description={desc}
         imageSrc="https://images.unsplash.com/photo-1551434678-e076c223a692?w=500&h=500&fit=crop"
         imageAlt="Building Materials Industry"
       />
@@ -133,10 +120,9 @@ const BuildingMaterialsPage = () => {
         representativeSearches={representativeSearches}
       />
       <CommonBanner
-        title="Connect with Our Senior Consultants"
-        subtitle="For expert support with your leadership hiring needs.
-Button: Get In Touch"
-        buttonText="Get In Touch"
+        title={b("titlebanner")}
+        subtitle={b("subtitlebanner")}
+        buttonText={b("btnText")}
         buttonLink="/contact-us"
       />
     </>

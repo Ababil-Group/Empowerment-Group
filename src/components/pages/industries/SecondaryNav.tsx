@@ -6,6 +6,7 @@ import SearchMethodology from "../services/SearchMethodology";
 import SpecialitiesList from "./SpecialitiesList";
 import RepresentativeSearches from "./RepresentativeSearches";
 import { LucideIcon } from "lucide-react";
+// import { useTranslations } from "next-intl";
 
 interface RepresentativeSearch {
   title: string;
@@ -30,6 +31,7 @@ const SecondaryNav: React.FC<SecondaryNavProps> = ({
   methodologies,
   representativeSearches,
 }) => {
+  // const t = useTranslations("secondarynav");
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState<string>("specialities");
 
