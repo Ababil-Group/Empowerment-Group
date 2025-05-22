@@ -39,6 +39,7 @@ import {
   organizationItemVariants,
 } from "@/components/animation/variants";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -48,6 +49,7 @@ const formSchema = z.object({
 });
 
 const ContactUs = () => {
+  const pathname = usePathname();
   const t = useTranslations("contact");
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -59,8 +61,34 @@ const ContactUs = () => {
     },
   });
 
-  const onSubmit = (data: z.infer<typeof formSchema>) => {
-    console.log(data);
+  const onSubmit = async (data: z.infer<typeof formSchema>) => {
+    const locale = pathname.split("/")[0];
+
+    try {
+      const response = await fetch(`/api/${locale}/contact`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        // Show success message
+        alert("Message sent successfully")
+        form.reset();
+      } else {
+        // Show error message from server
+        alert("error",)
+      }
+
+      return result;
+    } catch (error) {
+      console.error("Error sending form data:", error);
+     
+    }
   };
 
   return (

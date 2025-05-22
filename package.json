@@ -48,6 +48,7 @@
     "next-auth": "^4.24.11",
     "next-intl": "^4.1.0",
     "nextjs-toploader": "^3.7.15",
+    "nodemailer": "^6.10.1",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
     "react-day-picker": "^9.5.1",
