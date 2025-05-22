@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -51,6 +51,7 @@ const formSchema = z.object({
 const ContactUs = () => {
   const pathname = usePathname();
   const t = useTranslations("contact");
+  const [isLoading, setIsLoading] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -63,8 +64,8 @@ const ContactUs = () => {
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     const locale = pathname.split("/")[0];
-
     try {
+      setIsLoading(true);
       const response = await fetch(`/api/${locale}/contact`, {
         method: "POST",
         headers: {
@@ -77,17 +78,17 @@ const ContactUs = () => {
 
       if (response.ok) {
         // Show success message
-        alert("Message sent successfully")
         form.reset();
+        setIsLoading(false);
       } else {
         // Show error message from server
-        alert("error",)
+        setIsLoading(false);
       }
 
       return result;
     } catch (error) {
+      setIsLoading(false);
       console.error("Error sending form data:", error);
-     
     }
   };
 
@@ -360,7 +361,7 @@ const ContactUs = () => {
                   <Button
                     type="submit"
                     className="w-full bg-primary text-white hover:bg-primary/90">
-                    {t("contactform.btnText")}
+                    {isLoading ? "Sending..." : t("contactform.btnText")}
                   </Button>
                 </form>
               </Form>
