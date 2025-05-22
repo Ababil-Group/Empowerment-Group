@@ -38,6 +38,7 @@ import {
   organizationContainerVariants,
   organizationItemVariants,
 } from "@/components/animation/variants";
+import { useTranslations } from "next-intl";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -47,6 +48,7 @@ const formSchema = z.object({
 });
 
 const ContactUs = () => {
+  const t = useTranslations("contact");
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -86,13 +88,13 @@ const ContactUs = () => {
                 <BreadcrumbLink
                   href="/"
                   className="text-gray-800 hover:text-gray-600">
-                  Home
+                  {t("menu1")}
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator className="text-gray-500" />
               <BreadcrumbItem>
                 <BreadcrumbPage className="text-gray-800 font-medium">
-                  Contact Us
+                  {t("menu2")}
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
@@ -112,7 +114,7 @@ const ContactUs = () => {
               className="p-5 md:p-6 space-y-6">
               <div>
                 <h2 className="text-2xl font-bold mb-6 text-gray-900">
-                  Contact Information
+                  {t("title")}
                 </h2>
                 <div className="space-y-6">
                   <div className="flex items-start justify-center space-x-4 group">
@@ -123,26 +125,21 @@ const ContactUs = () => {
                       <div className="border border-gray-400 p-4">
                         <div className="w-full ">
                           <h3 className="font-semibold text-[12px]  text-gray-800">
-                            Corporate Headquarter - Qatar
+                            {t("location1.title")}
                           </h3>
                         </div>
                         <div className="w-full ">
-                          <p>
-                            World Wide Business Centre, D Ring Rd, Doha, Qatar
-                          </p>
+                          <p>{t("location1.address")}</p>
                         </div>
                       </div>
                       <div className="border border-gray-400 p-4">
                         <div className="w-full ">
                           <h3 className="font-semibold text-[12px]  text-gray-800">
-                            Head Office - Romania:
+                            {t("location2.title")}
                           </h3>
                         </div>
                         <div className="w-full ">
-                          <p>
-                            Municipiul Slobozia, Starda VIILOR,Nr.3,Bloc
-                            R3,Scara, A,Etaj P,Ap.1,Judet Ialomita, Romania
-                          </p>
+                          <p>{t("location2.address")}</p>
                         </div>
                       </div>
                     </div>
@@ -154,7 +151,7 @@ const ContactUs = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-2 text-gray-800">
-                        Phone
+                        {t("phone")}
                       </h3>
                       <p className="text-gray-600"> +40784805998</p>
                     </div>
@@ -166,7 +163,7 @@ const ContactUs = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-2 text-gray-800">
-                        Email
+                        {t("email")}
                       </h3>
                       <p className="text-gray-600">info@empowerment.group</p>
                     </div>
@@ -177,7 +174,7 @@ const ContactUs = () => {
               {/* Social Media Links */}
               <div>
                 <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                  Connect With Us
+                  {t("contactsocial")}
                 </h3>
 
                 <div className="flex space-x-4">
@@ -213,24 +210,26 @@ const ContactUs = () => {
               {/* Business Hours */}
               <div>
                 <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                  Business Hours
+                  {t("workingtime.title")}
                 </h3>
                 <div className="space-y-2 text-gray-600">
                   <p className="flex justify-between items-center py-2 border-b border-gray-200">
-                    <span>Monday - Friday</span>
+                    <span>{t("workingtime.days1")}</span>
                     <span className="text-green-800 font-medium">
-                      8:00 AM - 6:00 PM
+                      {t("workingtime.hours1")}
                     </span>
                   </p>
                   <p className="flex justify-between items-center py-2 border-b border-gray-200">
-                    <span>Saturday</span>
+                    <span>{t("workingtime.days2")}</span>
                     <span className="text-green-800 font-medium">
-                      8:00 AM - 2:00 PM
+                      {t("workingtime.hours2")}
                     </span>
                   </p>
                   <p className="flex justify-between items-center py-2">
-                    <span>Sunday</span>
-                    <span className="text-red-700 font-medium">Closed</span>
+                    <span>{t("workingtime.days3")}</span>
+                    <span className="text-red-700 font-medium">
+                      {t("workingtime.hours3")}
+                    </span>
                   </p>
                 </div>
               </div>
@@ -242,12 +241,9 @@ const ContactUs = () => {
               className="p-5 md:p-6 backdrop-blur-sm bg-gray-50/50">
               <div className="mb-6">
                 <h2 className="text-2xl font-bold text-gray-900">
-                  Get in Touch
+                  {t("contactform.title")}
                 </h2>
-                <p className="text-gray-600 mt-2">
-                  Fill out the form below and we&apos;ll get back to you as soon
-                  as possible.
-                </p>
+                <p className="text-gray-600 mt-2">{t("contactform.desc")}</p>
               </div>
               <Form {...form}>
                 <form
@@ -258,7 +254,9 @@ const ContactUs = () => {
                     name="name"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-gray-700">Name</FormLabel>
+                        <FormLabel className="text-gray-700">
+                          {t("contactform.name")}
+                        </FormLabel>
                         <FormControl>
                           <Input
                             placeholder="Your name"
@@ -276,7 +274,9 @@ const ContactUs = () => {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-gray-700">Email</FormLabel>
+                        <FormLabel className="text-gray-700">
+                          {t("contactform.email")}
+                        </FormLabel>
                         <FormControl>
                           <Input
                             placeholder="your.email@example.com"
@@ -294,7 +294,9 @@ const ContactUs = () => {
                     name="subject"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-gray-700">Subject</FormLabel>
+                        <FormLabel className="text-gray-700">
+                          {t("contactform.subject")}
+                        </FormLabel>
                         <FormControl>
                           <Input
                             placeholder="Message subject"
@@ -312,7 +314,9 @@ const ContactUs = () => {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-gray-700">Message</FormLabel>
+                        <FormLabel className="text-gray-700">
+                          {t("contactform.message")}
+                        </FormLabel>
                         <FormControl>
                           <Textarea
                             placeholder="Your message"
@@ -328,7 +332,7 @@ const ContactUs = () => {
                   <Button
                     type="submit"
                     className="w-full bg-primary text-white hover:bg-primary/90">
-                    Send Message
+                    {t("contactform.btnText")}
                   </Button>
                 </form>
               </Form>

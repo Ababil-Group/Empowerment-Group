@@ -636,5 +636,249 @@
     "titlebanner": "Obratite se našim višim konzultantima",
     "subtitlebanner": "za vaše potrebe zapošljavanja lidera",
     "btnText": "Kontaktirajte nas"
+  },
+  "devlopment": {
+    "title": "Industrijski",
+    "menu1": "Početna",
+    "menu2": "Industrije",
+    "title2": "Razvoj",
+    "desc": [
+      "Razvojni sektor ključan je za oblikovanje naših gradova i infrastrukture. Naša stručnost omogućuje nam da identificiramo i postavimo lidere koji pokreću održivi razvoj i potiču inovacije.",
+      "Surađujemo s razvojnim tijelima, infrastrukturnim tvrtkama i organizacijama za urbano planiranje kako bismo pronašli rukovoditelje koji razumiju složenost velikih projekata i vode vizijom i svrhom.",
+      "Naše duboko razumijevanje obuhvaća ključna područja, uključujući infrastrukturu, urbani razvoj i promet, osiguravajući da možemo ispuniti vaše potrebe za vodstvom u ovom dinamičnom sektoru."
+    ],
+    "specialitytitle": "Naše specijalnosti",
+    "representativetitle": "Reprezentativne pretrage",
+    "specialitie": [
+      "Razvoj infrastrukture",
+      "Urbani razvoj",
+      "Planiranje projekata",
+      "Upravljanje građevinom",
+      "Prometni projekti",
+      "Javni radovi",
+      "Ekološko planiranje",
+      "Održivi razvoj",
+      "Razvoj pametnih gradova",
+      "Industrijski razvoj",
+      "Ruralni razvoj",
+      "Gospodarski razvoj",
+      "Financiranje projekata"
+    ],
+    "representative1": {
+      "title": "Glavni operativni direktor",
+      "desc": "Vodeća industrijska proizvodna tvrtka"
+    },
+    "representative2": {
+      "title": "Voditelj pogona",
+      "desc": "Velika korporacija za teško inženjerstvo"
+    },
+    "representative3": {
+      "title": "Potpredsjednik opskrbnog lanca",
+      "desc": "Proizvođač industrijskih oprema"
+    },
+    "representative4": {
+      "title": "Direktor inženjeringa",
+      "desc": "Tvrtka za preciznu proizvodnju"
+    },
+    "representative5": {
+      "title": "Voditelj istraživanja i razvoja",
+      "desc": "Proizvođač opreme za proizvodnju energije"
+    },
+    "representative6": {
+      "title": "Tehnološki direktor",
+      "desc": "Dobavljač rješenja za industrijsku automatizaciju"
+    },
+    "representative7": {
+      "title": "Voditelj poslovanja",
+      "desc": "Tvrtka za rješenja industrijskog interneta stvari"
+    },
+    "representative8": {
+      "title": "Potpredsjednik za ljudske resurse",
+      "desc": "Vodeća korporacija u procesnoj industriji"
+    },
+    "methodologie1": {
+      "title": "Analiza zahtjeva",
+      "desc": "Razumijevanje potreba klijenata i specifikacija uloge"
+    },
+    "methodologie2": {
+      "title": "Identifikacija kandidata",
+      "desc": "Korištenje naše mreže za pronalaženje potencijalnih podudarnosti"
+    },
+    "methodologie3": {
+      "title": "Proces selekcije",
+      "desc": "Dubinska evaluacija kandidata"
+    },
+    "methodologie4": {
+      "title": "Procjena",
+      "desc": "Detaljna procjena odabranih kandidata."
+    },
+    "methodologie5": {
+      "title": "Odabir",
+      "desc": "Konačni odabir i upravljanje ponudama"
+    },
+    "methodologie6": {
+      "title": "Uključivanje",
+      "desc": "Osiguravanje glatkog prijelaza u ulogu"
+    }
+  },
+  "banner10": {
+    "titlebanner": "Obratite se našim višim konzultantima",
+    "subtitlebanner": "za vaše potrebe zapošljavanja vodstva",
+    "btnText": "Kontaktirajte nas"
+  },
+  "technology": {
+    "title": "Industrijski",
+    "menu1": "Početna",
+    "menu2": "Industrije",
+    "title2": "Tehnologija",
+    "desc": [
+      "Tehnološki sektor vodi put u inovacijama i digitalnoj transformaciji. Naša stručnost pomaže nam da identificiramo i postavimo lidere koji mogu pokrenuti tehnološki napredak i poslovni rast.",
+      "Partneri smo sa softverskim tvrtkama, tehnološkim startupima i pružateljima korporativnih rješenja kako bismo pronašli izvršne direktore koji kombiniraju tehnološku stručnost s poslovnom strategijom, osiguravajući uspješne digitalne inicijative.",
+      "Naše duboko razumijevanje obuhvaća ključna područja, uključujući razvoj softvera, AI/ML, računalstvo u oblaku i kibernetičku sigurnost, što nam omogućuje da ispunimo vaše specifične potrebe za vodstvom u ovom sektoru koji se stalno razvija."
+    ],
+    "specialitytitle": "Naše specijalnosti",
+    "representativetitle": "Reprezentativne pretrage",
+    "specialitie": [
+      "Razvoj softvera",
+      "Računalstvo u oblaku",
+      "Umjetna inteligencija",
+      "Analiza podataka",
+      "Kibernetička sigurnost",
+      "Korporativna rješenja",
+      "Digitalna transformacija",
+      "Mobilne tehnologije",
+      "DevOps",
+      "Blockchain",
+      "IoT rješenja",
+      "FinTech",
+      "SaaS platforme"
+    ],
+    "representative1": {
+      "title": "Glavni operativni direktor",
+      "desc": "Vodeća industrijska proizvodna tvrtka"
+    },
+    "representative2": {
+      "title": "Voditelj pogona",
+      "desc": "Velika korporacija za teško inženjerstvo"
+    },
+    "representative3": {
+      "title": "Potpredsjednik opskrbnog lanca",
+      "desc": "Proizvođač industrijskih oprema"
+    },
+    "representative4": {
+      "title": "Direktor inženjeringa",
+      "desc": "Tvrtka za preciznu proizvodnju"
+    },
+    "representative5": {
+      "title": "Voditelj istraživanja i razvoja",
+      "desc": "Proizvođač opreme za proizvodnju energije"
+    },
+    "representative6": {
+      "title": "Tehnološki direktor",
+      "desc": "Dobavljač rješenja za industrijsku automatizaciju"
+    },
+    "representative7": {
+      "title": "Voditelj poslovanja",
+      "desc": "Tvrtka za rješenja industrijskog interneta stvari"
+    },
+    "representative8": {
+      "title": "Potpredsjednik za ljudske resurse",
+      "desc": "Vodeća korporacija u procesnoj industriji"
+    },
+    "methodologie1": {
+      "title": "Analiza zahtjeva",
+      "desc": "Razumijevanje potreba klijenata i specifikacija uloge"
+    },
+    "methodologie2": {
+      "title": "Identifikacija kandidata",
+      "desc": "Korištenje naše mreže za pronalaženje potencijalnih podudarnosti"
+    },
+    "methodologie3": {
+      "title": "Proces selekcije",
+      "desc": "Dubinska evaluacija kandidata"
+    },
+    "methodologie4": {
+      "title": "Procjena",
+      "desc": "Detaljna procjena odabranih kandidata."
+    },
+    "methodologie5": {
+      "title": "Odabir",
+      "desc": "Konačni odabir i upravljanje ponudama"
+    },
+    "methodologie6": {
+      "title": "Uključivanje",
+      "desc": "Osiguravanje glatkog prijelaza u ulogu"
+    }
+  },
+  "banner11": {
+    "titlebanner": "Obratite se našim višim konzultantima",
+    "subtitlebanner": "za vaše potrebe zapošljavanja vodstva",
+    "btnText": "Kontaktirajte nas"
+  },
+  "contact": {
+    "title": "Kontakt informacije",
+    "menu1": "Početna",
+    "menu2": "Kontaktirajte nas",
+    "location1": {
+      "title": "Središnji ured - Katar",
+      "address": "World Wide Business Centre, D Ring Rd, Doha, Katar"
+    },
+    "location2": {
+      "title": "Glavni ured - Rumunjska",
+      "address": "Municipiul Slobozia, Starda VIILOR,Nr.3,Bloc R3,Scara, A,Etaj P,Ap.1,Judet Ialomita, Rumunjska"
+    },
+    "phone": "Telefon",
+    "email": "Email",
+    "contactsocial": "Povežite se s nama",
+    "workingtime": {
+      "title": "Radno vrijeme",
+      "days1": "Ponedjeljak do petak",
+      "hours1": "8:00 - 18:00",
+      "days2": "Subota",
+      "hours2": "8:00 - 14:00",
+      "days3": "Nedjelja",
+      "hours3": "Zatvoreno"
+    },
+    "contactform": {
+      "title": "Kontaktirajte nas",
+      "desc": "Ispunite obrazac ispod i odgovorit ćemo vam u najkraćem mogućem roku.",
+      "name": "Ime",
+      "email": "Email",
+      "subject": "Predmet",
+      "message": "Poruka",
+      "btnText": "Pošalji poruku"
+    }
+  },
+  "contactpop": {
+    "title": "Kontaktirajte nas",
+    "subtitle1": "Korporativni klijenti",
+    "desc1": "Želite li da vam pomognemo u potrazi za vrhunskim talentima?",
+    "subtitle2": "Kandidati",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "desc2": "Tražite li pravu karijernu priliku?",
+    "btnText": "Pošaljite životopis",
+    "desc3": "Prijevarni postupci zapošljavanja"
+  },
+  "footer": {
+    "title1": "Empowerment Group",
+    "desc": "Pružamo stručno savjetovanje i inovativna rješenja za tvrtke diljem svijeta.",
+    "location1": {
+      "title": "Glavno sjedište - Katar",
+      "address": "World Wide Business Centre, D Ring Rd, Doha, Katar"
+    },
+    "location2": {
+      "title": "Glavni ured - Rumunjska",
+      "address": "Municipiul Slobozia, Starda VIILOR, Nr.3, Bloc R3, Scara A, Etaj P, Ap.1, Judet Ialomita, Rumunjska"
+    },
+    "title2": "Brzi linkovi",
+    "nav1": "Kontakt",
+    "title3": "Usluge",
+    "nav2": "Savjetovanje uprave",
+    "nav3": "Potraga za izvršnim talentima",
+    "nav4": "Zapošljavanje lidera",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "copyright": "© 2025 Empowerment Group. Sva prava pridržana."
   }
 }

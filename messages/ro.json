@@ -632,5 +632,249 @@
     "titlebanner": "Contactați consultanții noștri seniori",
     "subtitlebanner": "pentru nevoile dumneavoastră de angajare a liderilor",
     "btnText": "Contactați-ne"
+  },
+  "devlopment": {
+    "title": "Industrial",
+    "menu1": "Acasă",
+    "menu2": "Industrii",
+    "title2": "Dezvoltare",
+    "desc": [
+      "Sectorul de dezvoltare este cheia în modelarea orașelor și infrastructurii noastre. Expertiza noastră ne permite să identificăm și să plasăm lideri care conduc dezvoltarea durabilă și stimulează inovația.",
+      "Colaborăm cu autorități de dezvoltare, companii de infrastructură și organizații de planificare urbană pentru a găsi directori executivi care înțeleg complexitatea proiectelor la scară mare și conduc cu viziune și scop.",
+      "Înțelegerea noastră profundă acoperă domenii cheie, inclusiv infrastructura, dezvoltarea urbană și transportul, asigurându-ne că putem satisface nevoile dumneavoastră de leadership în acest sector dinamic."
+    ],
+    "specialitytitle": "Specialitățile noastre",
+    "representativetitle": "Căutări reprezentative",
+    "specialitie": [
+      "Dezvoltarea infrastructurii",
+      "Dezvoltarea urbană",
+      "Planificarea proiectelor",
+      "Managementul construcțiilor",
+      "Proiecte de transport",
+      "Lucrări publice",
+      "Planificare ambientală",
+      "Dezvoltare durabilă",
+      "Dezvoltarea orașelor inteligente",
+      "Dezvoltare industrială",
+      "Dezvoltare rurală",
+      "Dezvoltare economică",
+      "Finanțarea proiectelor"
+    ],
+    "representative1": {
+      "title": "Director Operațional",
+      "desc": "Companie de producție industrială de top"
+    },
+    "representative2": {
+      "title": "Șef de Uzina",
+      "desc": "Corporație majoră de inginerie grea"
+    },
+    "representative3": {
+      "title": "Vicepreședinte lanț de aprovizionare",
+      "desc": "Producător de echipamente industriale"
+    },
+    "representative4": {
+      "title": "Director de Inginerie",
+      "desc": "Companie de producție de precizie"
+    },
+    "representative5": {
+      "title": "Șef Cercetare și Dezvoltare",
+      "desc": "Producător de echipamente pentru generarea de energie"
+    },
+    "representative6": {
+      "title": "Director Tehnologic",
+      "desc": "Furnizor de soluții de automatizare industrială"
+    },
+    "representative7": {
+      "title": "Șef de Afaceri",
+      "desc": "Companie de soluții IoT industrial"
+    },
+    "representative8": {
+      "title": "Vicepreședinte Resurse Umane",
+      "desc": "Corporație de top în industria de proces"
+    },
+    "methodologie1": {
+      "title": "Analiza cerințelor",
+      "desc": "Înțelegerea nevoilor clientului și a specificațiilor rolului"
+    },
+    "methodologie2": {
+      "title": "Identificarea candidaților",
+      "desc": "Folosirea rețelei noastre pentru a găsi potențiale potriviri"
+    },
+    "methodologie3": {
+      "title": "Procesul de selecție",
+      "desc": "Evaluare aprofundată a candidaților"
+    },
+    "methodologie4": {
+      "title": "Evaluare",
+      "desc": "Evaluare detaliată a candidaților selectați."
+    },
+    "methodologie5": {
+      "title": "Selecție",
+      "desc": "Selecție finală și gestionarea ofertei"
+    },
+    "methodologie6": {
+      "title": "Onboarding",
+      "desc": "Asigurarea unei tranziții fluide în rol"
+    }
+  },
+  "banner10": {
+    "titlebanner": "Contactați consultanții noștri seniori",
+    "subtitlebanner": "pentru nevoile dumneavoastră de angajare a liderilor",
+    "btnText": "Contactați-ne"
+  },
+  "technology": {
+    "title": "Industrial",
+    "menu1": "Acasă",
+    "menu2": "Industrii",
+    "title2": "Tehnologie",
+    "desc": [
+      "Sectorul tehnologic conduce calea în inovație și transformare digitală. Expertiza noastră ne ajută să identificăm și să plasăm lideri care pot conduce avansurile tehnologice și creșterea afacerii.",
+      "Colaborăm cu companii de software, startup-uri tech și furnizori de soluții enterprise pentru a găsi directori executivi care combină expertiza tehnologică cu strategia de afaceri, asigurând inițiative digitale de succes.",
+      "Înțelegerea noastră profundă acoperă domenii cheie, inclusiv dezvoltarea de software, AI/ML, cloud computing și securitate cibernetică, permițându-ne să satisfacem nevoile dumneavoastră specifice de leadership în acest sector în continuă evoluție."
+    ],
+    "specialitytitle": "Specialitățile noastre",
+    "representativetitle": "Căutări reprezentative",
+    "specialitie": [
+      "Dezvoltare software",
+      "Cloud computing",
+      "Inteligență artificială",
+      "Analiza datelor",
+      "Securitate cibernetică",
+      "Soluții enterprise",
+      "Transformare digitală",
+      "Tehnologii mobile",
+      "DevOps",
+      "Blockchain",
+      "Soluții IoT",
+      "FinTech",
+      "Platforme SaaS"
+    ],
+    "representative1": {
+      "title": "Director Operațional",
+      "desc": "Companie de producție industrială de top"
+    },
+    "representative2": {
+      "title": "Șef de Uzina",
+      "desc": "Corporație majoră de inginerie grea"
+    },
+    "representative3": {
+      "title": "Vicepreședinte lanț de aprovizionare",
+      "desc": "Producător de echipamente industriale"
+    },
+    "representative4": {
+      "title": "Director de Inginerie",
+      "desc": "Companie de producție de precizie"
+    },
+    "representative5": {
+      "title": "Șef Cercetare și Dezvoltare",
+      "desc": "Producător de echipamente pentru generarea de energie"
+    },
+    "representative6": {
+      "title": "Director Tehnologic",
+      "desc": "Furnizor de soluții de automatizare industrială"
+    },
+    "representative7": {
+      "title": "Șef de Afaceri",
+      "desc": "Companie de soluții IoT industrial"
+    },
+    "representative8": {
+      "title": "Vicepreședinte Resurse Umane",
+      "desc": "Corporație de top în industria de proces"
+    },
+    "methodologie1": {
+      "title": "Analiza cerințelor",
+      "desc": "Înțelegerea nevoilor clientului și a specificațiilor rolului"
+    },
+    "methodologie2": {
+      "title": "Identificarea candidaților",
+      "desc": "Folosirea rețelei noastre pentru a găsi potențiale potriviri"
+    },
+    "methodologie3": {
+      "title": "Procesul de selecție",
+      "desc": "Evaluare aprofundată a candidaților"
+    },
+    "methodologie4": {
+      "title": "Evaluare",
+      "desc": "Evaluare detaliată a candidaților selectați."
+    },
+    "methodologie5": {
+      "title": "Selecție",
+      "desc": "Selecție finală și gestionarea ofertei"
+    },
+    "methodologie6": {
+      "title": "Onboarding",
+      "desc": "Asigurarea unei tranziții fluide în rol"
+    }
+  },
+  "banner11": {
+    "titlebanner": "Contactați consultanții noștri seniori",
+    "subtitlebanner": "pentru nevoile dumneavoastră de angajare a liderilor",
+    "btnText": "Contactați-ne"
+  },
+  "contact": {
+    "title": "Informații de contact",
+    "menu1": "Acasă",
+    "menu2": "Contactați-ne",
+    "location1": {
+      "title": "Sediu social - Qatar",
+      "address": "World Wide Business Centre, D Ring Rd, Doha, Qatar"
+    },
+    "location2": {
+      "title": "Sediu central - România",
+      "address": "Municipiul Slobozia, Starda VIILOR,Nr.3,Bloc R3,Scara, A,Etaj P,Ap.1,Judet Ialomita, România"
+    },
+    "phone": "Telefon",
+    "email": "Email",
+    "contactsocial": "Contactați-ne",
+    "workingtime": {
+      "title": "Program de lucru",
+      "days1": "Luni până vineri",
+      "hours1": "8:00 - 18:00",
+      "days2": "Sâmbătă",
+      "hours2": "8:00 - 14:00",
+      "days3": "Duminică",
+      "hours3": "Închis"
+    },
+    "contactform": {
+      "title": "Luați legătura",
+      "desc": "Completați formularul de mai jos și vă vom răspunde cât mai curând posibil.",
+      "name": "Nume",
+      "email": "Email",
+      "subject": "Subiect",
+      "message": "Mesaj",
+      "btnText": "Trimite mesaj"
+    }
+  },
+  "contactpop": {
+    "title": "Contactați-ne",
+    "subtitle1": "Corporatii",
+    "desc1": "Doriți să vă ajutăm în căutarea de talente premium?",
+    "subtitle2": "Candidați",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "desc2": "Căutați oportunitatea potrivită pentru carieră?",
+    "btnText": "Trimiteți CV",
+    "desc3": "Activități frauduloase de recrutare"
+  },
+  "footer": {
+    "title1": "Empowerment Group",
+    "desc": "Oferim consultanță expertă și soluții inovatoare pentru afaceri din întreaga lume.",
+    "location1": {
+      "title": "Sediu social - Qatar",
+      "address": "World Wide Business Centre, D Ring Rd, Doha, Qatar"
+    },
+    "location2": {
+      "title": "Sediu central - România",
+      "address": "Municipiul Slobozia, Starda VIILOR, Nr.3, Bloc R3, Scara A, Etaj P, Ap.1, Județul Ialomița, România"
+    },
+    "title2": "Link-uri rapide",
+    "nav1": "Contact",
+    "title3": "Servicii",
+    "nav2": "Consiliere de administrație",
+    "nav3": "Căutare de talente executive",
+    "nav4": "Recrutare de lideri",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "copyright": "© 2025 Empowerment Group. Toate drepturile rezervate."
   }
 }

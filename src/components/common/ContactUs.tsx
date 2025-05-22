@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, X } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const drawerVariants = {
   initial: {
@@ -53,6 +54,7 @@ const contentVariants = {
 
 const ContactUs = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const t = useTranslations("contactpop");
 
   return (
     <div className="fixed bottom-0 right-0 z-[9999]">
@@ -68,7 +70,9 @@ const ContactUs = () => {
               <div
                 className="flex items-center justify-between p-2 sm:p-3 cursor-pointer bg-black text-white rounded-t-lg" // Added smaller padding for mobile
                 onClick={() => setIsOpen(false)}>
-                <h3 className="text-xs sm:text-sm font-semibold">Contact Us</h3>
+                <h3 className="text-xs sm:text-sm font-semibold">
+                  {t("title")}
+                </h3>
                 <div className="bg-white/10 rounded-full p-1 sm:p-1.5 hover:bg-white/20 transition-colors">
                   <X className="h-2.5 w-2.5 sm:h-3 sm:w-3" />
                 </div>
@@ -84,36 +88,35 @@ const ContactUs = () => {
                 {/* Corporates Section */}
                 <div>
                   <h4 className="font-medium mb-1 text-black text-xs sm:text-sm">
-                    The Corporates
+                    {t("subtitle1")}
                   </h4>
                   <p className="text-gray-600 text-[10px] sm:text-xs mb-1.5">
-                    Would you like us to assist in your search for premium
-                    talent?
+                    {t("desc1")}
                   </p>
                   <div className="space-y-0.5 text-[10px] sm:text-xs text-gray-800">
-                    <p>Phone: +40784805998</p>
-                    <p>E-mail: info@empowerment.group</p>
+                    <p>{t("phone")}: +40784805998</p>
+                    <p>{t("email")}: info@empowerment.group</p>
                   </div>
                 </div>
 
                 {/* Candidates Section */}
                 <div>
                   <h4 className="font-medium mb-1 text-black text-xs sm:text-sm">
-                    Candidates
+                    {t("subtitle2")}
                   </h4>
                   <p className="text-gray-600 text-[10px] sm:text-xs mb-1.5">
-                    Are you looking for the right career opportunity?
+                    {t("desc2")}
                   </p>
                   <Link
-                    href="/jobs/submit-cv"
+                    href="/contact-us"
                     className="text-blue-600 hover:text-blue-700 text-[10px] sm:text-xs">
-                    Submit your CV
+                    {t("btnText")}
                   </Link>
                 </div>
 
                 {/* Warning Section */}
                 <div className="text-[10px] sm:text-xs text-red-600 pt-2 border-t border-gray-200">
-                  <strong>Beware:</strong> Fraudulent recruitment activity
+                  <strong>Beware:</strong> {t("desc3")}
                 </div>
               </motion.div>
             </motion.div>
@@ -132,7 +135,7 @@ const ContactUs = () => {
               className="bg-black text-white p-2 sm:p-3 cursor-pointer flex items-center justify-between hover:bg-black/90 rounded-t-lg" // Changed rounded-lg to rounded-t-lg
               onClick={() => setIsOpen(true)}>
               <span className="text-xs sm:text-sm font-semibold">
-                Contact Us
+                {t("title")}
               </span>
               <div className="bg-white/10 rounded-full p-1 sm:p-1.5 hover:bg-white/20 transition-colors">
                 <Plus className="h-3 w-3 sm:h-4 sm:w-4" />

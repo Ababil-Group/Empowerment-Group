@@ -21,109 +21,96 @@ import {
   Smartphone,
   Users2,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const TechnologyPage = () => {
-  const specialities = [
-    "Software Development",
-    "Cloud Computing",
-    "Artificial Intelligence",
-    "Data Analytics",
-    "Cybersecurity",
-    "Enterprise Solutions",
-    "Digital Transformation",
-    "Mobile Technologies",
-    "DevOps",
-    "Blockchain",
-    "IoT Solutions",
-    "FinTech",
-    "SaaS Platforms",
-  ];
+  const t = useTranslations("technology");
+  const b = useTranslations("banner11");
+  const des = t.raw("desc");
+  const spacil = t.raw("specialitie");
+  const specialities = spacil.map((item) => item);
 
   const representativeSearches = [
     {
       icon: Code,
-      title: "Chief Technology Officer",
-      subtitle: "Leading Industrial Manufacturing Company",
+      title: t("representative1.title"),
+      subtitle: t("representative1.desc"),
     },
     {
       icon: Cloud,
-      title: "Plant Head",
-      subtitle: "Major Heavy Engineering Corporation",
+      title: t("representative2.title"),
+      subtitle: t("representative2.desc"),
     },
     {
       icon: Database,
-      title: "VP Supply Chain",
-      subtitle: "Industrial Equipment Manufacturer",
+      title: t("representative3.title"),
+      subtitle: t("representative3.desc"),
     },
     {
       icon: Shield,
-      title: "Director of Engineering",
-      subtitle: "Precision Manufacturing Company",
+      title: t("representative4.title"),
+      subtitle: t("representative4.desc"),
     },
     {
       icon: Cpu,
-      title: "Head of R&D",
-      subtitle: "Power Generation Equipment Manufacturer",
+      title: t("representative5.title"),
+      subtitle: t("representative5.desc"),
     },
     {
       icon: Brain,
-      title: "Technology Director",
-      subtitle: "Industrial Automation Solutions Provider",
+      title: t("representative6.title"),
+      subtitle: t("representative6.desc"),
     },
     {
       icon: Smartphone,
-      title: "Business Head",
-      subtitle: "Industrial IoT Solutions Company",
+      title: t("representative7.title"),
+      subtitle: t("representative7.desc"),
     },
     {
       icon: Users2,
-      title: "VP Human Resources",
-      subtitle: "Leading Process Industry Corporation",
+      title: t("representative8.title"),
+      subtitle: t("representative8.desc"),
     },
   ];
 
   const methodologies = [
     {
       icon: <Search className="w-8 h-8 text-primary" />,
-      title: "Requirements Analysis",
-      subtitle: "Understanding client needs and role specifications",
+      title: t("methodologie1.title"),
+      subtitle: t("methodologie1.desc"),
     },
     {
       icon: <Users className="w-8 h-8 text-primary" />,
-      title: "Candidate Identification",
-      subtitle: "Leveraging our network to find potential matches",
+      title: t("methodologie2.title"),
+      subtitle: t("methodologie2.desc"),
     },
     {
       icon: <CheckCircle className="w-8 h-8 text-primary" />,
-      title: "Screening Process",
-      subtitle: "In-depth evaluation of candidates",
+      title: t("methodologie3.title"),
+      subtitle: t("methodologie3.desc"),
     },
     {
       icon: <BarChart className="w-8 h-8 text-primary" />,
-      title: "Assessment",
-      subtitle: "Detailed assessment of shortlisted candidates",
+      title: t("methodologie4.title"),
+      subtitle: t("methodologie4.desc"),
     },
     {
       icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
-      title: "Selection",
-      subtitle: "Final selection and offer management",
+      title: t("methodologie5.title"),
+      subtitle: t("methodologie5.desc"),
     },
     {
       icon: <HandshakeIcon className="w-8 h-8 text-primary" />,
-      title: "Onboarding",
-      subtitle: "Ensuring smooth transition into the role",
+      title: t("methodologie6.title"),
+      subtitle: t("methodologie6.desc"),
     },
   ];
 
   return (
     <>
       <IndustiresLayout
-        title="Technology"
-        description={[
-          "The technology sector leads the way in innovation and digital transformation. Our expertise helps us identify and place leaders who can drive technological advancements and business growth.",
-          "We partner with software companies, tech startups, and enterprise solution providers to find executives who blend technological expertise with business strategy, ensuring successful digital initiatives.",
-          "Our deep understanding spans key areas, including software development, AI/ML, cloud computing, and cybersecurity, allowing us to meet your specific leadership needs in this ever-evolving sector.",
-        ]}
+        title={t("title2")}
+        description={des}
         imageSrc="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&h=500&fit=crop"
         imageAlt="Technology Innovation"
       />
@@ -133,9 +120,9 @@ const TechnologyPage = () => {
         representativeSearches={representativeSearches}
       />
       <CommonBanner
-        title="Reach out to our Senior Consultants"
-        subtitle="for your leadership hiring needs"
-        buttonText="Get In Touch"
+        title={b("titlebanner")}
+        subtitle={b("subtitlebanner")}
+        buttonText={b("btnText")}
         buttonLink="/contact-us"
       />
     </>

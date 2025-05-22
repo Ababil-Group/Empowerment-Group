@@ -9,19 +9,18 @@ import {
   FaTiktok,
   FaPinterest,
 } from "react-icons/fa";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("footer");
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Empowerment Group</h3>
-            <p className="text-gray-400 mb-4">
-              Delivering expert consulting and innovative solutions to
-              businesses across the globe.
-            </p>
+            <h3 className="text-xl font-bold mb-4">{t("title1")}</h3>
+            <p className="text-gray-400 mb-4">{t("desc")}</p>
             <div className="flex space-x-4">
               <a
                 href="https://www.facebook.com/empowermentuk"
@@ -70,7 +69,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-4">{t("title2")}</h3>
             <ul className="space-y-2">
               {/* <li>
                 <Link
@@ -100,7 +99,7 @@ const Footer = () => {
                 <Link
                   href="/contact-us"
                   className="text-gray-400 hover:text-white transition-colors">
-                  Contact Us
+                  {t("nav1")}
                 </Link>
               </li>
             </ul>
@@ -108,43 +107,34 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Services</h3>
+            <h3 className="text-xl font-bold mb-4">{t("title3")}</h3>
             <ul className="space-y-2">
               <li className="text-gray-400 hover:text-white transition-colors">
-                <Link href="/services/board-advisory">Board Advisory</Link>
+                <Link href="/services/board-advisory">{t("nav2")}</Link>
               </li>
               <li className="text-gray-400 hover:text-white transition-colors">
-                <Link href="/services/executive-search">
-                  Executive Talent Search
-                </Link>
+                <Link href="/services/executive-search">{t("nav3")}</Link>
               </li>
               <li className="text-gray-400 hover:text-white transition-colors">
-                <Link href="/services/leadership">Leadership Recruitment</Link>
+                <Link href="/services/leadership">{t("nav4")}</Link>
               </li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+            <h3 className="text-xl font-bold mb-4">{t("nav1")}</h3>
             <ul className="space-y-2 text-gray-400">
               <li className="w-full border p-2 rounded-lg">
-                <span className="text-[12px]">
-                  Corporate Headquarter - Qatar:
-                </span>
-                <p className="text-sm">
-                  World Wide Business Centre, D Ring Rd, Doha, Qatar
-                </p>
+                <span className="text-[12px]">{t("location1.title")}</span>
+                <p className="text-sm">{t("location1.address")}</p>
               </li>
               <li className="w-full border  p-2 rounded-lg">
-                <span className="text-[12px] ">Head Office - Romania:</span>
-                <p className="text-sm">
-                  Municipiul Slobozia, Starda VIILOR,Nr.3,Bloc R3,Scara, A,Etaj
-                  P,Ap.1,Judet Ialomita, Romania
-                </p>
+                <span className="text-[12px] ">{t("location2.title")}</span>
+                <p className="text-sm">{t("location2.address")}</p>
               </li>
-              <li>Phone: +40 784 805 998 </li>
-              <li>Email: info@empowerment.group</li>
+              <li>{t("phone")}: +40 784 805 998 </li>
+              <li>{t("email")}: info@empowerment.group</li>
             </ul>
           </div>
         </div>
@@ -152,8 +142,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8">
           <p className="text-center text-gray-400">
-            © {new Date().getFullYear()} Empowerment Group. All rights
-            reserved.
+           {t("copyright")}
           </p>
         </div>
       </div>

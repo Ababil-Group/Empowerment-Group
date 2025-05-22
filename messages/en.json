@@ -632,5 +632,249 @@
     "titlebanner": "Reach out to our Senior Consultants",
     "subtitlebanner": "for your leadership hiring needs",
     "btnText": "Get In Touch"
+  },
+  "devlopment": {
+    "title": "Industrial",
+    "menu1": "Home",
+    "menu2": "Industries",
+    "title2": "Development",
+    "desc": [
+      "The development sector is key to shaping our cities and infrastructure. Our expertise allows us to identify and place leaders who drive sustainable development and foster innovation.",
+      "We collaborate with development authorities, infrastructure companies, and urban planning organizations to find executives who understand the complexities of large-scale projects and lead with vision and purpose.",
+      "Our deep understanding spans key areas, including infrastructure, urban development, and transportation, ensuring we can meet your leadership needs within this dynamic sector."
+    ],
+    "specialitytitle": "Our Specialities",
+    "representativetitle": "Representative Searches",
+    "specialitie": [
+      "Infrastructure Development",
+      "Urban Development",
+      "Project Planning",
+      "Construction Management",
+      "Transportation Projects",
+      "Public Works",
+      "Environmental Planning",
+      "Sustainable Development",
+      "Smart City Development",
+      "Industrial Development",
+      "Rural Development",
+      "Economic Development",
+      "Project Finance"
+    ],
+    "representative1": {
+      "title": "Chief Operating Officer",
+      "desc": "Leading Industrial Manufacturing Company"
+    },
+    "representative2": {
+      "title": "Plant Head",
+      "desc": "Major Heavy Engineering Corporation"
+    },
+    "representative3": {
+      "title": "VP Supply Chain",
+      "desc": "Industrial Equipment Manufacturer"
+    },
+    "representative4": {
+      "title": "Director of Engineering",
+      "desc": "Precision Manufacturing Company"
+    },
+    "representative5": {
+      "title": "Head of R&D",
+      "desc": "Power Generation Equipment Manufacturer"
+    },
+    "representative6": {
+      "title": "Technology Director",
+      "desc": "Industrial Automation Solutions Provider"
+    },
+    "representative7": {
+      "title": "Business Head",
+      "desc": "Industrial IoT Solutions Company"
+    },
+    "representative8": {
+      "title": "VP Human Resources",
+      "desc": "Leading Process Industry Corporation"
+    },
+    "methodologie1": {
+      "title": "Requirements Analysis",
+      "desc": "Understanding client needs and role specifications"
+    },
+    "methodologie2": {
+      "title": "Candidate Identification",
+      "desc": "Leveraging our network to find potential matches"
+    },
+    "methodologie3": {
+      "title": "Screening Process",
+      "desc": "In-depth evaluation of candidates"
+    },
+    "methodologie4": {
+      "title": "Assessment",
+      "desc": "Detailed assessment of shortlisted candidates."
+    },
+    "methodologie5": {
+      "title": "Selection",
+      "desc": " Final selection and offer management"
+    },
+    "methodologie6": {
+      "title": "Onboarding",
+      "desc": "Ensuring smooth transition into the role"
+    }
+  },
+  "banner10": {
+    "titlebanner": "Reach out to our Senior Consultants",
+    "subtitlebanner": "for your leadership hiring needs",
+    "btnText": "Get In Touch"
+  },
+  "technology": {
+    "title": "Industrial",
+    "menu1": "Home",
+    "menu2": "Industries",
+    "title2": "Technology",
+    "desc": [
+      "The technology sector leads the way in innovation and digital transformation. Our expertise helps us identify and place leaders who can drive technological advancements and business growth.",
+      "We partner with software companies, tech startups, and enterprise solution providers to find executives who blend technological expertise with business strategy, ensuring successful digital initiatives.",
+      "Our deep understanding spans key areas, including software development, AI/ML, cloud computing, and cybersecurity, allowing us to meet your specific leadership needs in this ever-evolving sector."
+    ],
+    "specialitytitle": "Our Specialities",
+    "representativetitle": "Representative Searches",
+    "specialitie": [
+      "Software Development",
+      "Cloud Computing",
+      "Artificial Intelligence",
+      "Data Analytics",
+      "Cybersecurity",
+      "Enterprise Solutions",
+      "Digital Transformation",
+      "Mobile Technologies",
+      "DevOps",
+      "Blockchain",
+      "IoT Solutions",
+      "FinTech",
+      "SaaS Platforms"
+    ],
+    "representative1": {
+      "title": "Chief Operating Officer",
+      "desc": "Leading Industrial Manufacturing Company"
+    },
+    "representative2": {
+      "title": "Plant Head",
+      "desc": "Major Heavy Engineering Corporation"
+    },
+    "representative3": {
+      "title": "VP Supply Chain",
+      "desc": "Industrial Equipment Manufacturer"
+    },
+    "representative4": {
+      "title": "Director of Engineering",
+      "desc": "Precision Manufacturing Company"
+    },
+    "representative5": {
+      "title": "Head of R&D",
+      "desc": "Power Generation Equipment Manufacturer"
+    },
+    "representative6": {
+      "title": "Technology Director",
+      "desc": "Industrial Automation Solutions Provider"
+    },
+    "representative7": {
+      "title": "Business Head",
+      "desc": "Industrial IoT Solutions Company"
+    },
+    "representative8": {
+      "title": "VP Human Resources",
+      "desc": "Leading Process Industry Corporation"
+    },
+    "methodologie1": {
+      "title": "Requirements Analysis",
+      "desc": "Understanding client needs and role specifications"
+    },
+    "methodologie2": {
+      "title": "Candidate Identification",
+      "desc": "Leveraging our network to find potential matches"
+    },
+    "methodologie3": {
+      "title": "Screening Process",
+      "desc": "In-depth evaluation of candidates"
+    },
+    "methodologie4": {
+      "title": "Assessment",
+      "desc": "Detailed assessment of shortlisted candidates."
+    },
+    "methodologie5": {
+      "title": "Selection",
+      "desc": " Final selection and offer management"
+    },
+    "methodologie6": {
+      "title": "Onboarding",
+      "desc": "Ensuring smooth transition into the role"
+    }
+  },
+  "banner11": {
+    "titlebanner": "Reach out to our Senior Consultants",
+    "subtitlebanner": "for your leadership hiring needs",
+    "btnText": "Get In Touch"
+  },
+  "contact": {
+    "title": "Contact Information",
+    "menu1": "Home",
+    "menu2": "Contact Us",
+    "location1": {
+      "title": "Corporate Headquarter - Qatar",
+      "address": "World Wide Business Centre, D Ring Rd, Doha, Qatar"
+    },
+    "location2": {
+      "title": "Head Office - Romania",
+      "address": "Municipiul Slobozia, Starda VIILOR,Nr.3,Bloc R3,Scara, A,Etaj P,Ap.1,Judet Ialomita, Romania"
+    },
+    "phone": "Phone",
+    "email": "Email",
+    "contactsocial": "Connect With Us",
+    "workingtime": {
+      "title": "Business Hours",
+      "days1": "Monday to Friday",
+      "hours1": "8:00 AM - 6:00 PM",
+      "days2": "Saturday",
+      "hours2": "8:00 AM - 2:00 PM",
+      "days3": "Sunday",
+      "hours3": "Closed"
+    },
+    "contactform": {
+      "title": "Get in Touch",
+      "desc": "Fill out the form below and we'll get back to you as soon as possible.",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "btnText": "Send Message"
+    }
+  },
+  "contactpop": {
+    "title": "Contact Us",
+    "subtitle1": "The Corporates",
+    "desc1": " Would you like us to assist in your search for premium talent?",
+    "subtitle2": "Candidates",
+    "email": "E-mail",
+    "phone": "Phone",
+    "desc2": "Are you looking for the right career opportunity?",
+    "btnText": "Submit your CV",
+    "desc3": "Fraudulent recruitment acti"
+  },
+  "footer": {
+    "title1": "Empowerment Group",
+    "desc": "Delivering expert consulting and innovative solutions to businesses across the globe.",
+    "location1": {
+      "title": "Corporate Headquarter - Qatar",
+      "address": "World Wide Business Centre, D Ring Rd, Doha, Qatar"
+    },
+    "location2": {
+      "title": "Head Office - Romania",
+      "address": "Municipiul Slobozia, Starda VIILOR,Nr.3,Bloc R3,Scara, A,Etaj P,Ap.1,Judet Ialomita, Romania"
+    },
+    "title2": "Quick Links",
+    "nav1": "Contact Us",
+    "title3": "Services",
+    "nav2": "Board Advisory",
+    "nav3": "Executive Talent Search",
+    "nav4": "Leadership Recruitment",
+    "email": "Email",
+    "phone": "Phone",
+    "copyright": "Copyright © 2025 Empowerment Group. All rights reserved."
   }
 }
