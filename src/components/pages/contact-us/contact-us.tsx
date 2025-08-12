@@ -29,7 +29,7 @@ import {
   Mail,
   Facebook,
   Twitter,
-  Linkedin,
+  // Linkedin,
   Youtube,
 } from "lucide-react";
 import { motion } from "framer-motion";
@@ -94,7 +94,7 @@ const ContactUs = () => {
 
   return (
     <motion.section
-      className="min-h-screen relative bg-white overflow-hidden"
+      className="relative min-h-screen overflow-hidden bg-white"
       initial={{
         background:
           "linear-gradient(289deg, #ff0000 0%, #ffffff 0%, #ffffff 100%)",
@@ -104,7 +104,7 @@ const ContactUs = () => {
           "linear-gradient(289deg, #ff0000 55%, #ffffff 55%, #ffffff 100%)",
       }}
       transition={{ duration: 1.2, ease: "easeInOut" }}>
-      <div className="relative container mx-auto px-4 py-3">
+      <div className="container relative px-4 py-3 mx-auto">
         {/* Animated Breadcrumb */}
         <motion.div
           variants={fadeInUp}
@@ -122,7 +122,7 @@ const ContactUs = () => {
               </BreadcrumbItem>
               <BreadcrumbSeparator className="text-gray-500" />
               <BreadcrumbItem>
-                <BreadcrumbPage className="text-gray-800 font-medium">
+                <BreadcrumbPage className="font-medium text-gray-800">
                   {t("menu2")}
                 </BreadcrumbPage>
               </BreadcrumbItem>
@@ -135,23 +135,23 @@ const ContactUs = () => {
           variants={organizationContainerVariants}
           initial="hidden"
           animate="visible"
-          className="backdrop-blur-sm rounded-2xl shadow-xl max-w-5xl mx-auto border border-gray-200 overflow-hidden">
+          className="max-w-5xl mx-auto overflow-hidden border border-gray-200 shadow-xl backdrop-blur-sm rounded-2xl">
           <div className="grid md:grid-cols-2">
             {/* Contact Information Section */}
             <motion.div
               variants={organizationItemVariants}
-              className="p-5 md:p-6 space-y-6">
+              className="p-5 space-y-6 md:p-6">
               <div>
-                <h2 className="text-2xl font-bold mb-6 text-gray-900">
+                <h2 className="mb-6 text-2xl font-bold text-gray-900">
                   {t("title")}
                 </h2>
                 <div className="space-y-6">
                   <div className="flex items-start justify-center space-x-4 group">
-                    <div className="p-3 bg-gray-100 rounded-xl group-hover:bg-gray-200 transition-colors">
+                    <div className="p-3 transition-colors bg-gray-100 rounded-xl group-hover:bg-gray-200">
                       <MapPin className="w-6 h-6 text-gray-700" />
                     </div>
                     <div className="">
-                      <div className="border border-gray-400 p-4">
+                      <div className="p-4 border border-gray-400">
                         <div className="w-full ">
                           <h3 className="font-semibold text-[12px]  text-gray-800">
                             {t("location1.title")}
@@ -161,7 +161,7 @@ const ContactUs = () => {
                           <p>{t("location1.address")}</p>
                         </div>
                       </div>
-                      <div className="border border-gray-400 p-4">
+                      <div className="p-4 border border-gray-400">
                         <div className="w-full ">
                           <h3 className="font-semibold text-[12px]  text-gray-800">
                             {t("location2.title")}
@@ -175,11 +175,11 @@ const ContactUs = () => {
                   </div>
 
                   <div className="flex items-start space-x-4 group">
-                    <div className="p-3 bg-gray-100 rounded-xl group-hover:bg-gray-200 transition-colors">
+                    <div className="p-3 transition-colors bg-gray-100 rounded-xl group-hover:bg-gray-200">
                       <Phone className="w-6 h-6 text-gray-700" />
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-2 text-gray-800">
+                      <h3 className="mb-2 font-semibold text-gray-800">
                         {t("phone")}
                       </h3>
                       <p className="text-gray-600"> +40784805998</p>
@@ -187,11 +187,11 @@ const ContactUs = () => {
                   </div>
 
                   <div className="flex items-start space-x-4 group">
-                    <div className="p-3 bg-gray-100 rounded-xl group-hover:bg-gray-200 transition-colors">
+                    <div className="p-3 transition-colors bg-gray-100 rounded-xl group-hover:bg-gray-200">
                       <Mail className="w-6 h-6 text-gray-700" />
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-2 text-gray-800">
+                      <h3 className="mb-2 font-semibold text-gray-800">
                         {t("email")}
                       </h3>
                       <p className="text-gray-600">info@empowerment.group</p>
@@ -202,34 +202,34 @@ const ContactUs = () => {
 
               {/* Social Media Links */}
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">
+                <h3 className="mb-4 text-xl font-semibold text-gray-800">
                   {t("contactsocial")}
                 </h3>
 
                 <div className="flex space-x-4">
                   <a
                     href="https://www.facebook.com/empowermentuk"
-                    className="p-3 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors"
+                    className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
                     target="_blank">
                     <Facebook className="w-6 h-6 text-gray-700" />
                   </a>
                   <a
                     href="https://x.com/empowerment4492"
-                    className="p-3 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors"
+                    className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
                     target="_blank">
                     <Twitter className="w-6 h-6 text-gray-700" />
                   </a>
-                  <a
+                  {/* <a
                     href="https://www.linkedin.com/company/empowerment-group-limited"
-                    className="p-3 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors"
+                    className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
                     target="_blank">
                     <Linkedin className="w-6 h-6 text-gray-700" />
-                  </a>
+                  </a> */}
                 </div>
-                <div className="flex space-x-4 mt-5">
+                <div className="flex mt-5 space-x-4">
                   <a
                     href="https://www.youtube.com/@EmpowermentGroupLimited"
-                    className="p-3 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors"
+                    className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
                     target="_blank">
                     <Youtube className="w-6 h-6 text-gray-700" />
                   </a>
@@ -238,25 +238,25 @@ const ContactUs = () => {
 
               {/* Business Hours */}
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">
+                <h3 className="mb-4 text-xl font-semibold text-gray-800">
                   {t("workingtime.title")}
                 </h3>
                 <div className="space-y-2 text-gray-600">
-                  <p className="flex justify-between items-center py-2 border-b border-gray-200">
+                  <p className="flex items-center justify-between py-2 border-b border-gray-200">
                     <span>{t("workingtime.days1")}</span>
-                    <span className="text-green-800 font-medium">
+                    <span className="font-medium text-green-800">
                       {t("workingtime.hours1")}
                     </span>
                   </p>
-                  <p className="flex justify-between items-center py-2 border-b border-gray-200">
+                  <p className="flex items-center justify-between py-2 border-b border-gray-200">
                     <span>{t("workingtime.days2")}</span>
-                    <span className="text-green-800 font-medium">
+                    <span className="font-medium text-green-800">
                       {t("workingtime.hours2")}
                     </span>
                   </p>
-                  <p className="flex justify-between items-center py-2">
+                  <p className="flex items-center justify-between py-2">
                     <span>{t("workingtime.days3")}</span>
-                    <span className="text-red-700 font-medium">
+                    <span className="font-medium text-red-700">
                       {t("workingtime.hours3")}
                     </span>
                   </p>
@@ -272,7 +272,7 @@ const ContactUs = () => {
                 <h2 className="text-2xl font-bold text-gray-900">
                   {t("contactform.title")}
                 </h2>
-                <p className="text-gray-600 mt-2">{t("contactform.desc")}</p>
+                <p className="mt-2 text-gray-600">{t("contactform.desc")}</p>
               </div>
               <Form {...form}>
                 <form
@@ -290,7 +290,7 @@ const ContactUs = () => {
                           <Input
                             placeholder="Your name"
                             {...field}
-                            className="bg-white/80 border-gray-200 text-gray-900 placeholder:text-gray-500"
+                            className="text-gray-900 border-gray-200 bg-white/80 placeholder:text-gray-500"
                           />
                         </FormControl>
                         <FormMessage className="text-red-600" />
@@ -310,7 +310,7 @@ const ContactUs = () => {
                           <Input
                             placeholder="your.email@example.com"
                             {...field}
-                            className="bg-white/80 border-gray-200 text-gray-900 placeholder:text-gray-500"
+                            className="text-gray-900 border-gray-200 bg-white/80 placeholder:text-gray-500"
                           />
                         </FormControl>
                         <FormMessage className="text-red-600" />
@@ -330,7 +330,7 @@ const ContactUs = () => {
                           <Input
                             placeholder="Message subject"
                             {...field}
-                            className="bg-white/80 border-gray-200 text-gray-900 placeholder:text-gray-500"
+                            className="text-gray-900 border-gray-200 bg-white/80 placeholder:text-gray-500"
                           />
                         </FormControl>
                         <FormMessage className="text-red-600" />
@@ -360,7 +360,7 @@ const ContactUs = () => {
 
                   <Button
                     type="submit"
-                    className="w-full bg-primary text-white hover:bg-primary/90">
+                    className="w-full text-white bg-primary hover:bg-primary/90">
                     {isLoading ? "Sending..." : t("contactform.btnText")}
                   </Button>
                 </form>

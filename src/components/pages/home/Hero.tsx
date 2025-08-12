@@ -3,7 +3,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Twitter, Linkedin, Facebook } from "lucide-react";
+import { ArrowRight, Twitter, Facebook } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -78,16 +78,13 @@ const Hero = () => {
         initial="initial"
         animate="animate"
         className="relative min-h-[80vh] flex items-center bg-white py-6 md:py-12 pb-4">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
+        <div className="container px-4 mx-auto">
+          <div className="grid items-center grid-cols-1 gap-6 md:grid-cols-2 md:gap-12">
             <AnimateInView
               variants={fadeInRight}
               delay={0.6}
-              className="relative mt-0 mb-8 md:mb-0 md:mt-0 order-1 md:order-2">
-              <div
-                className="absolute -right-8 top-8 w-full h-full rounded-2xl 
-                          bg-primary/20 blur-lg transform"
-              />
+              className="relative order-1 mt-0 mb-8 md:mb-0 md:mt-0 md:order-2">
+              <div className="absolute w-full h-full transform -right-8 top-8 rounded-2xl bg-primary/20 blur-lg" />
               <Carousel
                 setApi={setApi}
                 className="relative w-full overflow-hidden rounded-2xl shadow-[2px_4px_16px_rgba(0,0,0,0.15)]"
@@ -113,7 +110,7 @@ const Hero = () => {
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2">
+                <div className="absolute flex items-center gap-2 -translate-x-1/2 bottom-4 left-1/2">
                   {images.map((_, index) => (
                     <button
                       key={`dot-${index}`}
@@ -132,9 +129,9 @@ const Hero = () => {
             <AnimateInView
               variants={fadeInLeft}
               delay={0.6}
-              className="space-y-2 md:space-y-8 order-2 md:order-1">
+              className="order-2 space-y-2 md:space-y-8 md:order-1">
               <AnimateInView variants={fadeInUp} delay={0.7}>
-                <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-2xl font-bold leading-tight text-gray-900 sm:text-3xl md:text-5xl lg:text-6xl">
                   {t("title")}
                   <span className="block text-primary mt-0.5 md:mt-2">
                     {t("subtitle")}
@@ -143,50 +140,43 @@ const Hero = () => {
               </AnimateInView>
 
               <AnimateInView variants={fadeInUp} delay={0.8}>
-                <p className="text-sm sm:text-base md:text-xl text-gray-600 max-w-lg">
+                <p className="max-w-lg text-sm text-gray-600 sm:text-base md:text-xl">
                   {t("description")}
                 </p>
               </AnimateInView>
 
               <AnimateInView variants={fadeInUp} delay={0.9}>
-                <div className="flex flex-col sm:flex-row items-center gap-3 pt-2 md:pt-4">
-                  <div className="flex flex-row items-center justify-between w-full sm:w-auto gap-3 md:gap-4">
+                <div className="flex flex-col items-center gap-3 pt-2 sm:flex-row md:pt-4">
+                  <div className="flex flex-row items-center justify-between w-full gap-3 sm:w-auto md:gap-4">
                     <Button
                       size="lg"
-                      className="w-auto text-sm sm:text-base md:text-xl bg-black hover:bg-primary/90 text-white 
-                                flex items-center justify-center gap-2 md:gap-3 rounded-full 
-                                py-3 sm:py-4 md:py-6 px-4 sm:px-6 md:px-8
-                                transition-all duration-300 ease-in-out transform hover:scale-105 
-                                relative overflow-hidden group">
+                      className="relative flex items-center justify-center w-auto gap-2 px-4 py-3 overflow-hidden text-sm text-white transition-all duration-300 ease-in-out transform bg-black rounded-full sm:text-base md:text-xl hover:bg-primary/90 md:gap-3 sm:py-4 md:py-6 sm:px-6 md:px-8 hover:scale-105 group">
                       <span className="relative z-10">{t("button")}</span>
                       <span className="bg-white p-1 sm:p-1.5 md:p-2 rounded-full relative z-10">
-                        <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 md:h-6 md:w-6 text-black" />
+                        <ArrowRight className="w-3 h-3 text-black sm:h-4 sm:w-4 md:h-6 md:w-6" />
                       </span>
-                      <div
-                        className="absolute inset-0 bg-primary transform scale-0 origin-right 
-                                    transition-transform duration-300 ease-out group-hover:scale-100"
-                      />
+                      <div className="absolute inset-0 transition-transform duration-300 ease-out origin-right transform scale-0 bg-primary group-hover:scale-100" />
                     </Button>
 
                     {/* Social Media Icons */}
                     <div className="flex items-center gap-3 sm:gap-3 md:gap-4">
                       <a
                         href="https://x.com/empowerment4492"
-                        className="text-gray-600 hover:text-primary transition-colors"
+                        className="text-gray-600 transition-colors hover:text-primary"
                         target="_blank">
-                        <Twitter className="h-5 w-5 sm:h-5 sm:w-5 md:h-6 md:w-6" />
+                        <Twitter className="w-5 h-5 sm:h-5 sm:w-5 md:h-6 md:w-6" />
                       </a>
-                      <a
+                      {/* <a
                         href="https://www.linkedin.com/company/empowerment-group-limited"
-                        className="text-gray-600 hover:text-primary transition-colors"
+                        className="text-gray-600 transition-colors hover:text-primary"
                         target="_blank">
-                        <Linkedin className="h-5 w-5 sm:h-5 sm:w-5 md:h-6 md:w-6" />
-                      </a>
+                        <Linkedin className="w-5 h-5 sm:h-5 sm:w-5 md:h-6 md:w-6" />
+                      </a> */}
                       <a
                         href="https://www.facebook.com/empowermentuk"
-                        className="text-gray-600 hover:text-primary transition-colors"
+                        className="text-gray-600 transition-colors hover:text-primary"
                         target="_blank">
-                        <Facebook className="h-5 w-5 sm:h-5 sm:w-5 md:h-6 md:w-6" />
+                        <Facebook className="w-5 h-5 sm:h-5 sm:w-5 md:h-6 md:w-6" />
                       </a>
                     </div>
                   </div>
