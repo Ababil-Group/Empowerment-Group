@@ -3,7 +3,13 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Twitter, Facebook } from "lucide-react";
+import {
+  ArrowRight,
+  // Twitter,
+  Facebook,
+  Youtube,
+  Instagram,
+} from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -20,6 +26,7 @@ import {
 import PageTransition from "@/components/animation/PageTransition";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { FaPinterest, FaTiktok } from "react-icons/fa";
 
 const images = ["/images/h1.jpg", "/images/h2.jpg", "/images/h3.jpg"];
 
@@ -159,25 +166,47 @@ const Hero = () => {
                     </Button>
 
                     {/* Social Media Icons */}
-                    <div className="flex items-center gap-3 sm:gap-3 md:gap-4">
-                      <a
-                        href="https://x.com/empowerment4492"
-                        className="text-gray-600 transition-colors hover:text-primary"
-                        target="_blank">
-                        <Twitter className="w-5 h-5 sm:h-5 sm:w-5 md:h-6 md:w-6" />
-                      </a>
-                      {/* <a
-                        href="https://www.linkedin.com/company/empowerment-group-limited"
-                        className="text-gray-600 transition-colors hover:text-primary"
-                        target="_blank">
-                        <Linkedin className="w-5 h-5 sm:h-5 sm:w-5 md:h-6 md:w-6" />
-                      </a> */}
+                    <div className="flex space-x-4">
                       <a
                         href="https://www.facebook.com/empowermentuk"
-                        className="text-gray-600 transition-colors hover:text-primary"
+                        className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
                         target="_blank">
-                        <Facebook className="w-5 h-5 sm:h-5 sm:w-5 md:h-6 md:w-6" />
+                        <Facebook className="w-6 h-6 text-gray-700" />
                       </a>
+                      <a
+                        href="https://www.instagram.com/empowerment.group25/"
+                        className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200">
+                        <Instagram className="w-6 h-6 text-gray-700" />
+                      </a>
+                      <a
+                        href="https://www.tiktok.com/@empowerment.group25?lang=en"
+                        className="flex justify-center p-3 transition-colors bg-gray-100 jus ju rounded-xl hover:bg-gray-200">
+                        <FaTiktok className="w-6 h-6 text-gray-700 " />
+                      </a>
+                      <a
+                        href="https://www.pinterest.com/empowermentgroup25/"
+                        className="flex justify-center p-3 transition-colors bg-gray-100 justi rounded-xl hover:bg-gray-200"
+                        target="_blank">
+                        <FaPinterest className="w-6 h-6 text-gray-700 " />
+                      </a>
+                      {/* <a
+                    href="https://x.com/empowerment4492"
+                    className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
+                    target="_blank">
+                    <Twitter className="w-6 h-6 text-gray-700" />
+                  </a> */}
+                      <a
+                        href="https://www.youtube.com/@EmpowermentGroupLimited"
+                        className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
+                        target="_blank">
+                        <Youtube className="w-6 h-6 text-gray-700" />
+                      </a>
+                      {/* <a
+                    href="https://www.linkedin.com/company/empowerment-group-limited"
+                    className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
+                    target="_blank">
+                    <Linkedin className="w-6 h-6 text-gray-700" />
+                  </a> */}
                     </div>
                   </div>
                 </div>

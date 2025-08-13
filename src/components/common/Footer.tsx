@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import {
   FaFacebookF,
-  FaTwitter,
+  // FaTwitter,
   // FaLinkedinIn,
   FaInstagram,
   FaYoutube,
@@ -28,12 +28,12 @@ const Footer = () => {
                 target="_blank">
                 <FaFacebookF />
               </a>
-              <a
+              {/* <a
                 href="https://x.com/empowerment4492"
                 className="text-xl transition-colors hover:text-blue-500"
                 target="_blank">
                 <FaTwitter />
-              </a>
+              </a> */}
               {/* <a
                 href="https://www.linkedin.com/company/empowerment-group-limited"
                 className="text-xl transition-colors hover:text-blue-500"

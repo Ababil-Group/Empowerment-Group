@@ -28,9 +28,10 @@ import {
   Phone,
   Mail,
   Facebook,
-  Twitter,
+  // Twitter,
   // Linkedin,
   Youtube,
+  Instagram,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import {
@@ -40,6 +41,7 @@ import {
 } from "@/components/animation/variants";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
+import { FaPinterest, FaTiktok } from "react-icons/fa";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -214,10 +216,32 @@ const ContactUs = () => {
                     <Facebook className="w-6 h-6 text-gray-700" />
                   </a>
                   <a
+                    href="https://www.instagram.com/empowerment.group25/"
+                    className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200">
+                    <Instagram className="w-6 h-6 text-gray-700" />
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@empowerment.group25?lang=en"
+                    className="flex justify-center p-3 transition-colors bg-gray-100 jus ju rounded-xl hover:bg-gray-200">
+                    <FaTiktok className="w-6 h-6 text-gray-700 " />
+                  </a>
+                  <a
+                    href="https://www.pinterest.com/empowermentgroup25/"
+                    className="flex justify-center p-3 transition-colors bg-gray-100 justi rounded-xl hover:bg-gray-200"
+                    target="_blank">
+                    <FaPinterest className="w-6 h-6 text-gray-700 " />
+                  </a>
+                  {/* <a
                     href="https://x.com/empowerment4492"
                     className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
                     target="_blank">
                     <Twitter className="w-6 h-6 text-gray-700" />
+                  </a> */}
+                  <a
+                    href="https://www.youtube.com/@EmpowermentGroupLimited"
+                    className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
+                    target="_blank">
+                    <Youtube className="w-6 h-6 text-gray-700" />
                   </a>
                   {/* <a
                     href="https://www.linkedin.com/company/empowerment-group-limited"
@@ -226,14 +250,7 @@ const ContactUs = () => {
                     <Linkedin className="w-6 h-6 text-gray-700" />
                   </a> */}
                 </div>
-                <div className="flex mt-5 space-x-4">
-                  <a
-                    href="https://www.youtube.com/@EmpowermentGroupLimited"
-                    className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
-                    target="_blank">
-                    <Youtube className="w-6 h-6 text-gray-700" />
-                  </a>
-                </div>
+                <div className="flex mt-5 space-x-4"></div>
               </div>
 
               {/* Business Hours */}
@@ -267,7 +284,7 @@ const ContactUs = () => {
             {/* Form Section */}
             <motion.div
               variants={organizationItemVariants}
-              className="p-5 md:p-6 backdrop-blur-sm bg-gray-50/50">
+              className="p-5 md:p-6 backdrop-blur-sm bg-gray-50/80">
               <div className="mb-6">
                 <h2 className="text-2xl font-bold text-gray-900">
                   {t("contactform.title")}
@@ -360,7 +377,7 @@ const ContactUs = () => {
 
                   <Button
                     type="submit"
-                    className="w-full text-white bg-primary hover:bg-primary/90">
+                    className="z-10 w-full text-white bg-red-500 hover:bg-primary">
                     {isLoading ? "Sending..." : t("contactform.btnText")}
                   </Button>
                 </form>
