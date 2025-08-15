@@ -103,7 +103,7 @@ const ContactUs = () => {
       }}
       animate={{
         background:
-          "linear-gradient(289deg, #ff0000 55%, #ffffff 55%, #ffffff 100%)",
+          "linear-gradient(289deg, #ff0000 20%, #ffffff 30%, #ffffff 40%)",
       }}
       transition={{ duration: 1.2, ease: "easeInOut" }}>
       <div className="container relative px-4 py-3 mx-auto">
@@ -377,7 +377,7 @@ const ContactUs = () => {
 
                   <Button
                     type="submit"
-                    className="z-10 w-full text-white bg-red-500 hover:bg-primary">
+                    className="z-10 w-full text-white bg-[#FF0000] hover:bg-primary">
                     {isLoading ? "Sending..." : t("contactform.btnText")}
                   </Button>
                 </form>

@@ -13,6 +13,7 @@ import { useTranslations } from "next-intl";
 
 const Footer = () => {
   const t = useTranslations("footer");
+  const t2 = useTranslations("nav");
   return (
     <footer className="pt-16 pb-8 text-white bg-gray-900">
       <div className="container px-4 mx-auto">
@@ -71,34 +72,52 @@ const Footer = () => {
           <div>
             <h3 className="mb-4 text-xl font-bold">{t("title2")}</h3>
             <ul className="space-y-2">
-              {/* <li>
+              <li>
                 <Link
-                  href="/about"
-                  className="text-gray-400 transition-colors hover:text-white"
-                >
-                  About Us
+                  className="block p-2 font-medium rounded-md hover:bg-accent hover:text-primary"
+                  href="/expertise/building-materials">
+                  {t2("building")}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services"
-                  className="text-gray-400 transition-colors hover:text-white"
-                >
-                  Our Services
+                  className="block p-2 font-medium rounded-md hover:bg-accent hover:text-primary"
+                  href="/expertise/education">
+                  {t2("education")}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/projects"
-                  className="text-gray-400 transition-colors hover:text-white"
-                >
-                  Projects
+                  className="block p-2 font-medium rounded-md hover:bg-accent hover:text-primary"
+                  href="/expertise/industrial">
+                  {t2("industrial")}
                 </Link>
-              </li> */}
+              </li>
+              <li>
+                <Link
+                  className="block p-2 font-medium rounded-md hover:bg-accent hover:text-primary"
+                  href="/expertise/development">
+                  {t2("development")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="block p-2 font-medium rounded-md hover:bg-accent hover:text-primary"
+                  href="/expertise/real-estate">
+                  {t2("realestate")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="block p-2 font-medium rounded-md hover:bg-accent hover:text-primary"
+                  href="/expertise/technology">
+                  {t2("technology")}
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/contact-us"
-                  className="text-gray-400 transition-colors hover:text-white">
+                  className="block p-2 font-medium rounded-md hover:bg-accent hover:text-primary">
                   {t("nav1")}
                 </Link>
               </li>
