@@ -23,12 +23,12 @@ const Footer = () => {
             <h3 className="mb-4 text-xl font-bold">{t("title1")}</h3>
             <p className="mb-4 text-gray-400">{t("desc")}</p>
             <div className="flex space-x-4">
-              <a
+              <Link
                 href="https://www.facebook.com/empowermentuk"
                 className="transition-colors hover:text-blue-500"
                 target="_blank">
                 <FaFacebookF />
-              </a>
+              </Link>
               {/* <a
                 href="https://x.com/empowerment4492"
                 className="text-xl transition-colors hover:text-blue-500"
@@ -41,30 +41,30 @@ const Footer = () => {
                 target="_blank">
                 <FaLinkedinIn />
               </a> */}
-              <a
+              <Link
                 href="https://www.instagram.com/empowerment.group25/"
                 className="text-xl transition-colors hover:text-blue-500"
                 target="_blank">
                 <FaInstagram />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.youtube.com/@EmpowermentGroupLimited"
                 className="text-xl transition-colors hover:text-blue-500"
                 target="_blank">
                 <FaYoutube />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.tiktok.com/@empowerment.group25?lang=en"
                 className="text-xl transition-colors hover:text-blue-500"
                 target="_blank">
                 <FaTiktok />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.pinterest.com/empowermentgroup25/"
                 className="text-xl transition-colors hover:text-blue-500"
                 target="_blank">
                 <FaPinterest />
-              </a>
+              </Link>
             </div>
           </div>
 

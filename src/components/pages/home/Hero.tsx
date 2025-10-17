@@ -9,6 +9,7 @@ import {
   Facebook,
   Youtube,
   Instagram,
+  Link,
 } from "lucide-react";
 import {
   Carousel,
@@ -167,40 +168,40 @@ const Hero = () => {
 
                     {/* Social Media Icons */}
                     <div className="flex space-x-4">
-                      <a
+                      <Link
                         href="https://www.facebook.com/empowermentuk"
                         className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
                         target="_blank">
                         <Facebook className="w-6 h-6 text-gray-700" />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         href="https://www.instagram.com/empowerment.group25/"
                         className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200">
                         <Instagram className="w-6 h-6 text-gray-700" />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         href="https://www.tiktok.com/@empowerment.group25?lang=en"
                         className="flex justify-center p-3 transition-colors bg-gray-100 jus ju rounded-xl hover:bg-gray-200">
                         <FaTiktok className="w-6 h-6 text-gray-700 " />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         href="https://www.pinterest.com/empowermentgroup25/"
                         className="flex justify-center p-3 transition-colors bg-gray-100 justi rounded-xl hover:bg-gray-200"
                         target="_blank">
                         <FaPinterest className="w-6 h-6 text-gray-700 " />
-                      </a>
+                      </Link>
                       {/* <a
                     href="https://x.com/empowerment4492"
                     className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
                     target="_blank">
                     <Twitter className="w-6 h-6 text-gray-700" />
                   </a> */}
-                      <a
+                      <Link
                         href="https://www.youtube.com/@EmpowermentGroupLimited"
                         className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
                         target="_blank">
                         <Youtube className="w-6 h-6 text-gray-700" />
-                      </a>
+                      </Link>
                       {/* <a
                     href="https://www.linkedin.com/company/empowerment-group-limited"
                     className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
