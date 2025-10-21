@@ -9,8 +9,8 @@ import {
   Facebook,
   Youtube,
   Instagram,
-  Link,
 } from "lucide-react";
+import Link from "next/link";
 import {
   Carousel,
   CarouselContent,
