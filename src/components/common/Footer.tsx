@@ -152,7 +152,7 @@ const Footer = () => {
                 <span className="text-[12px] ">{t("location2.title")}</span>
                 <p className="text-sm">{t("location2.address")}</p>
               </li>
-              <li>{t("phone")}: +40 784 805 998 </li>
+              {/* <li>{t("phone")}: +40 784 805 998 </li> */}
               <li>{t("email")}: info@empowerment.group</li>
             </ul>
           </div>

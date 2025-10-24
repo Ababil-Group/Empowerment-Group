@@ -26,7 +26,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import {
   MapPin,
-  Phone,
+  // Phone,
   Mail,
   Facebook,
   // Twitter,
@@ -177,7 +177,7 @@ const ContactUs = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-4 group">
+                  {/* <div className="flex items-start space-x-4 group">
                     <div className="p-3 transition-colors bg-gray-100 rounded-xl group-hover:bg-gray-200">
                       <Phone className="w-6 h-6 text-gray-700" />
                     </div>
@@ -187,7 +187,7 @@ const ContactUs = () => {
                       </h3>
                       <p className="text-gray-600"> +40784805998</p>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="flex items-start space-x-4 group">
                     <div className="p-3 transition-colors bg-gray-100 rounded-xl group-hover:bg-gray-200">
