@@ -211,7 +211,7 @@ const ContactUs = () => {
 
                 <div className="flex space-x-4">
                   <Link
-                    href="https://www.facebook.com/empowermentuk"
+                    href="https://www.facebook.com/empowermentgroup.uk"
                     className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
                     target="_blank">
                     <Facebook className="w-6 h-6 text-gray-700" />
