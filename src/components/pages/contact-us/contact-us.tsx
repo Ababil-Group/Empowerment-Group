@@ -211,7 +211,7 @@ const ContactUs = () => {
 
                 <div className="flex space-x-4">
                   <Link
-                    href="https://www.facebook.com/empowermentgroup.uk"
+                    href="https://www.facebook.com/we.empowerment.group/"
                     className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
                     target="_blank">
                     <Facebook className="w-6 h-6 text-gray-700" />
@@ -226,7 +226,7 @@ const ContactUs = () => {
                     className="flex justify-center p-3 transition-colors bg-gray-100 jus ju rounded-xl hover:bg-gray-200">
                     <FaTiktok className="w-6 h-6 text-gray-700 " />
                   </Link>
-                  <Link
+                  
                     href="https://www.pinterest.com/empowermentgroup25/"
                     className="flex justify-center p-3 transition-colors bg-gray-100 justi rounded-xl hover:bg-gray-200"
                     target="_blank">
