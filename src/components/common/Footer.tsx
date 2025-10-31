@@ -144,10 +144,10 @@ const Footer = () => {
           <div>
             <h3 className="mb-4 text-xl font-bold">{t("nav1")}</h3>
             <ul className="space-y-2 text-gray-400">
-              <li className="w-full p-2 border rounded-lg">
+              {/* <li className="w-full p-2 border rounded-lg">
                 <span className="text-[12px]">{t("location1.title")}</span>
                 <p className="text-sm">{t("location1.address")}</p>
-              </li>
+              </li> */}
               <li className="w-full p-2 border rounded-lg">
                 <span className="text-[12px] ">{t("location2.title")}</span>
                 <p className="text-sm">{t("location2.address")}</p>
