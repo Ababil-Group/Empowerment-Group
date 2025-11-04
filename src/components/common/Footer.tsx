@@ -24,7 +24,7 @@ const Footer = () => {
             <p className="mb-4 text-gray-400">{t("desc")}</p>
             <div className="flex space-x-4">
               <Link
-                href="https://www.facebook.com/we.empowerment.group/"
+                href="https://www.facebook.com/WeEmpowerment"
                 className="transition-colors hover:text-blue-500"
                 target="_blank">
                 <FaFacebookF />
