@@ -154,16 +154,6 @@ const ContactUs = () => {
                       <MapPin className="w-6 h-6 text-gray-700" />
                     </div>
                     <div className="">
-                      {/* <div className="p-4 border border-gray-400">
-                        <div className="w-full ">
-                          <h3 className="font-semibold text-[12px]  text-gray-800">
-                            {t("location1.title")}
-                          </h3>
-                        </div>
-                        <div className="w-full ">
-                          <p>{t("location1.address")}</p>
-                        </div>
-                      </div> */}
                       <div className="p-4 border border-gray-400">
                         <div className="w-full ">
                           <h3 className="font-semibold text-[12px]  text-gray-800">
@@ -172,6 +162,17 @@ const ContactUs = () => {
                         </div>
                         <div className="w-full ">
                           <p>{t("location2.address")}</p>
+                        </div>
+                      </div>
+                      <div className="p-4 border border-gray-400">
+                        <div className="w-full ">
+                          <h3 className="font-semibold text-[12px]  text-gray-800"> Bangladesh</h3>
+                        </div>
+                        <div className="w-full ">
+                          <p>
+                            Level-04, House 21, Road-7/D, Akash Plaza,
+                            Sector-09, Uttara, Dhaka-1230, Bangladesh
+                          </p>
                         </div>
                       </div>
                     </div>

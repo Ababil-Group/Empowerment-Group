@@ -152,6 +152,13 @@ const Footer = () => {
                 <span className="text-[12px] ">{t("location2.title")}</span>
                 <p className="text-sm">{t("location2.address")}</p>
               </li>
+              <li className="w-full p-2 border rounded-lg">
+                <span className="text-[12px] ">Bangladesh</span>
+                <p className="text-sm">
+                  Level-04, House 21, Road-7/D, Akash Plaza, Sector-09, Uttara,
+                  Dhaka-1230, Bangladesh
+                </p>
+              </li>
               {/* <li>{t("phone")}: +40 784 805 998 </li> */}
               <li>{t("email")}: info@empowerment.group</li>
             </ul>

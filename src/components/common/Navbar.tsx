@@ -34,8 +34,8 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white border-b">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 z-50 w-full bg-white border-b">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-8">
             {/* Logo */}
@@ -47,7 +47,7 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                   width={120}
                   height={32}
                   priority
-                  className="h-6 w-auto sm:h-8 md:h-10" // Smaller on mobile
+                  className="w-auto h-6 sm:h-8 md:h-10" // Smaller on mobile
                 />
               </Link>
             </div>
@@ -77,21 +77,21 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                         <ul className="min-w-[400px] p-4 space-y-3">
                           <li>
                             <Link
-                              className="block p-2 text-base font-medium hover:bg-accent rounded-md"
+                              className="block p-2 text-base font-medium rounded-md hover:bg-accent"
                               href="/about-us">
                               {t("organization")}
                             </Link>
                           </li>
                           <li>
                             <Link
-                              className="block p-2 hover:bg-accent rounded-md font-medium"
+                              className="block p-2 font-medium rounded-md hover:bg-accent"
                               href="/about-us#journey">
                               {t("journey")}
                             </Link>
                           </li>
                           <li>
                             <Link
-                              className="block p-2 hover:bg-accent rounded-md font-medium"
+                              className="block p-2 font-medium rounded-md hover:bg-accent"
                               href="/about-us#ourculture">
                               {t("culture")}
                             </Link>
@@ -114,21 +114,21 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                         <ul className="grid w-[400px] gap-3 p-4">
                           <li>
                             <Link
-                              className="block p-2 text-base font-medium hover:bg-accent rounded-md"
+                              className="block p-2 text-base font-medium rounded-md hover:bg-accent"
                               href="/services/board-advisory">
                               {t("board")}
                             </Link>
                           </li>
                           <li>
                             <Link
-                              className="block p-2 hover:bg-accent rounded-md font-medium"
+                              className="block p-2 font-medium rounded-md hover:bg-accent"
                               href="/services/executive-search">
                               {t("executive")}
                             </Link>
                           </li>
                           <li>
                             <Link
-                              className="block p-2 hover:bg-accent rounded-md font-medium"
+                              className="block p-2 font-medium rounded-md hover:bg-accent"
                               href="/services/leadership">
                               {t("leadership")}
                             </Link>
@@ -151,46 +151,46 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                         <div className="w-[600px] p-6 flex">
                           {/* Left side - Title */}
                           <div className="w-1/4 p-2 rounded-lg">
-                            <div className="flex items-center gap-2 group cursor-default">
-                              <h4 className="font-bold text-base text-gray-900 group-hover:text-primary transition-colors">
+                            <div className="flex items-center gap-2 cursor-default group">
+                              <h4 className="text-base font-bold text-gray-900 transition-colors group-hover:text-primary">
                                 {t("industries")}
                               </h4>
-                              <ChevronLeft className="w-4 h-4 text-gray-400 group-hover:text-primary transition-colors" />
+                              <ChevronLeft className="w-4 h-4 text-gray-400 transition-colors group-hover:text-primary" />
                             </div>
                           </div>
 
                           {/* Right side - Industries list */}
                           <div className="w-3/4">
-                            <div className="grid grid-cols-2 gap-x-4 gap-y-3 relative">
+                            <div className="relative grid grid-cols-2 gap-x-4 gap-y-3">
                               <div className="absolute left-1/2 top-2 bottom-2 w-[2px] bg-gray-200" />
 
                               <Link
-                                className="block p-2 hover:bg-accent rounded-md font-medium"
+                                className="block p-2 font-medium rounded-md hover:bg-accent"
                                 href="/expertise/building-materials">
                                 {t("building")}
                               </Link>
                               <Link
-                                className="block p-2 hover:bg-accent rounded-md font-medium"
+                                className="block p-2 font-medium rounded-md hover:bg-accent"
                                 href="/expertise/education">
                                 {t("education")}
                               </Link>
                               <Link
-                                className="block p-2 hover:bg-accent rounded-md font-medium"
+                                className="block p-2 font-medium rounded-md hover:bg-accent"
                                 href="/expertise/industrial">
                                 {t("industrial")}
                               </Link>
                               <Link
-                                className="block p-2 hover:bg-accent rounded-md font-medium"
+                                className="block p-2 font-medium rounded-md hover:bg-accent"
                                 href="/expertise/development">
                                 {t("development")}
                               </Link>
                               <Link
-                                className="block p-2 hover:bg-accent rounded-md font-medium"
+                                className="block p-2 font-medium rounded-md hover:bg-accent"
                                 href="/expertise/real-estate">
                                 {t("realestate")}
                               </Link>
                               <Link
-                                className="block p-2 hover:bg-accent rounded-md font-medium"
+                                className="block p-2 font-medium rounded-md hover:bg-accent"
                                 href="/expertise/technology">
                                 {t("technology")}
                               </Link>
@@ -201,24 +201,28 @@ const Navbar: React.FC<HTMLAttributes<HTMLElement>> = () => {
                     </NavigationMenuItem>
                   </NavigationMenuList>
                   <NavigationMenuViewport />
+                  <Link
+                    href="/our-success"
+                    className="relative flex items-center justify-center px-2 md:px-6">
+                    <span className="relative z-10">{t("oursuccess")}</span>
+                    <div className="absolute inset-0 transition-transform duration-300 ease-out origin-top-right transform scale-0 rounded-full bg-primary/90 group-hover:scale-100" />
+                  </Link>
                 </NavigationMenu>
               </div>
             )}
           </div>
 
           {/* Right section */}
-          <div className="flex gap-1 items-center">
+          <div className="flex items-center gap-1">
             <Button
               asChild
               variant="default"
-              className="relative bg-black text-white overflow-hidden transition-all duration-300 
-              h-7 md:h-10 text-xs md:text-base group rounded-full 
-              mr-14 md:mr-0 px-2 md:px-6">
+              className="relative px-2 overflow-hidden text-xs text-white transition-all duration-300 bg-black rounded-full h-7 md:h-10 md:text-base group mr-14 md:mr-0 md:px-6">
               <Link
                 href="/contact-us"
                 className="relative flex items-center justify-center px-2 md:px-6">
                 <span className="relative z-10">{t("contact")}</span>
-                <div className="absolute inset-0 bg-primary/90 transform scale-0 origin-top-right transition-transform duration-300 ease-out group-hover:scale-100 rounded-full" />
+                <div className="absolute inset-0 transition-transform duration-300 ease-out origin-top-right transform scale-0 rounded-full bg-primary/90 group-hover:scale-100" />
               </Link>
             </Button>
 
