@@ -166,13 +166,13 @@ const ContactUs = () => {
                       </div>
                       <div className="p-4 border border-gray-400">
                         <div className="w-full ">
-                          <h3 className="font-semibold text-[12px]  text-gray-800"> Bangladesh</h3>
+                          <h3 className="font-semibold text-[12px]  text-gray-800">
+                            {" "}
+                            Malta
+                          </h3>
                         </div>
                         <div className="w-full ">
-                          <p>
-                            Level-04, House 21, Road-7/D, Akash Plaza,
-                            Sector-09, Uttara, Dhaka-1230, Bangladesh
-                          </p>
+                          <p>9C M A Vassalli Street, Valletta VLT1310, MALTA</p>
                         </div>
                       </div>
                     </div>
