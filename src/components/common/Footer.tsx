@@ -8,6 +8,8 @@ import {
   FaYoutube,
   FaTiktok,
   FaPinterest,
+  FaTwitter,
+  FaLinkedinIn,
 } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 
@@ -29,18 +31,18 @@ const Footer = () => {
                 target="_blank">
                 <FaFacebookF />
               </Link>
-              {/* <a
-                href="https://x.com/empowerment4492"
+              <Link
+                href="https://x.com/empowermen94664"
                 className="text-xl transition-colors hover:text-blue-500"
                 target="_blank">
                 <FaTwitter />
-              </a> */}
-              {/* <a
-                href="https://www.linkedin.com/company/empowerment-group-limited"
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/empowerment-recruitment/"
                 className="text-xl transition-colors hover:text-blue-500"
                 target="_blank">
                 <FaLinkedinIn />
-              </a> */}
+              </Link>
               <Link
                 href="https://www.instagram.com/empowerment.group25/"
                 className="text-xl transition-colors hover:text-blue-500"

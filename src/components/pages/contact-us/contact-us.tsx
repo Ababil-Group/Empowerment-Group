@@ -33,6 +33,8 @@ import {
   // Linkedin,
   Youtube,
   Instagram,
+  Linkedin,
+  Twitter,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import {
@@ -247,24 +249,24 @@ const ContactUs = () => {
                     target="_blank">
                     <FaPinterest className="w-6 h-6 text-gray-700 " />
                   </Link>
-                  {/* <a
-                    href="https://x.com/empowerment4492"
+                  <Link
+                    href="https://x.com/empowermen94664"
                     className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
                     target="_blank">
                     <Twitter className="w-6 h-6 text-gray-700" />
-                  </a> */}
+                  </Link>
                   <Link
                     href="https://www.youtube.com/@EmpowermentGroupLimited"
                     className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
                     target="_blank">
                     <Youtube className="w-6 h-6 text-gray-700" />
                   </Link>
-                  {/* <a
-                    href="https://www.linkedin.com/company/empowerment-group-limited"
+                  <Link
+                    href="https://www.linkedin.com/company/empowerment-recruitment/"
                     className="p-3 transition-colors bg-gray-100 rounded-xl hover:bg-gray-200"
                     target="_blank">
                     <Linkedin className="w-6 h-6 text-gray-700" />
-                  </a> */}
+                  </Link>
                 </div>
                 <div className="flex mt-5 space-x-4"></div>
               </div>
