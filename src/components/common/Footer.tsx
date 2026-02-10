@@ -148,14 +148,21 @@ const Footer = () => {
                 <span className="text-[12px]">{t("location1.title")}</span>
                 <p className="text-sm">{t("location1.address")}</p>
               </li> */}
-              <li className="w-full p-2 border rounded-lg">
+              {/* <li className="w-full p-2 border rounded-lg">
                 <span className="text-[12px] ">{t("location2.title")}</span>
                 <p className="text-sm">{t("location2.address")}</p>
-              </li>
-              <li className="w-full p-2 border rounded-lg">
+              </li> */}
+              {/* <li className="w-full p-2 border rounded-lg">
                 <span className="text-[12px] ">Malta</span>
                 <p className="text-sm">
                   9C M A Vassalli Street, Valletta VLT1310, MALTA
+                </p>
+              </li> */}
+              <li className="w-full p-2 border rounded-lg">
+                <span className="text-[12px] ">Bangladesh</span>
+                <p className="text-sm">
+                  Sonargaon Janapad Road, Sector #12 Uttara, Dhaka-1230,
+                  Bangladesh
                 </p>
               </li>
               {/* <li>{t("phone")}: +40 784 805 998 </li> */}

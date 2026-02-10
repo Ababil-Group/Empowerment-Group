@@ -154,7 +154,7 @@ const ContactUs = () => {
                       <MapPin className="w-6 h-6 text-gray-700" />
                     </div>
                     <div className="">
-                      <div className="p-4 border border-gray-400">
+                      {/* <div className="p-4 border border-gray-400">
                         <div className="w-full ">
                           <h3 className="font-semibold text-[12px]  text-gray-800">
                             {t("location2.title")}
@@ -163,8 +163,8 @@ const ContactUs = () => {
                         <div className="w-full ">
                           <p>{t("location2.address")}</p>
                         </div>
-                      </div>
-                      <div className="p-4 border border-gray-400">
+                      </div> */}
+                      {/* <div className="p-4 border border-gray-400">
                         <div className="w-full ">
                           <h3 className="font-semibold text-[12px]  text-gray-800">
                             {" "}
@@ -173,6 +173,20 @@ const ContactUs = () => {
                         </div>
                         <div className="w-full ">
                           <p>9C M A Vassalli Street, Valletta VLT1310, MALTA</p>
+                        </div>
+                      </div> */}
+                      <div className="p-4 border border-gray-400">
+                        <div className="w-full ">
+                          <h3 className="font-semibold text-[12px]  text-gray-800">
+                            {" "}
+                            Bangladesh
+                          </h3>
+                        </div>
+                        <div className="w-full ">
+                          <p>
+                            Sonargaon Janapad Road, Sector #12 Uttara,
+                            Dhaka-1230, Bangladesh
+                          </p>
                         </div>
                       </div>
                     </div>
