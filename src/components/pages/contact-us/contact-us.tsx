@@ -156,7 +156,7 @@ const ContactUs = () => {
                       <MapPin className="w-6 h-6 text-gray-700" />
                     </div>
                     <div className="">
-                      {/* <div className="p-4 border border-gray-400">
+                      <div className="p-4 border border-gray-400">
                         <div className="w-full ">
                           <h3 className="font-semibold text-[12px]  text-gray-800">
                             {t("location2.title")}
@@ -165,7 +165,7 @@ const ContactUs = () => {
                         <div className="w-full ">
                           <p>{t("location2.address")}</p>
                         </div>
-                      </div> */}
+                      </div>
                       {/* <div className="p-4 border border-gray-400">
                         <div className="w-full ">
                           <h3 className="font-semibold text-[12px]  text-gray-800">
