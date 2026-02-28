@@ -21,41 +21,75 @@ const stories: Story[] = [
     category: "Romania",
     categoryImage: "/images/romania.jpg",
     image: [
-      { url: "/images/visa.png", type: "image/png" },
-      { url: "/images/visa.png", type: "image/png" },
-      { url: "/images/visa.png", type: "image/png" },
+      { url: "/RomaniaVisa/visa1.jpg", type: "image/png" },
+      { url: "/RomaniaVisa/visa2.jpg", type: "image/png" },
+      { url: "/RomaniaVisa/visa3.jpg", type: "image/png" },
+      { url: "/RomaniaVisa/visa4.jpg", type: "image/png" },
+      { url: "/RomaniaVisa/visa5.jpg", type: "image/png" },
+      { url: "/RomaniaVisa/visa6.jpg", type: "image/png" },
+      { url: "/RomaniaVisa/visa7.jpg", type: "image/png" },
+      { url: "/RomaniaVisa/visa8.jpg", type: "image/png" },
+      { url: "/RomaniaVisa/visa9.jpg", type: "image/png" },
+      { url: "/RomaniaVisa/visa10.jpg", type: "image/png" },
     ],
   },
   {
     category: "Serbia",
     categoryImage: "/images/serbia.jpg",
     image: [
-      { url: "/images/serbia1.jpg", type: "image/jpeg" },
-      { url: "/images/serbia2.jpg", type: "image/jpeg" },
+      { url: "/SerbiaVisa/visa1.jpg", type: "image/jpg" },
+      { url: "/SerbiaVisa/visa2.jpg", type: "image/jpg" },
+      { url: "/SerbiaVisa/visa3.jpg", type: "image/jpg" },
+      { url: "/SerbiaVisa/visa4.jpg", type: "image/jpg" },
+      { url: "/SerbiaVisa/visa5.jpg", type: "image/jpg" },
+      { url: "/SerbiaVisa/visa6.jpg", type: "image/jpg" },
+      { url: "/SerbiaVisa/visa7.jpg", type: "image/jpg" },
+      { url: "/SerbiaVisa/visa8.jpg", type: "image/jpg" },
+      { url: "/SerbiaVisa/visa9.jpg", type: "image/jpg" },
     ],
   },
   {
     category: "Croatia",
     categoryImage: "/images/croatia.jpg",
     image: [
-      { url: "/images/croatia1.jpg", type: "image/jpeg" },
-      { url: "/images/croatia2.jpg", type: "image/jpeg" },
+      { url: "/CroatiaVisa/visa1.jpg", type: "image/jpg" },
+      { url: "/CroatiaVisa/visa2.jpg", type: "image/jpg" },
+      { url: "/CroatiaVisa/visa3.jpg", type: "image/jpg" },
+      { url: "/CroatiaVisa/visa4.jpg", type: "image/jpg" },
+      { url: "/CroatiaVisa/visa5.jpg", type: "image/jpg" },
+      { url: "/CroatiaVisa/visa6.jpg", type: "image/jpg" },
+      { url: "/CroatiaVisa/visa7.jpg", type: "image/jpg" },
+      { url: "/CroatiaVisa/visa8.jpg", type: "image/jpg" },
+      { url: "/CroatiaVisa/visa9.jpg", type: "image/jpg" },
+      { url: "/CroatiaVisa/visa10.jpg", type: "image/jpg" },
+      { url: "/CroatiaVisa/visa11.jpg", type: "image/jpg" },
+      { url: "/CroatiaVisa/visa12.jpg", type: "image/jpg" },
+      { url: "/CroatiaVisa/visa13.jpg", type: "image/jpg" },
+      { url: "/CroatiaVisa/visa14.jpg", type: "image/jpg" },
     ],
   },
   {
     category: "Bosnia",
     categoryImage: "/images/bosnia.jpg",
     image: [
-      { url: "/images/bosnia1.jpg", type: "image/jpeg" },
-      { url: "/images/bosnia2.jpg", type: "image/jpeg" },
+      { url: "/BosniaVisa/visa1.jpg", type: "image/jpg" },
+      { url: "/BosniaVisa/visa2.jpg", type: "image/jpg" },
+      { url: "/BosniaVisa/visa3.jpg", type: "image/jpg" },
     ],
   },
   {
     category: "Malta",
     categoryImage: "/images/malta.jpg",
     image: [
-      { url: "/images/malta1.jpg", type: "image/jpeg" },
-      { url: "/images/malta2.jpg", type: "image/jpeg" },
+      { url: "/MaltaVisa/visa1.jpg", type: "image/jpg" },
+      { url: "/MaltaVisa/visa2.jpg", type: "image/jpg" },
+      { url: "/MaltaVisa/visa3.jpg", type: "image/jpg" },
+      { url: "/MaltaVisa/visa4.jpg", type: "image/jpg" },
+      { url: "/MaltaVisa/visa5.jpg", type: "image/jpg" },
+      { url: "/MaltaVisa/visa6.jpg", type: "image/jpg" },
+      { url: "/MaltaVisa/visa7.jpg", type: "image/jpg" },
+      { url: "/MaltaVisa/visa8.jpg", type: "image/jpg" },
+      
     ],
   },
 ];
@@ -118,7 +152,14 @@ export default function CountryGallery() {
             className="fixed inset-0 z-50 flex flex-col items-center justify-center p-6 bg-black/80"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}>
+            exit={{ opacity: 0 }}
+            style={{
+              backgroundImage: `url(${selectedCountry.categoryImage})`,
+              backgroundSize: "cover",
+              backgroundColor: "rgba(0, 0, 0, 0.761)",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}>
             {/* Close button */}
             <button
               title="button"
@@ -172,7 +213,7 @@ export default function CountryGallery() {
             </div>
 
             {/* Thumbnail Slider */}
-            <div className="flex max-w-3xl gap-3 mt-6 overflow-x-auto">
+            <div className="flex max-w-4xl gap-3 mt-6 overflow-hidden">
               {selectedCountry.image.map((img, index) => (
                 <motion.div
                   key={index}
