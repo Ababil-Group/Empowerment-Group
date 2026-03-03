@@ -89,7 +89,6 @@ const stories: Story[] = [
       { url: "/MaltaVisa/visa6.jpg", type: "image/jpg" },
       { url: "/MaltaVisa/visa7.jpg", type: "image/jpg" },
       { url: "/MaltaVisa/visa8.jpg", type: "image/jpg" },
-      
     ],
   },
 ];
@@ -152,14 +151,17 @@ export default function CountryGallery() {
             className="fixed inset-0 z-50 flex flex-col items-center justify-center p-6 bg-black/80"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            style={{
-              backgroundImage: `url(${selectedCountry.categoryImage})`,
-              backgroundSize: "cover",
-              backgroundColor: "rgba(0, 0, 0, 0.761)",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }}>
+            exit={{ opacity: 0 }}>
+            <div className="absolute inset-0">
+              <Image
+                src={selectedCountry.categoryImage}
+                alt={selectedCountry.category}
+                fill
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-black/70" />
+            </div>
             {/* Close button */}
             <button
               title="button"
